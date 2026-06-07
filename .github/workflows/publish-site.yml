@@ -10,11 +10,6 @@ on:
       - ".github/workflows/publish-site.yml"
   workflow_dispatch:
 
-# Set to "" if the site is served from a custom domain or user/org root,
-# or "/rl" for a project page at <user>.github.io/rl.
-env:
-  BASE_URL: "/rl"
-
 permissions:
   contents: read
   pages: write
@@ -29,6 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Reports the correct base path for the Pages config: "" for the rl.fz.ax
+      # custom domain (served at root), "/rl" for a bare project page. No manual BASE_URL.
+      - id: pages
+        uses: actions/configure-pages@v5
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -36,7 +35,9 @@ jobs:
       - name: Build site from data/
         run: |
           python .claude/skills/random-learning/scripts/build_site.py \
-            --data-dir data --out-dir site --base-url "${BASE_URL}"
+            --data-dir data --out-dir site --base-url "${{ steps.pages.outputs.base_path }}"
+          # Preserve the custom domain across Actions deploys (Pages can otherwise drop it).
+          echo "rl.fz.ax" > site/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
