@@ -59,6 +59,11 @@ routine, Local variant) on an always-on Mac Mini:
   `AUTH_TOKEN` / `CT0` env vars).
 - Git push uses `gh`-authenticated HTTPS (`gh auth login` once).
 
+**Before trusting the schedule (spike):** run the `random-learning` skill once
+by hand and confirm it can (a) invoke the user-level `last30days` sub-skill,
+(b) write the day's files, and (c) `git push` via `gh`. A forced gate failure
+must commit nothing.
+
 A scheduled GitHub Action (`heartbeat.yml`) alerts if `data/` goes stale, so a
 silent failure on the Mac Mini surfaces independently.
 
