@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Generated static site (built in CI from data/, never committed)
+site/
+
+# last30days raw evidence is written to a temp dir, never committed
+*.raw.md
+.last30days-raw/
+
+# Local self-repo cache
+.cache/
+
+.DS_Store
