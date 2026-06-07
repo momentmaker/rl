@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Random Learning{% endblock %}
+{% block content %}
+<h1>Random Learning</h1>
+<p class="muted">What I learned, one day at a time.</p>
+{% if days %}
+<ul class="day-list">
+  {% for day in days %}
+  <li>
+    <a href="{{ day.href }}">{{ day.date }}</a>
+    <span class="muted">&mdash;
+      {% for t in day.topics %}{{ t.title }}{% if not loop.last %} · {% endif %}{% endfor %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">No entries yet.</p>
+{% endif %}
+{% endblock %}

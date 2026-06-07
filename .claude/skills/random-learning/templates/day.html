@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ day.date }} · Random Learning{% endblock %}
+{% block content %}
+<h1>{{ day.date }}</h1>
+{% for topic in day.topics %}
+<article class="topic">
+  <h2>{{ topic.title }}</h2>
+  {{ topic.html | safe }}
+  {% if topic.connections %}
+  <div class="connections">Connects to:
+    {% for c in topic.connections %}
+      <a href="{{ c.href }}">{{ c.title }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>
+{% endfor %}
+{% if day.provenance_html %}
+<div class="provenance">{{ day.provenance_html | safe }}</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Random Learning{% endblock %}</title>
+<style>
+  :root { --ink: #1a1a1a; --muted: #6b6b6b; --accent: #3b5bdb; --line: #e6e6e6; }
+  * { box-sizing: border-box; }
+  body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         color: var(--ink); max-width: 46rem; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+  header a { font-weight: 700; text-decoration: none; color: var(--ink); letter-spacing: -0.02em; }
+  h1 { font-size: 1.5rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.2rem; margin-top: 2.4rem; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .day-list { list-style: none; padding: 0; }
+  .day-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+  .topic { margin: 2rem 0; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+  .connections { font-size: 0.92rem; color: var(--muted); margin-top: 0.8rem; }
+  .provenance { font-size: 0.92rem; color: var(--muted); margin-top: 2rem;
+                border-top: 1px dashed var(--line); padding-top: 1rem; }
+  footer { margin-top: 4rem; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header><a href="{{ base_url }}/">Random Learning</a></header>
+<main>{% block content %}{% endblock %}</main>
+<footer>A daily learning ritual. Never the same topic twice.</footer>
+</body>
+</html>
