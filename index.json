@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "retired_ids": [
+    13,
+    138,
+    176
+  ],
+  "topics": [
+    {
+      "title": "Conway's Law in the age of AI agents",
+      "tokens": [
+        "age",
+        "agents",
+        "ai",
+        "conway",
+        "conways",
+        "design",
+        "law",
+        "microservices",
+        "org"
+      ],
+      "tags": [
+        "conways-law",
+        "org-design",
+        "ai-agents",
+        "microservices"
+      ],
+      "date": "2026/06/07",
+      "slug": "conways-law-ai-agents",
+      "path": "data/2026/06/07/conways-law-ai-agents.md"
+    },
+    {
+      "title": "How fairy tales got sanitized: the dark original Pinocchio",
+      "tokens": [
+        "culture",
+        "dark",
+        "fairy",
+        "got",
+        "grimm",
+        "original",
+        "pinocchio",
+        "sanitization",
+        "sanitized",
+        "tales"
+      ],
+      "tags": [
+        "fairy-tales",
+        "grimm",
+        "pinocchio",
+        "sanitization",
+        "culture"
+      ],
+      "date": "2026/06/07",
+      "slug": "fairy-tale-sanitization",
+      "path": "data/2026/06/07/fairy-tale-sanitization.md"
+    },
+    {
+      "title": "Sogo shosha and why Buffett bet on Japanese trading houses",
+      "tokens": [
+        "bet",
+        "buffett",
+        "business",
+        "houses",
+        "investing",
+        "japan",
+        "japanese",
+        "shosha",
+        "sogo",
+        "trading"
+      ],
+      "tags": [
+        "sogo-shosha",
+        "buffett",
+        "japan-business",
+        "investing"
+      ],
+      "date": "2026/06/07",
+      "slug": "sogo-shosha-buffett",
+      "path": "data/2026/06/07/sogo-shosha-buffett.md"
+    }
+  ]
+}

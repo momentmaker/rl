@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-07",
+  "topics": [
+    {
+      "title": "Conway's Law in the age of AI agents",
+      "brief_file": "conways-law-ai-agents.md",
+      "tags": [
+        "conways-law",
+        "org-design",
+        "ai-agents",
+        "microservices"
+      ],
+      "connections": []
+    },
+    {
+      "title": "How fairy tales got sanitized: the dark original Pinocchio",
+      "brief_file": "fairy-tale-sanitization.md",
+      "tags": [
+        "fairy-tales",
+        "grimm",
+        "pinocchio",
+        "sanitization",
+        "culture"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Sogo shosha and why Buffett bet on Japanese trading houses",
+      "brief_file": "sogo-shosha-buffett.md",
+      "tags": [
+        "sogo-shosha",
+        "buffett",
+        "japan-business",
+        "investing"
+      ],
+      "connections": []
+    }
+  ]
+}
