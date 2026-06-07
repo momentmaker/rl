@@ -32,8 +32,10 @@ DAY="data/$TODAY"
 ```
 
 Assert the `last30days` engine before relying on it (pin against version skew):
-`last30days --diagnose` style check, or confirm the resolved skill path/version
-in `~/.claude/skills/last30days`. If it can't be resolved, abort.
+run a `--diagnose` check against the resolved engine and confirm its version. It
+may be installed as a user skill (`~/.claude/skills/last30days`) or as a Claude
+Code plugin (`~/.claude/plugins/cache/last30days-skill/<version>/skills/last30days`);
+resolve whichever exists. If it can't be resolved, abort.
 
 ## Sequence
 

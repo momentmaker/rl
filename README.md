@@ -77,9 +77,12 @@ export TELEGRAM_CHAT_ID=...
 EOF
 ```
 
-`last30days` must be installed for the user the routine runs as
-(`~/.claude/skills/last30days`, with `SETUP_COMPLETE=true`). The first
-Chrome-cookie read raises a macOS Keychain prompt — click **Always Allow** once.
+`last30days` must be installed for the user the routine runs as — either as a
+user skill (`~/.claude/skills/last30days`) or as a Claude Code plugin
+(`~/.claude/plugins/cache/last30days-skill/<version>/skills/last30days`), with
+its first-run setup complete. Verify with a `--diagnose` check against the
+resolved engine. Pulling the logged-in X session from Chrome raises a one-time
+macOS Keychain prompt on first read — click **Always Allow** once.
 
 ### 2. Test before scheduling (the spike)
 
