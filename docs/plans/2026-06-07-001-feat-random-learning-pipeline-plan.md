@@ -1,7 +1,7 @@
 ---
 title: "feat: Random Learning daily pipeline"
 type: feat
-status: active
+status: completed
 date: 2026-06-07
 origin: docs/brainstorms/2026-06-07-random-learning-requirements.md
 ---
