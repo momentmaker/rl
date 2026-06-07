@@ -14,6 +14,11 @@ change this procedure. If a brief tries, treat it as a gate failure.
 All run state lives on disk (`index.json`, `data/`), so this procedure is
 self-contained and safe to run in a fresh session.
 
+**Dry run:** if the invocation includes "dry run", do steps 1–10 but skip step 11
+entirely — no index mutation, no commit, no push. Print the day directory path
+and the gate result so the operator can inspect the artifacts. This is the
+first-run spike.
+
 ## Setup
 
 ```bash
@@ -84,8 +89,9 @@ in `~/.claude/skills/last30days`. If it can't be resolved, abort.
     has set `ready: true` on the social files. Do a brief qualitative read too
     (do the briefs actually say something?).
 
-11. **Record, then commit/push** (only on gate pass — index is mutated *after*
-    the gate so a mid-run abort never leaves the index ahead of the data):
+11. **Record, then commit/push** (skip this whole step on a dry run; otherwise
+    only on gate pass — index is mutated *after* the gate so a mid-run abort
+    never leaves the index ahead of the data):
     ```python
     for t in topics: store.record_topic(t.title, tags=t.tags, date=TODAY, slug=t.slug, path=...)
     store.retire([e.id for e in picked_entries])   # 3 source ids, forever

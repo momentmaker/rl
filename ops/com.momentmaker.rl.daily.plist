@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LaunchAgent (per-user, runs in the logged-in GUI session so it keeps
+     Chrome/Keychain + gh access). Install:
+       cp ops/com.momentmaker.rl.daily.plist ~/Library/LaunchAgents/
+       launchctl load ~/Library/LaunchAgents/com.momentmaker.rl.daily.plist
+     EDIT the ProgramArguments path below to your Mac Mini checkout. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.momentmaker.rl.daily</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/rubberduck/GitHub/momentmaker/rl/ops/run_daily.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>7</integer>
+    <key>Minute</key><integer>17</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/rubberduck/.local/state/rl/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/rubberduck/.local/state/rl/launchd.err.log</string>
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

@@ -45,27 +45,113 @@ pytest
 Helper scripts target Python 3.12+ (TOML frontmatter parsed with stdlib
 `tomllib`). Run one cycle by hand before relying on the schedule.
 
-## Scheduling (Mac Mini)
+## Deploy on the Mac Mini
 
-The pipeline runs daily as a **Local Desktop scheduled task** (a Claude Code
-routine, Local variant) on an always-on Mac Mini:
+When you pull this onto the Mac Mini there's no prior context — this section is
+the whole runbook.
 
-- Create it in Claude Code Desktop → Routines → New routine → **Local**, pointing
-  at the `random-learning` skill, on a daily schedule.
-- Grant the task the tools it needs (Bash / Write / Read / Edit + skill
-  invocation) via the task's permission set.
-- Provide env: `BRAVE_API_KEY`, `FROM_BROWSER=chrome`. Grant the one-time
-  macOS Keychain "always allow" for Chrome cookie access (fallback:
-  `AUTH_TOKEN` / `CT0` env vars).
-- Git push uses `gh`-authenticated HTTPS (`gh auth login` once).
+### 1. One-time setup
 
-**Before trusting the schedule (spike):** run the `random-learning` skill once
-by hand and confirm it can (a) invoke the user-level `last30days` sub-skill,
-(b) write the day's files, and (c) `git push` via `gh`. A forced gate failure
-must commit nothing.
+```bash
+git clone git@github.com:momentmaker/rl.git && cd rl
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+pytest -q                # proves the deterministic scripts
 
-A scheduled GitHub Action (`heartbeat.yml`) alerts if `data/` goes stale, so a
-silent failure on the Mac Mini surfaces independently.
+gh auth login            # git push uses gh-authenticated HTTPS
+```
+
+Operator config lives **outside the repo** (so secrets are never committed),
+sourced by the runner from `~/.config/rl/env`:
+
+```bash
+mkdir -p ~/.config/rl
+cat > ~/.config/rl/env <<'EOF'
+export BRAVE_API_KEY=...            # last30days web backend
+export FROM_BROWSER=chrome          # pull the logged-in X session from Chrome
+export SELF_DIR=$HOME/.cache/rl-self
+# fallback if Chrome cookies can't be read unattended:
+# export AUTH_TOKEN=...  CT0=...
+EOF
+```
+
+`last30days` must be installed for the user the routine runs as
+(`~/.claude/skills/last30days`, with `SETUP_COMPLETE=true`). The first
+Chrome-cookie read raises a macOS Keychain prompt — click **Always Allow** once.
+
+### 2. Test before scheduling (the spike)
+
+Work up from cheap to full. There is no conversation context on the Mac Mini, so
+each step is self-contained:
+
+```bash
+S=.claude/skills/random-learning/scripts
+
+# a) deterministic scripts — no Claude, no network
+pytest -q
+
+# b) real self data — no Claude — confirms parsing + supply
+python $S/collect.py --self-dir "$SELF_DIR" --remote git@github.com:momentmaker/self.git --measure
+python $S/fuel.py    --self-dir "$SELF_DIR" --index index.json
+python $S/build_site.py                       # renders an empty-state site/ locally
+
+# c) ONE full cycle, DRY RUN — Claude does collect -> pick -> last30days ->
+#    write -> gate, but commits/pushes NOTHING. Inspect data/<today>/ after.
+ops/run_daily.sh --dry-run
+
+# d) ONE real cycle — commits + pushes; the publish Action then deploys the site
+ops/run_daily.sh
+```
+
+Step (c) is the spike: it proves Claude finds the project skill, invokes the
+user-level `last30days` sub-skill, the briefs carry the engine badge/footer, the
+social files are within limits, and the fail-closed gate passes on good data
+(and commits nothing on a forced failure). Logs land in `~/.local/state/rl/`.
+
+### 3. Schedule the daily routine
+
+Pick one.
+
+**A. Claude Code Desktop routine (Local)** — simplest if the Desktop app runs on
+the Mac Mini. Desktop app → **Routines → New routine → Local**, prompt
+`/random-learning`, daily schedule, and grant Bash / Read / Write / Edit + skill
+invocation in the task's permission set. Local routines are durable (survive
+restarts, no 7-day expiry) and spawn their own session per run.
+
+**B. launchd LaunchAgent** — OS-level, no Desktop app needed. A LaunchAgent (not
+a Daemon) runs in your logged-in GUI session, so it keeps Chrome/Keychain and
+`gh` access:
+
+```bash
+# edit the checkout path inside the plist first if your Mac Mini differs
+cp ops/com.momentmaker.rl.daily.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.momentmaker.rl.daily.plist
+launchctl start com.momentmaker.rl.daily      # fire once now to verify
+```
+
+It runs `ops/run_daily.sh` daily (07:17 by default). The one thing to confirm
+for your `claude` version is the headless invocation inside `run_daily.sh`
+(permission mode + tool/dir access) — step 2c is where you verify it.
+
+A cloud GitHub Action (`heartbeat.yml`) independently alerts (opens an issue) if
+`data/` goes stale for more than 2 days, so a silent failure on the Mac Mini
+still surfaces even if the machine or routine dies.
+
+## Custom domain (rl.fz.ax)
+
+The site is served at the **root** of `rl.fz.ax`, so the Pages base path is empty
+— `publish-site.yml` derives it automatically via `actions/configure-pages` and
+writes a `CNAME` on every deploy. One-time setup:
+
+1. **DNS** at the `fz.ax` zone — `rl` is a subdomain, so add a CNAME record:
+   `rl  CNAME  momentmaker.github.io.`
+2. **GitHub → Settings → Pages**: Source = **GitHub Actions**; Custom domain =
+   `rl.fz.ax` (GitHub verifies DNS, then issues a cert); after the cert lands,
+   tick **Enforce HTTPS**.
+3. Enable Pages (step 2's Source) **before** the workflow runs —
+   `actions/configure-pages` errors otherwise. Trigger a first deploy with
+   **Actions → Publish site → Run workflow** to verify the domain + HTTPS on the
+   empty-state page, before any daily entry exists.
 
 ## Plan & origin
 
