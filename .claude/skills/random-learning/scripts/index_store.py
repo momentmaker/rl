@@ -36,6 +36,10 @@ _STOPWORDS = {
 _TOKEN_RE = re.compile(r"[a-z0-9]+")
 
 
+class IndexStoreError(RuntimeError):
+    """Raised when index.json is unreadable/corrupt — fail closed, never silently reset."""
+
+
 def normalize_tokens(title: str, tags: list[str] | None = None) -> list[str]:
     """Lowercase, split title+tags into a deduped token set (sorted for stability)."""
     text = title or ""
@@ -57,9 +61,15 @@ class IndexStore:
     # ---- persistence -------------------------------------------------------
 
     def _load(self) -> dict:
-        if self.path.exists():
-            return json.loads(self.path.read_text())
-        return self.bootstrap()
+        if not self.path.exists():
+            return self.bootstrap()
+        try:
+            data = json.loads(self.path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            raise IndexStoreError(f"index.json is corrupt: {e}") from e
+        for key, default in (("version", 1), ("retired_ids", []), ("topics", [])):
+            data.setdefault(key, default)
+        return data
 
     @staticmethod
     def bootstrap() -> dict:
@@ -68,7 +78,7 @@ class IndexStore:
     def save(self) -> None:
         """Atomic write: serialize to a temp file then os.replace into place."""
         tmp = self.path.with_suffix(self.path.suffix + ".tmp")
-        tmp.write_text(json.dumps(self.data, indent=2, ensure_ascii=False))
+        tmp.write_text(json.dumps(self.data, indent=2, ensure_ascii=False), encoding="utf-8")
         os.replace(tmp, self.path)
 
     # ---- retired source ids ------------------------------------------------

@@ -17,6 +17,7 @@ import json
 from pathlib import Path
 
 import markdown as md
+import nh3
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 SOCIAL_FILES = {"tweet.md", "telegram.md"}
@@ -28,7 +29,22 @@ DEFAULT_TEMPLATES = SCRIPT_DIR.parent / "templates"
 
 
 def _render_md(path: Path) -> str:
-    return md.markdown(path.read_text(encoding="utf-8"), extensions=["extra", "sane_lists"])
+    html = md.markdown(path.read_text(encoding="utf-8"), extensions=["extra", "sane_lists"])
+    # Briefs/provenance derive from untrusted web/social research and are rendered |safe;
+    # strip any embedded HTML/scripts so the public site can't be an XSS sink.
+    return nh3.clean(html)
+
+
+def _safe_child(day: Path, name: str) -> Path | None:
+    """Resolve a model-supplied filename, confined to the day dir (no traversal)."""
+    if not name or "/" in name or "\\" in name or ".." in name:
+        return None
+    candidate = day / name
+    try:
+        candidate.resolve().relative_to(day.resolve())
+    except ValueError:
+        return None
+    return candidate
 
 
 def _day_dirs(data_dir: Path) -> list[Path]:
@@ -50,12 +66,15 @@ def build_day(day: Path, data_dir: Path, base_url: str) -> dict:
     meta_path = day / META_FILE
     topics = []
     if meta_path.exists():
-        meta = json.loads(meta_path.read_text())
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            meta = {"topics": []}
         for t in meta.get("topics", []):
-            brief = day / t.get("brief_file", "")
+            brief = _safe_child(day, t.get("brief_file", ""))
             topics.append({
-                "title": t.get("title", brief.stem),
-                "html": _render_md(brief) if brief.exists() else "",
+                "title": t.get("title", brief.stem if brief else ""),
+                "html": _render_md(brief) if brief and brief.exists() else "",
                 "connections": [
                     {"title": c.get("title", ""),
                      "href": f"{base_url}/{c['date']}/" if c.get("date") else "#"}
@@ -88,13 +107,13 @@ def render_site(data_dir, out_dir, templates_dir=None, base_url: str = "") -> di
 
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(
-        env.get_template("index.html").render(days=days, base_url=base_url)
+        env.get_template("index.html").render(days=days, base_url=base_url), encoding="utf-8"
     )
     for day in days:
         page_dir = out_dir / day["date"]
         page_dir.mkdir(parents=True, exist_ok=True)
         (page_dir / "index.html").write_text(
-            env.get_template("day.html").render(day=day, base_url=base_url)
+            env.get_template("day.html").render(day=day, base_url=base_url), encoding="utf-8"
         )
     return {"days": len(days)}
 

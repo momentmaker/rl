@@ -2,7 +2,9 @@
 
 import json
 
-from index_store import IndexStore, DEDUP_THRESHOLD, RELATED_THRESHOLD
+import pytest
+
+from index_store import IndexStore, IndexStoreError, DEDUP_THRESHOLD, RELATED_THRESHOLD
 
 
 def _seed_cluster(store):
@@ -84,3 +86,16 @@ def test_atomic_write_leaves_no_temp(index_path):
     json.loads(index_path.read_text())  # valid JSON
     leftovers = list(index_path.parent.glob("*.tmp"))
     assert leftovers == []
+
+
+def test_corrupt_index_raises(index_path):
+    index_path.write_text("{not valid json")
+    with pytest.raises(IndexStoreError):
+        IndexStore(index_path)
+
+
+def test_missing_keys_tolerated(index_path):
+    index_path.write_text('{"version": 1}')
+    store = IndexStore(index_path)  # setdefault backfills retired_ids/topics
+    assert store.topic_count == 0
+    assert not store.is_retired(1)

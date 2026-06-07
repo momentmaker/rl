@@ -71,3 +71,16 @@ def test_measure_reports_pool(self_repo):
     stats = collect.measure(collect_entries(self_repo))
     assert stats["eligible_pool"] == 2
     assert stats["capture_rate_per_day"] > 0
+
+
+def test_tags_non_list_does_not_crash(self_repo):
+    bad = self_repo / "2026-w17" / "2026-04-23-000050-badtags.md"
+    bad.write_text('+++\nid = 50\nkind = "url"\nurl = "https://x.example"\ntitle = "t"\ntags = 42\n+++\n\nbody\n')
+    assert parse_entry(bad)["tags"] == []   # coerced, not a TypeError
+    collect_entries(self_repo)              # collecting over the dir must not raise
+
+
+def test_tags_string_not_char_split(self_repo):
+    bad = self_repo / "2026-w17" / "2026-04-23-000051-strtags.md"
+    bad.write_text('+++\nid = 51\nkind = "url"\nurl = "https://y.example"\ntitle = "t"\ntags = "rust"\n+++\n\nbody\n')
+    assert parse_entry(bad)["tags"] == []   # a bare string is dropped, never split into ['r','u',...]

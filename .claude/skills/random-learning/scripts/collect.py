@@ -17,6 +17,7 @@ import re
 import subprocess
 import sys
 import tomllib
+from datetime import date
 from pathlib import Path
 
 DEFAULT_ALLOWLIST = ("url",)
@@ -39,8 +40,7 @@ def _extract_why(body: str) -> str:
     parts = _WHY_RE.split(body, maxsplit=1)
     if len(parts) < 2:
         return ""
-    tail_lines = [ln for ln in parts[1].strip().splitlines()]
-    note_lines = [ln for ln in tail_lines if not _ISO_TS_RE.match(ln)]
+    note_lines = [ln for ln in parts[1].strip().splitlines() if not _ISO_TS_RE.match(ln)]
     return "\n".join(note_lines).strip()
 
 
@@ -65,11 +65,13 @@ def parse_entry(path: Path) -> dict | None:
     except tomllib.TOMLDecodeError:
         return None
     body = m.group(2)
+    raw_tags = meta.get("tags", [])
+    tags = [str(t) for t in raw_tags] if isinstance(raw_tags, list) else []
     return {
         "id": meta.get("id"),
         "title": meta.get("title", ""),
         "url": meta.get("url", ""),
-        "tags": list(meta.get("tags", [])),
+        "tags": tags,
         "kind": meta.get("kind", ""),
         "captured_at": meta.get("captured_at"),
         "iso_week": meta.get("iso_week"),
@@ -102,17 +104,20 @@ def collect(self_dir, retired_ids=(), allowlist=DEFAULT_ALLOWLIST) -> list[dict]
 
 # ---- git sync ----------------------------------------------------------------
 
-def _git(args, cwd=None):
-    return subprocess.run(["git", *args], cwd=cwd, capture_output=True, text=True)
+def _git(args, cwd=None, timeout=120):
+    return subprocess.run(["git", *args], cwd=cwd, capture_output=True, text=True, timeout=timeout)
 
 
 def sync_self(remote: str, cache_dir) -> Path:
     cache = Path(cache_dir)
-    if (cache / ".git").exists():
-        r = _git(["-C", str(cache), "pull", "--ff-only"])
-    else:
-        cache.parent.mkdir(parents=True, exist_ok=True)
-        r = _git(["clone", "--depth", "50", remote, str(cache)])
+    try:
+        if (cache / ".git").exists():
+            r = _git(["-C", str(cache), "pull", "--ff-only"])
+        else:
+            cache.parent.mkdir(parents=True, exist_ok=True)
+            r = _git(["clone", "--depth", "50", remote, str(cache)])
+    except subprocess.TimeoutExpired:
+        raise CollectError("self sync timed out")
     if r.returncode != 0:
         raise CollectError(f"self sync failed: {(r.stderr or r.stdout).strip()}")
     return cache
@@ -125,7 +130,6 @@ def measure(entries: list[dict]) -> dict:
     dates = sorted(e["local_date"] for e in entries if e.get("local_date"))
     span_days = 1
     if len(dates) >= 2:
-        from datetime import date
         try:
             d0 = date.fromisoformat(dates[0])
             d1 = date.fromisoformat(dates[-1])
@@ -151,7 +155,11 @@ def main(argv=None) -> int:
     args = p.parse_args(argv)
 
     if args.remote and not args.no_sync:
-        sync_self(args.remote, args.self_dir)
+        try:
+            sync_self(args.remote, args.self_dir)
+        except CollectError as e:
+            print(json.dumps({"error": str(e)}), file=sys.stderr)
+            return 1
 
     retired = ()
     if args.index:

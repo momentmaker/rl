@@ -65,3 +65,29 @@ def test_no_private_self_url_leaks_when_provenance_redacted(tmp_path):
     render_site(data, out, templates_dir=TEMPLATES)
     page = (out / "2026/06/07" / "index.html").read_text()
     assert "lawsofsoftwareengineering.com" not in page  # raw self URL never injected
+
+
+def test_brief_html_is_sanitized(tmp_path):
+    data = tmp_path / "data"
+    _make_day(data, "2026/06/07", "x", "Topic", "Safe text <script>alert(1)</script> more")
+    out = tmp_path / "site"
+    render_site(data, out, templates_dir=TEMPLATES)
+    page = (out / "2026/06/07" / "index.html").read_text()
+    assert "<script>" not in page  # untrusted HTML stripped (XSS guard)
+    assert "Safe text" in page
+
+
+def test_brief_file_traversal_is_blocked(tmp_path):
+    secret = tmp_path / "secret.txt"
+    secret.write_text("TOPSECRET")
+    data = tmp_path / "data"
+    day = data / "2026/06/07"
+    day.mkdir(parents=True)
+    (day / "ok.md").write_text("# T\n\nbody\n")
+    meta = {"date": "2026/06/07",
+            "topics": [{"title": "T", "brief_file": "../../../../secret.txt", "connections": []}]}
+    (day / "meta.json").write_text(json.dumps(meta))
+    out = tmp_path / "site"
+    render_site(data, out, templates_dir=TEMPLATES)  # must not read outside the day dir or crash
+    page = (out / "2026/06/07" / "index.html").read_text()
+    assert "TOPSECRET" not in page

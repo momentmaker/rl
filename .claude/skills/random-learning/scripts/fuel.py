@@ -13,12 +13,13 @@ import json
 import sys
 from pathlib import Path
 
-from collect import collect, measure
+from collect import DEFAULT_ALLOWLIST, collect, measure
 
 LOW_FUEL_EXIT = 2
+ABORT_EXIT = 3
 
 
-def runway(self_dir, retired_ids=(), allowlist=("url",), per_day: int = 3) -> dict:
+def runway(self_dir, retired_ids=(), allowlist=DEFAULT_ALLOWLIST, per_day: int = 3) -> dict:
     stats = measure(collect(self_dir, retired_ids, allowlist))
     stats["per_day"] = per_day
     stats["days_runway"] = stats["eligible_pool"] // per_day
@@ -35,8 +36,12 @@ def main(argv=None) -> int:
 
     retired = ()
     if args.index and Path(args.index).exists():
-        from index_store import IndexStore
-        retired = IndexStore(args.index).data["retired_ids"]
+        from index_store import IndexStore, IndexStoreError
+        try:
+            retired = IndexStore(args.index).data["retired_ids"]
+        except IndexStoreError as e:
+            print(json.dumps({"error": str(e)}), file=sys.stderr)
+            return ABORT_EXIT
 
     stats = runway(args.self_dir, retired, per_day=args.per_day)
     print(json.dumps(stats))
