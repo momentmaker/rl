@@ -70,6 +70,8 @@ cat > ~/.config/rl/env <<'EOF'
 export BRAVE_API_KEY=...            # last30days web backend
 export FROM_BROWSER=chrome          # pull the logged-in X session from Chrome
 export SELF_DIR=$HOME/.cache/rl-self
+export TELEGRAM_BOT_TOKEN=...       # [rl] alerting bot (same-day failure pings)
+export TELEGRAM_CHAT_ID=...
 # fallback if Chrome cookies can't be read unattended:
 # export AUTH_TOKEN=...  CT0=...
 EOF
@@ -133,9 +135,22 @@ It runs `ops/run_daily.sh` daily (07:17 by default). The one thing to confirm
 for your `claude` version is the headless invocation inside `run_daily.sh`
 (permission mode + tool/dir access) — step 2c is where you verify it.
 
-A cloud GitHub Action (`heartbeat.yml`) independently alerts (opens an issue) if
-`data/` goes stale for more than 2 days, so a silent failure on the Mac Mini
-still surfaces even if the machine or routine dies.
+### Alerting
+
+Failures surface to Telegram with an `[rl]` prefix from two complementary places:
+
+- **`run_daily.sh` (Mac Mini, same-day):** `[rl] no entry committed today …` when a
+  real run errors or ships nothing (gate fail / low fuel). Deterministic — it
+  inspects git, not model behavior. Needs `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID`
+  in `~/.config/rl/env`.
+- **`heartbeat.yml` (cloud, catch-all):** `[rl] pipeline stale …` when `data/` goes
+  stale for more than 2 days — fires even if the Mac Mini or the routine dies.
+  Needs the same two values as **GitHub repo secrets** (Settings → Secrets and
+  variables → Actions): `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. It also opens a
+  deduped GitHub issue as a durable record.
+
+Both degrade gracefully (skip the ping) if the creds aren't set, so the pipeline
+runs fine before you wire alerting.
 
 ## Custom domain (rl.fz.ax)
 

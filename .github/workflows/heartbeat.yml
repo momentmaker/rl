@@ -21,7 +21,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Compute freshness
         id: fresh
@@ -57,18 +57,31 @@ jobs:
         if: steps.fresh.outputs.stale == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
           ENTRY_DATE: ${{ steps.fresh.outputs.entry_date }}
           AGE_DAYS: ${{ steps.fresh.outputs.age_days }}
           DETAIL: ${{ steps.fresh.outputs.detail }}
           TITLE: "Random Learning pipeline appears stale"
         run: |
-          set -euo pipefail
-          body="The daily pipeline has not produced a fresh dated entry."
+          set -uo pipefail
           if [ -n "${DETAIL:-}" ]; then
-            body="$body ${DETAIL}."
+            body="${DETAIL}."
           else
-            body="$body Newest entry: ${ENTRY_DATE} (${AGE_DAYS} days old, threshold ${STALE_DAYS})."
+            body="newest entry ${ENTRY_DATE} is ${AGE_DAYS} days old (threshold ${STALE_DAYS})."
           fi
+
+          # Telegram alert ([rl]-prefixed), only if the bot secrets are configured.
+          if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT:-}" ]; then
+            curl -fsS -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+              --data-urlencode "chat_id=${TG_CHAT}" \
+              --data-urlencode "text=[rl] pipeline stale — ${body}" >/dev/null \
+              && echo "telegram alert sent" || echo "telegram alert failed (non-fatal)"
+          else
+            echo "TELEGRAM_* secrets not set; skipping Telegram alert"
+          fi
+
+          # Durable, deduped GitHub issue as a persistent record.
           existing="$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)"
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body "$body"

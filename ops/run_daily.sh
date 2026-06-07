@@ -33,6 +33,24 @@ claude -p "$PROMPT" \
   --add-dir "$SELF_DIR" \
   >"$LOG" 2>&1
 status=$?
-
 echo "random-learning: exit=$status log=$LOG"
+
+notify() {  # [rl]-prefixed Telegram alert; no-op unless creds are in the env file
+  [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ] || return 0
+  curl -fsS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+    --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+    --data-urlencode "text=[rl] $1" >/dev/null 2>&1 || true
+}
+
+# Same-day alert from the Mac Mini side (the cloud heartbeat is the slower catch-all).
+# Deterministic: inspects git, not model behavior.
+if [ "${1:-}" != "--dry-run" ]; then
+  today="data/$(date +%Y/%m/%d)"
+  if [ "$status" -ne 0 ]; then
+    notify "daily run errored (exit $status); see $LOG"
+  elif ! git ls-files --error-unmatch "$today" >/dev/null 2>&1; then
+    notify "no entry committed for $(date +%Y-%m-%d) — gate failed or low fuel; see $LOG"
+  fi
+fi
+
 exit "$status"
