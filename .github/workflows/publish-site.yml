@@ -1,0 +1,52 @@
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - ".claude/skills/random-learning/templates/**"
+      - ".claude/skills/random-learning/scripts/build_site.py"
+      - ".github/workflows/publish-site.yml"
+  workflow_dispatch:
+
+# Set to "" if the site is served from a custom domain or user/org root,
+# or "/rl" for a project page at <user>.github.io/rl.
+env:
+  BASE_URL: "/rl"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Build site from data/
+        run: |
+          python .claude/skills/random-learning/scripts/build_site.py \
+            --data-dir data --out-dir site --base-url "${BASE_URL}"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
