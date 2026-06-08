@@ -213,7 +213,6 @@ def _build_topic(day: Path, t: dict) -> dict:
         "badge": _render_badge(parts["badge"]),
         "html": _render_md_text(parts["body"]) if parts["body"] else "",
         "footer": _render_footer(parts["footer"]),
-        "invitation": _render_md_text(parts["invitation"]) if parts["invitation"] else "",
         "reading_minutes": _reading_minutes(parts["body"] or raw),
         "connections": [
             {"title": c.get("title", ""),
@@ -243,7 +242,6 @@ def build_day(day: Path, data_dir: Path, base_url: str) -> dict:
                 "badge": _render_badge(parts["badge"]),
                 "html": _render_md_text(parts["body"]) if parts["body"] else "",
                 "footer": _render_footer(parts["footer"]),
-                "invitation": _render_md_text(parts["invitation"]) if parts["invitation"] else "",
                 "reading_minutes": _reading_minutes(parts["body"]),
                 "connections": [],
             })

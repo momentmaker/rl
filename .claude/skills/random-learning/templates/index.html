@@ -12,7 +12,7 @@
   <div class="stat"><div class="n">{{ site.stats.tags }}</div><div class="l">Themes explored</div></div>
 </section>
 
-{% if latest %}
+{% if latest and latest.topics %}
 <section class="hero">
   <p class="kicker">Latest</p>
   <a class="entry" href="{{ latest.href }}" style="border:0;padding:0">

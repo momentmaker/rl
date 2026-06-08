@@ -42,8 +42,6 @@
   </aside>
   {% endif %}
 
-  {% if topic.invitation %}<div class="invitation">{{ topic.invitation | safe }}</div>{% endif %}
-
   {% if topic.connections %}
   <div class="connections"><b>Connects to</b><br>
     {% for c in topic.connections %}

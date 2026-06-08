@@ -169,6 +169,7 @@ def test_engine_badge_and_source_card_render(tmp_path):
     assert "✅ All agents reported back!" in page            # source-card headline
     assert "Reddit: 14 threads" in page                     # source chip
     assert "Raw results saved" not in page                  # 📎 bookkeeping line dropped
+    assert "Closing invitation line." not in page            # chatbot closer dropped from the site
     assert 'class="badge"' in page and 'class="sources"' in page
 
 
