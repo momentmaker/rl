@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ tag.label }} · {{ site.title }}{% endblock %}
+{% block content %}
+<a class="backlink" href="{{ site.base_url }}/tags/">← All topics</a>
+<p class="kicker">Topic</p>
+<h1>{{ tag.label }}</h1>
+<p class="lede">{{ tag.entries|length }} {{ 'entry' if tag.entries|length == 1 else 'entries' }} explored this theme.</p>
+
+<div style="margin-top:2rem">
+  {% for item in tag.entries %}
+  <a class="entry" href="{{ item.href }}">
+    <span class="entry-date">{{ item.day_display }}</span>
+    <div class="entry-title">{{ item.title }}</div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

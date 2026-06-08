@@ -1,20 +1,56 @@
 {% extends "base.html" %}
-{% block title %}Random Learning{% endblock %}
+{% block title %}{{ site.title }} — {{ site.tagline }}{% endblock %}
 {% block content %}
-<h1>Random Learning</h1>
-<p class="muted">What I learned, one day at a time.</p>
+<p class="kicker">A daily learning ritual</p>
+<h1>{{ site.tagline }}</h1>
+<p class="lede">{{ site.description }}</p>
+
 {% if days %}
-<ul class="day-list">
-  {% for day in days %}
-  <li>
-    <a href="{{ day.href }}">{{ day.date }}</a>
-    <span class="muted">&mdash;
-      {% for t in day.topics %}{{ t.title }}{% if not loop.last %} · {% endif %}{% endfor %}
-    </span>
-  </li>
+<section class="stats" aria-label="Compounding so far">
+  <div class="stat"><div class="n">{{ site.stats.entries }}</div><div class="l">{{ 'Day' if site.stats.entries == 1 else 'Days' }}</div></div>
+  <div class="stat"><div class="n">{{ site.stats.topics }}</div><div class="l">Topics learned</div></div>
+  <div class="stat"><div class="n">{{ site.stats.tags }}</div><div class="l">Themes explored</div></div>
+</section>
+
+{% if latest %}
+<section class="hero">
+  <p class="kicker">Latest</p>
+  <a class="entry" href="{{ latest.href }}" style="border:0;padding:0">
+    <span class="entry-date">{{ latest.date_display }}</span>
+    <h2 class="entry-title">{{ latest.topics[0].title }}</h2>
+    {% if latest.topics|length > 1 %}
+    <p class="topics-peek">…and {{ latest.topics[1:] | map(attribute='title') | join(' · ') }}</p>
+    {% endif %}
+    <span class="sans" style="color:var(--accent-ink);font-size:.84rem;font-weight:600">Read the day →</span>
+  </a>
+</section>
+{% endif %}
+
+<h2 class="month" style="border:0;margin-top:3rem">The journal</h2>
+{% for group in months %}
+  <p class="month">{{ group.label }}</p>
+  {% for day in group.days %}
+  <a class="entry" href="{{ day.href }}">
+    <span class="entry-date">{{ day.date_display }}</span>
+    <div class="entry-title">{{ day.topics[0].title if day.topics else day.date_display }}</div>
+    {% if day.topics|length > 1 %}
+    <div class="entry-topics">{{ day.topics[1:] | map(attribute='title') | join(' · ') }}</div>
+    {% endif %}
+  </a>
   {% endfor %}
-</ul>
+{% endfor %}
+
+{% if site.tags %}
+<h2 class="month" style="border:0;margin-top:3rem">Explore by topic</h2>
+<div class="cloud">
+  {% for tag in site.tags[:24] %}
+  <a class="chip" href="{{ site.base_url }}/tags/{{ tag.slug }}/">{{ tag.label }} <span class="c">{{ tag.entries|length }}</span></a>
+  {% endfor %}
+  {% if site.tags|length > 24 %}<a class="chip" href="{{ site.base_url }}/tags/">all topics →</a>{% endif %}
+</div>
+{% endif %}
+
 {% else %}
-<p class="muted">No entries yet.</p>
+<p class="muted" style="margin-top:2rem">No entries yet. The first day of the ritual is coming.</p>
 {% endif %}
 {% endblock %}

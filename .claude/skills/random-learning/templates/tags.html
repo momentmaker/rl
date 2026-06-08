@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Topics · {{ site.title }}{% endblock %}
+{% block content %}
+<a class="backlink" href="{{ site.base_url }}/">← The journal</a>
+<p class="kicker">Browse by theme</p>
+<h1>Topics</h1>
+<p class="lede">{{ site.stats.topics }} topics across {{ tags|length }} themes, and counting.</p>
+
+<div class="cloud" style="margin-top:2rem">
+  {% for tag in tags %}
+  <a class="chip" href="{{ site.base_url }}/tags/{{ tag.slug }}/"
+     style="font-size:{{ 0.78 + (tag.entries|length - 1) * 0.06 }}rem">{{ tag.label }} <span class="c">{{ tag.entries|length }}</span></a>
+  {% endfor %}
+</div>
+{% endblock %}

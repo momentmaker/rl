@@ -1,0 +1,15 @@
+{
+  "name": "Random Learning",
+  "short_name": "rl",
+  "description": "A daily learning ritual. What I learned, one day at a time.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf7f1",
+  "theme_color": "#b4541f",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" },
+    { "src": "/favicon-32.png", "type": "image/png", "sizes": "32x32" }
+  ]
+}

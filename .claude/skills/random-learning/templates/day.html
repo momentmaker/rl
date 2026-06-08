@@ -1,21 +1,60 @@
 {% extends "base.html" %}
-{% block title %}{{ day.date }} · Random Learning{% endblock %}
+{% block title %}{{ day.date_display }} · {{ site.title }}{% endblock %}
+{% block structured_data %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting",
+ "headline":{{ (day.topics[0].title if day.topics else day.date_display) | tojson }},
+ "datePublished":{{ day.date | replace('/', '-') | tojson }},
+ "url":{{ page.canonical | tojson }},
+ "keywords":{{ day.tags | join(', ') | tojson }},
+ "author":{"@type":"Person","name":"Random Learning"},
+ "isPartOf":{"@type":"Blog","name":{{ site.title | tojson }},"url":{{ site.url | tojson }}}}
+</script>
+{% endblock %}
 {% block content %}
-<h1>{{ day.date }}</h1>
+<a class="backlink" href="{{ site.base_url }}/">← The journal</a>
+<p class="kicker">{{ day.date_display }}</p>
+<h1 style="margin-top:.1rem">{{ day.topics|length }} {{ 'thing' if day.topics|length == 1 else 'things' }} I learned</h1>
+
 {% for topic in day.topics %}
-<article class="topic">
-  <h2>{{ topic.title }}</h2>
-  {{ topic.html | safe }}
+<article class="topic" id="{{ topic.anchor }}">
+  <div class="topic-head">
+    <h2><a class="anchor" href="#{{ topic.anchor }}">{{ topic.title }}</a></h2>
+    <span class="readtime">{{ topic.reading_minutes }} min</span>
+  </div>
+  {% if topic.badge %}<span class="badge"><span class="dot"></span>{{ topic.badge }}</span>{% endif %}
+  {% if topic.tags %}
+  <div class="tags">
+    {% for tag in topic.tags %}
+    <a class="chip" href="{{ site.base_url }}/tags/{{ tag | slugify }}/">{{ tag.replace('-', ' ') }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="brief">{{ topic.html | safe }}</div>
+
+  {% if topic.footer %}
+  <aside class="sources" aria-label="Sources">
+    <div class="sources-head">{{ topic.footer.headline }}</div>
+    <div class="sources-list">
+      {% for s in topic.footer.sources %}<span class="src">{{ s }}</span>{% endfor %}
+    </div>
+  </aside>
+  {% endif %}
+
+  {% if topic.invitation %}<div class="invitation">{{ topic.invitation | safe }}</div>{% endif %}
+
   {% if topic.connections %}
-  <div class="connections">Connects to:
+  <div class="connections"><b>Connects to</b><br>
     {% for c in topic.connections %}
-      <a href="{{ c.href }}">{{ c.title }}</a>{% if not loop.last %}, {% endif %}
+      <a href="{{ c.href }}">{{ c.title }}</a>{% if not loop.last %} · {% endif %}
     {% endfor %}
   </div>
   {% endif %}
 </article>
 {% endfor %}
+
 {% if day.provenance_html %}
-<div class="provenance">{{ day.provenance_html | safe }}</div>
+<section class="provenance">{{ day.provenance_html | safe }}</section>
 {% endif %}
 {% endblock %}
