@@ -155,6 +155,44 @@ Failures surface to Telegram with an `[rl]` prefix from two complementary places
 Both degrade gracefully (skip the ping) if the creds aren't set, so the pipeline
 runs fine before you wire alerting.
 
+## Posting to X + Telegram (Hermes)
+
+The daily run only *produces* `tweet.md` / `telegram.md` (with `ready: true` set
+by the gate). A separate **Hermes** scheduled job posts them, decoupled from the
+rl run so it no-ops cleanly on days rl skips.
+
+- **`ops/hermes-rl-post.py`** — the Hermes `--script` preprocessor. Finds
+  `data/<today>/`, checks `ready: true`, extracts the frontmatter-stripped post
+  bodies, enforces **post-once** via a local marker
+  (`~/.local/state/rl-poster/posted-<date>`), and emits a `POST` / `NO_ENTRY`
+  (heartbeat alert) / `SILENT` contract. Hermes requires `--script` files to live
+  un-symlinked under `~/.hermes/scripts/`, so install a thin real-file shim there
+  that sets `RL_REPO` and `runpy`s this script (a symlink is rejected as
+  traversal; a plain copy breaks repo auto-detection).
+- **The cron job** posts the tweet via the x-poster `post_tweet` tool and ships
+  the telegram body via `--deliver telegram`:
+  ```bash
+  hermes cron create "30 8 * * *" "<poster prompt>" \
+    --name rl-daily-post --script rl-post.py \
+    --deliver telegram --workdir <repo>
+  # arm: hermes cron resume rl-daily-post   ·   disable: hermes cron pause rl-daily-post
+  # retry a failed day: rm ~/.local/state/rl-poster/posted-<date> && hermes cron run rl-daily-post
+  ```
+- **Debug Chrome must stay up.** `post_tweet` drives an already-running Chrome on
+  CDP port 9222 (`~/.config/hermes-chrome` profile, logged into x.com).
+  `ops/hermes-chrome-keeper.sh` + `ops/ai.hermes.chrome-debug.plist` are a
+  LaunchAgent watchdog (RunAtLoad + 60s interval) that relaunches it after
+  reboots/crashes; the dedicated profile keeps x.com/gmail logins persistent.
+  Install:
+  ```bash
+  cp ops/ai.hermes.chrome-debug.plist ~/Library/LaunchAgents/
+  launchctl load ~/Library/LaunchAgents/ai.hermes.chrome-debug.plist
+  ```
+- **x-poster gotcha:** the plugin must load as a Python package — `__init__.py`
+  (not `init.py`), a real Python `Schemas.py` (not the YAML manifest), and
+  case-correct imports. Confirm with `hermes plugins list` (status `enabled`) and
+  watch the agent log for `x-poster plugin registered: post_tweet`.
+
 ## Custom domain (rl.fz.ax)
 
 The site is served at the **root** of `rl.fz.ax`, so the Pages base path is empty

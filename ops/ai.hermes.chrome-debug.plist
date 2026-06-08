@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Keeps a debug-port Chrome (port 9222, ~/.config/hermes-chrome profile) alive
+     for Hermes x-poster + persistent gmail/x.com logins. LaunchAgent (per-user,
+     GUI session) so Chrome has a display + Keychain access. Install:
+       cp ops/ai.hermes.chrome-debug.plist ~/Library/LaunchAgents/
+       launchctl load ~/Library/LaunchAgents/ai.hermes.chrome-debug.plist
+     EDIT the absolute paths below if your checkout/user differ. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ai.hermes.chrome-debug</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/orchurator/Projects/rl/ops/hermes-chrome-keeper.sh</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StartInterval</key>
+  <integer>60</integer>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>StandardOutPath</key>
+  <string>/Users/orchurator/.local/state/hermes-chrome-keeper.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/orchurator/.local/state/hermes-chrome-keeper.log</string>
+</dict>
+</plist>
