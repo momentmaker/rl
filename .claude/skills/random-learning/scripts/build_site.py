@@ -43,6 +43,7 @@ DEFAULT_TEMPLATES = SCRIPT_DIR.parent / "templates"
 STATIC_DIRNAME = "static"
 
 DEFAULT_SITE_URL = "https://rl.fz.ax"
+SITE_REPO = "https://github.com/momentmaker/rl"
 SITE_TITLE = "Random Learning"
 SITE_TAGLINE = "What I learned, one day at a time."
 SITE_DESCRIPTION = (
@@ -469,7 +470,7 @@ def render_site(data_dir, out_dir, templates_dir=None, base_url: str = "",
     agg = _aggregate(days, base_url)
     site = {
         "title": SITE_TITLE, "tagline": SITE_TAGLINE, "description": SITE_DESCRIPTION,
-        "base_url": base_url, "site_url": site_url,
+        "base_url": base_url, "site_url": site_url, "repo_url": SITE_REPO,
         "url": f"{site_url}{base_url}/", "og_image": f"{site_url}{base_url}/og-image.png",
         "feed_url": f"{base_url}/feed.xml",
         "tags": agg["tags"], "stats": agg["stats"],
