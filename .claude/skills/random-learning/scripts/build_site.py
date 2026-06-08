@@ -29,6 +29,11 @@ import markdown as md
 import nh3
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+try:  # per-day OG cards need Pillow; fall back to the static card if unavailable
+    from og_card import render_day_card
+except Exception:  # pragma: no cover - exercised only when Pillow is missing
+    render_day_card = None
+
 SOCIAL_FILES = {"tweet.md", "telegram.md"}
 PROVENANCE_FILE = "provenance.md"
 META_FILE = "meta.json"
@@ -304,6 +309,85 @@ def _group_by_month(days: list[dict]) -> list[dict]:
     return groups
 
 
+# ---- constellation (topics as stars, "connects to" as edges) ----------------
+
+import hashlib  # noqa: E402  (kept local to this feature)
+import math  # noqa: E402
+
+_ATLAS_W, _ATLAS_H = 1000, 480
+
+
+def _jitter(seed: str) -> float:
+    h = int(hashlib.md5(seed.encode("utf-8")).hexdigest()[:8], 16)
+    return (h / 0xFFFFFFFF) * 2 - 1  # deterministic [-1, 1]
+
+
+def _atlas_model(days: list[dict]) -> tuple[list[dict], list[tuple[int, int]]]:
+    flat = [(day, t) for day in reversed(days) for t in day["topics"]]  # oldest -> newest
+    n = len(flat)
+    nodes, lookup = [], {}
+    for i, (day, t) in enumerate(flat):
+        x = (90 + i * ((_ATLAS_W - 180) / (n - 1))) if n > 1 else _ATLAS_W / 2
+        nodes.append({"title": t["title"], "href": f"{day['href']}#{t['anchor']}",
+                      "x": x, "y": _ATLAS_H / 2 + _jitter(t["title"]) * 150, "deg": 0})
+        lookup[(day["date"], t["title"].strip().lower())] = i
+    edges = []
+    for i, (day, t) in enumerate(flat):
+        for c in t["connections"]:
+            j = lookup.get((c.get("date"), (c.get("title") or "").strip().lower()))
+            if j is not None and j != i and (i, j) not in edges and (j, i) not in edges:
+                edges.append((i, j))
+                nodes[i]["deg"] += 1
+                nodes[j]["deg"] += 1
+    return nodes, edges
+
+
+def _atlas_svg(days: list[dict]) -> str:
+    nodes, edges = _atlas_model(days)
+    if not nodes:
+        return ""
+    parts = [
+        f'<svg viewBox="0 0 {_ATLAS_W} {_ATLAS_H}" class="atlas-svg" '
+        'xmlns="http://www.w3.org/2000/svg" role="img" '
+        'aria-label="Constellation of topics and their connections">',
+        '<defs><radialGradient id="star"><stop offset="0%" stop-color="#f4c79a"/>'
+        '<stop offset="100%" stop-color="#b4541f"/></radialGradient></defs>',
+        f'<rect x="0" y="0" width="{_ATLAS_W}" height="{_ATLAS_H}" rx="16" fill="#15120d"/>',
+    ]
+    # ambient background stars (deterministic)
+    for i in range(48):
+        ax = (int(hashlib.md5(f"ax{i}".encode()).hexdigest()[:6], 16) % _ATLAS_W)
+        ay = (int(hashlib.md5(f"ay{i}".encode()).hexdigest()[:6], 16) % _ATLAS_H)
+        parts.append(f'<circle cx="{ax}" cy="{ay}" r="1" fill="#4a3d2c" opacity="0.6"/>')
+    # edges (behind), gentle arcs
+    for i, j in edges:
+        a, b = nodes[i], nodes[j]
+        mx, my = (a["x"] + b["x"]) / 2, (a["y"] + b["y"]) / 2 - 40
+        parts.append(
+            f'<path d="M{a["x"]:.0f},{a["y"]:.0f} Q{mx:.0f},{my:.0f} {b["x"]:.0f},{b["y"]:.0f}" '
+            'fill="none" stroke="#e0915a" stroke-width="1.4" opacity="0.45"/>')
+    # nodes
+    for nd in nodes:
+        r = 6 + min(nd["deg"], 4) * 3
+        label = nd["title"] if len(nd["title"]) <= 30 else nd["title"][:29] + "…"
+        anchor = "end" if nd["x"] > _ATLAS_W - 150 else ("middle" if nd["x"] > 150 else "start")
+        lx = nd["x"] + (10 if anchor == "start" else (-10 if anchor == "end" else 0))
+        parts.append(
+            f'<a href="{_xml_escape(nd["href"])}">'
+            f'<circle cx="{nd["x"]:.0f}" cy="{nd["y"]:.0f}" r="{r + 8}" fill="#b4541f" opacity="0.18"/>'
+            f'<circle cx="{nd["x"]:.0f}" cy="{nd["y"]:.0f}" r="{r}" fill="url(#star)"/>'
+            f'<text x="{lx:.0f}" y="{nd["y"] + r + 18:.0f}" text-anchor="{anchor}" '
+            f'fill="#cdbfa8" font-family="system-ui,sans-serif" font-size="13">'
+            f'{_xml_escape(label)}</text></a>')
+    if not edges:
+        parts.append(
+            f'<text x="{_ATLAS_W/2:.0f}" y="{_ATLAS_H - 22:.0f}" text-anchor="middle" '
+            'fill="#6f6657" font-family="system-ui,sans-serif" font-size="13" font-style="italic">'
+            'Threads appear here as new topics connect to past ones.</text>')
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
 # ---- feeds / sitemap / robots ----------------------------------------------
 
 def _abs(site_url: str, base_url: str, path: str) -> str:
@@ -411,15 +495,24 @@ def render_site(data_dir, out_dir, templates_dir=None, base_url: str = "",
                  "og_type": "website"},
            days=days, months=_group_by_month(days), latest=(days[0] if days else None))
 
-    # day pages
+    # day pages (each gets its own OG card showing that day's topics)
     sitemap_urls = ["/"]
     for day in days:
         sitemap_urls.append(f"/{day['date']}/")
+        day_og = site["og_image"]
+        if render_day_card is not None:
+            rel_png = f"og/{day['date']}.png"
+            try:
+                render_day_card(out_dir / rel_png, day["date_display"],
+                                [t["title"] for t in day["topics"]], len(day["topics"]))
+                day_og = f"{site_url}{base_url}/{rel_png}"
+            except Exception:
+                day_og = site["og_image"]
         render("day.html", f"{day['date']}/index.html",
                page={"title": f"{day['date_display']} · {SITE_TITLE}",
                      "description": day["description"],
                      "canonical": f"{site_url}{base_url}/{day['date']}/",
-                     "og_image": site["og_image"], "og_type": "article"},
+                     "og_image": day_og, "og_type": "article"},
                day=day)
 
     # tag index + per-tag pages
@@ -440,6 +533,16 @@ def render_site(data_dir, out_dir, templates_dir=None, base_url: str = "",
                          "canonical": f"{site_url}{base_url}/tags/{tag['slug']}/",
                          "og_image": site["og_image"], "og_type": "website"},
                    tag=tag)
+
+    # constellation / atlas
+    if days:
+        sitemap_urls.append("/atlas/")
+        render("atlas.html", "atlas/index.html",
+               page={"title": f"Atlas · {SITE_TITLE}",
+                     "description": "A constellation of every topic learned and how they connect.",
+                     "canonical": f"{site_url}{base_url}/atlas/",
+                     "og_image": site["og_image"], "og_type": "website"},
+               atlas_svg=_atlas_svg(days))
 
     _write_feed(out_dir, days, site_url, base_url)
     _write_sitemap(out_dir, sitemap_urls, site_url, base_url)

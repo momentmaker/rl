@@ -178,6 +178,14 @@
   /* tag cloud */
   .cloud { display:flex; flex-wrap:wrap; gap:.5rem; margin:1.4rem 0; }
 
+  /* constellation / atlas */
+  .atlas { margin:2rem -1.3rem; }
+  @media (min-width:48rem){ .atlas { margin:2rem 0; } }
+  .atlas-svg { width:100%; height:auto; display:block; border-radius:16px; box-shadow:var(--shadow); }
+  .atlas-svg a text { transition:fill .15s ease; }
+  .atlas-svg a:hover text { fill:#f4c79a; }
+  .atlas-svg a:hover circle:last-of-type { filter:brightness(1.25); }
+
   footer.site { margin-top:4rem; padding-top:1.4rem; border-top:1px solid var(--line);
                 font-family:var(--sans); font-size:.84rem; color:var(--faint); }
   footer.site a { color:var(--muted); }
@@ -207,6 +215,7 @@
     <nav class="nav">
       <a href="{{ site.base_url }}/">Journal</a>
       {% if site.tags %}<a href="{{ site.base_url }}/tags/">Topics</a>{% endif %}
+      {% if site.stats.topics %}<a href="{{ site.base_url }}/atlas/">Atlas</a>{% endif %}
       <a href="{{ site.feed_url }}">Feed</a>
     </nav>
   </header>

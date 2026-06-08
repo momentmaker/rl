@@ -6,7 +6,9 @@ on:
     paths:
       - "data/**"
       - ".claude/skills/random-learning/templates/**"
-      - ".claude/skills/random-learning/scripts/build_site.py"
+      - ".claude/skills/random-learning/scripts/**"
+      - ".claude/skills/random-learning/assets/**"
+      - "requirements.txt"
       - ".github/workflows/publish-site.yml"
   workflow_dispatch:
 

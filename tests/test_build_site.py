@@ -188,3 +188,30 @@ def test_split_brief_without_engine_format_is_body_only():
     assert parts["badge"] is None
     assert parts["footer"] is None
     assert "Second paragraph." in parts["body"]
+
+
+def test_per_day_og_card_rendered_and_linked(tmp_path):
+    data = tmp_path / "data"
+    _make_day(data, "2026/06/07", "x", "A topic", "Body.", tags=["alpha"])
+    out = tmp_path / "site"
+    render_site(data, out, templates_dir=TEMPLATES, site_url=SITE_URL)
+    card = out / "og" / "2026" / "06" / "07.png"
+    assert card.exists() and card.stat().st_size > 1000  # a real PNG was written
+    assert card.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
+    page = (out / "2026/06/07" / "index.html").read_text()
+    assert 'og:image" content="https://rl.fz.ax/og/2026/06/07.png"' in page
+
+
+def test_atlas_renders_stars_and_edges(tmp_path):
+    data = tmp_path / "data"
+    _make_day(data, "2026/03/15", "old", "Older topic", "Body.")
+    _make_day(
+        data, "2026/06/07", "new", "Newer topic", "Body.",
+        connections=[{"title": "Older topic", "date": "2026/03/15"}],
+    )
+    out = tmp_path / "site"
+    render_site(data, out, templates_dir=TEMPLATES, site_url=SITE_URL)
+    atlas = (out / "atlas" / "index.html").read_text()
+    assert atlas.count("url(#star)") == 2                       # two topics -> two stars
+    assert 'stroke="#e0915a" stroke-width="1.4"' in atlas       # the connection draws an edge
+    assert "Older topic" in atlas and "Newer topic" in atlas

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Atlas · {{ site.title }}{% endblock %}
+{% block content %}
+<a class="backlink" href="{{ site.base_url }}/">← The journal</a>
+<p class="kicker">The constellation</p>
+<h1>Atlas</h1>
+<p class="lede">Every topic I've learned, as a sky. A thread is drawn whenever a new day's
+topic connects back to an earlier one — the shape of how the learning compounds over time.</p>
+
+<figure class="atlas">{{ atlas_svg | safe }}</figure>
+
+<p class="muted sans" style="font-size:.86rem">
+  {{ site.stats.topics }} {{ 'star' if site.stats.topics == 1 else 'stars' }} ·
+  {{ site.stats.entries }} {{ 'night' if site.stats.entries == 1 else 'nights' }} ·
+  the sky grows a little each day.
+</p>
+{% endblock %}
