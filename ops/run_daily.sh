@@ -10,6 +10,10 @@ set -uo pipefail
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO"
 
+# launchd runs with a bare PATH (/usr/bin:/bin:/usr/sbin:/sbin), so `claude` (and
+# node/gh) aren't found — the run exits 127. Prepend the usual tool locations.
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+
 # Operator config lives OUTSIDE the repo so secrets never get committed.
 # Expected: BRAVE_API_KEY, FROM_BROWSER=chrome, SELF_DIR (optional AUTH_TOKEN/CT0).
 ENV_FILE="${RL_ENV_FILE:-$HOME/.config/rl/env}"
