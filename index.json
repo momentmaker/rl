@@ -1,9 +1,12 @@
 {
   "version": 1,
   "retired_ids": [
+    125,
     13,
     138,
-    176
+    176,
+    19,
+    88
   ],
   "topics": [
     {
@@ -77,6 +80,84 @@
       "date": "2026/06/07",
       "slug": "sogo-shosha-buffett",
       "path": "data/2026/06/07/sogo-shosha-buffett.md"
+    },
+    {
+      "title": "The 1,200-year Kyoto cherry blossom record and climate change",
+      "tokens": [
+        "200",
+        "blossom",
+        "blossoms",
+        "change",
+        "cherry",
+        "climate",
+        "japan",
+        "kyoto",
+        "phenology",
+        "record",
+        "year"
+      ],
+      "tags": [
+        "cherry-blossoms",
+        "phenology",
+        "climate-change",
+        "kyoto",
+        "japan"
+      ],
+      "date": "2026/06/08",
+      "slug": "kyoto-cherry-blossom-climate",
+      "path": "data/2026/06/08/kyoto-cherry-blossom-climate.md"
+    },
+    {
+      "title": "The hippie trail and its revival: overland London to India",
+      "tokens": [
+        "adventures",
+        "hippie",
+        "history",
+        "india",
+        "its",
+        "london",
+        "overland",
+        "revival",
+        "trail",
+        "travel"
+      ],
+      "tags": [
+        "hippie-trail",
+        "overland-travel",
+        "india",
+        "history",
+        "adventures-overland"
+      ],
+      "date": "2026/06/08",
+      "slug": "hippie-trail-overland",
+      "path": "data/2026/06/08/hippie-trail-overland.md"
+    },
+    {
+      "title": "The history of pigments: colors once worth more than gold",
+      "tokens": [
+        "art",
+        "chemistry",
+        "color",
+        "colors",
+        "gold",
+        "history",
+        "more",
+        "once",
+        "pigments",
+        "than",
+        "ultramarine",
+        "worth"
+      ],
+      "tags": [
+        "pigments",
+        "color",
+        "art-history",
+        "ultramarine",
+        "chemistry"
+      ],
+      "date": "2026/06/08",
+      "slug": "history-of-pigments",
+      "path": "data/2026/06/08/history-of-pigments.md"
     }
   ]
 }

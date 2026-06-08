@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-08",
+  "topics": [
+    {
+      "title": "The 1,200-year Kyoto cherry blossom record and climate change",
+      "brief_file": "kyoto-cherry-blossom-climate.md",
+      "tags": [
+        "cherry-blossoms",
+        "phenology",
+        "climate-change",
+        "kyoto",
+        "japan"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The hippie trail and its revival: overland London to India",
+      "brief_file": "hippie-trail-overland.md",
+      "tags": [
+        "hippie-trail",
+        "overland-travel",
+        "india",
+        "history",
+        "adventures-overland"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The history of pigments: colors once worth more than gold",
+      "brief_file": "history-of-pigments.md",
+      "tags": [
+        "pigments",
+        "color",
+        "art-history",
+        "ultramarine",
+        "chemistry"
+      ],
+      "connections": []
+    }
+  ]
+}
