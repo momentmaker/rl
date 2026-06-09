@@ -1,11 +1,14 @@
 {
   "version": 1,
   "retired_ids": [
+    103,
     125,
     13,
     138,
     176,
+    179,
     19,
+    56,
     88
   ],
   "topics": [
@@ -158,6 +161,81 @@
       "date": "2026/06/08",
       "slug": "history-of-pigments",
       "path": "data/2026/06/08/history-of-pigments.md"
+    },
+    {
+      "title": "Do mineral hot springs actually do anything? The balneotherapy evidence and the geology",
+      "tokens": [
+        "actually",
+        "anything",
+        "balneotherapy",
+        "do",
+        "evidence",
+        "geology",
+        "geothermal",
+        "hot",
+        "mineral",
+        "springs",
+        "wellness"
+      ],
+      "tags": [
+        "hot-springs",
+        "balneotherapy",
+        "geothermal",
+        "geology",
+        "wellness"
+      ],
+      "date": "2026/06/09",
+      "slug": "mineral-hot-springs-balneotherapy",
+      "path": "data/2026/06/09/mineral-hot-springs-balneotherapy.md"
+    },
+    {
+      "title": "What sand really is, and why the world is running out of it",
+      "tokens": [
+        "environment",
+        "geology",
+        "microscopy",
+        "mining",
+        "out",
+        "really",
+        "running",
+        "sand",
+        "world"
+      ],
+      "tags": [
+        "sand",
+        "geology",
+        "sand-mining",
+        "microscopy",
+        "environment"
+      ],
+      "date": "2026/06/09",
+      "slug": "what-sand-is-and-the-sand-crisis",
+      "path": "data/2026/06/09/what-sand-is-and-the-sand-crisis.md"
+    },
+    {
+      "title": "How Japanese konbini conquered convenience, from Toshifumi Suzuki to 7-Eleven",
+      "tokens": [
+        "conquered",
+        "convenience",
+        "eleven",
+        "japan",
+        "japanese",
+        "konbini",
+        "retail",
+        "seven",
+        "suzuki",
+        "toshifumi"
+      ],
+      "tags": [
+        "konbini",
+        "seven-eleven",
+        "japan",
+        "retail",
+        "toshifumi-suzuki"
+      ],
+      "date": "2026/06/09",
+      "slug": "japanese-konbini-seven-eleven",
+      "path": "data/2026/06/09/japanese-konbini-seven-eleven.md"
     }
   ]
 }

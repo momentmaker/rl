@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-09",
+  "topics": [
+    {
+      "title": "Do mineral hot springs actually do anything? The balneotherapy evidence and the geology",
+      "brief_file": "mineral-hot-springs-balneotherapy.md",
+      "tags": [
+        "hot-springs",
+        "balneotherapy",
+        "geothermal",
+        "geology",
+        "wellness"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What sand really is, and why the world is running out of it",
+      "brief_file": "what-sand-is-and-the-sand-crisis.md",
+      "tags": [
+        "sand",
+        "geology",
+        "sand-mining",
+        "microscopy",
+        "environment"
+      ],
+      "connections": []
+    },
+    {
+      "title": "How Japanese konbini conquered convenience, from Toshifumi Suzuki to 7-Eleven",
+      "brief_file": "japanese-konbini-seven-eleven.md",
+      "tags": [
+        "konbini",
+        "seven-eleven",
+        "japan",
+        "retail",
+        "toshifumi-suzuki"
+      ],
+      "connections": []
+    }
+  ]
+}
