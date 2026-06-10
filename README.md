@@ -163,21 +163,33 @@ rl run so it no-ops cleanly on days rl skips.
 
 - **`ops/hermes-rl-post.py`** — the Hermes `--script` preprocessor. Finds
   `data/<today>/`, checks `ready: true`, extracts the frontmatter-stripped post
-  bodies, enforces **post-once** via a local marker
-  (`~/.local/state/rl-poster/posted-<date>`), and emits a `POST` / `NO_ENTRY`
-  (heartbeat alert) / `SILENT` contract. Hermes requires `--script` files to live
-  un-symlinked under `~/.hermes/scripts/`, so install a thin real-file shim there
-  that sets `RL_REPO` and `runpy`s this script (a symlink is rejected as
-  traversal; a plain copy breaks repo auto-detection).
-- **The cron job** posts the tweet via the x-poster `post_tweet` tool and ships
-  the telegram body via `--deliver telegram`:
+  bodies, and emits a `POST` / `NO_ENTRY` (heartbeat alert) / `SILENT` contract.
+  Hermes requires `--script` files to live un-symlinked under `~/.hermes/scripts/`,
+  so install a thin real-file shim there that sets `RL_REPO` and `runpy`s this
+  script (a symlink is rejected as traversal; a plain copy breaks repo
+  auto-detection).
+- **Post-once is mark-on-success.** The marker
+  (`~/.local/state/rl-poster/posted-<date>`) is written by the agent *after*
+  `post_tweet` succeeds — not optimistically by the preprocessor. So a run that
+  fails before/at posting (e.g. a transient model-API error) leaves no marker and
+  is safely retryable. The preprocessor emits the marker path on the `MARKER:`
+  line; the poster prompt tells the agent to write it only on success.
+- **Two cron jobs** — a primary and a backup that auto-recovers a failed primary.
+  Both run the same prompt + canonical script; the backup uses a shim that sets
+  `RL_POST_MODE=backup` (retry if no marker yet, else `[SILENT]`; never
+  double-alerts on no-entry):
   ```bash
   hermes cron create "30 8 * * *" "<poster prompt>" \
     --name rl-daily-post --script rl-post.py \
     --deliver telegram --workdir <repo>
-  # arm: hermes cron resume rl-daily-post   ·   disable: hermes cron pause rl-daily-post
-  # retry a failed day: rm ~/.local/state/rl-poster/posted-<date> && hermes cron run rl-daily-post
+  hermes cron create "30 9 * * *" "<same prompt>" \
+    --name rl-daily-post-backup --script rl-post-backup.py \
+    --deliver telegram --workdir <repo>
+  # pause/resume: hermes cron pause|resume rl-daily-post
+  # force a retry now: rm ~/.local/state/rl-poster/posted-<date> && hermes cron run rl-daily-post
   ```
+  `[SILENT]` is a Hermes delivery-suppression sentinel, so the backup is a true
+  no-op (no Telegram message) on days the primary already posted.
 - **Debug Chrome must stay up.** `post_tweet` drives an already-running Chrome on
   CDP port 9222 (`~/.config/hermes-chrome` profile, logged into x.com).
   `ops/hermes-chrome-keeper.sh` + `ops/ai.hermes.chrome-debug.plist` are a
