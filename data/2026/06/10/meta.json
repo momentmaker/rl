@@ -1,0 +1,41 @@
+{
+  "date": "2026/06/10",
+  "topics": [
+    {
+      "title": "What we still don't understand about gravity: quantum gravity, dark matter, and MOND",
+      "brief_file": "gravity-quantum-dark-matter-mond.md",
+      "tags": [
+        "gravity",
+        "quantum-gravity",
+        "dark-matter",
+        "mond",
+        "physics"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The Sovereign Individual: why crypto and tech keep citing a 1997 book",
+      "brief_file": "sovereign-individual-book.md",
+      "tags": [
+        "sovereign-individual",
+        "crypto",
+        "digital-sovereignty",
+        "books",
+        "libertarian"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What makes technical denim and performance fabrics actually work",
+      "brief_file": "technical-denim-performance-fabrics.md",
+      "tags": [
+        "textiles",
+        "denim",
+        "elastane",
+        "materials-science",
+        "apparel"
+      ],
+      "connections": []
+    }
+  ]
+}

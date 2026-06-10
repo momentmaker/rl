@@ -8,6 +8,9 @@
     176,
     179,
     19,
+    191,
+    196,
+    202,
     56,
     88
   ],
@@ -236,6 +239,85 @@
       "date": "2026/06/09",
       "slug": "japanese-konbini-seven-eleven",
       "path": "data/2026/06/09/japanese-konbini-seven-eleven.md"
+    },
+    {
+      "title": "What we still don't understand about gravity: quantum gravity, dark matter, and MOND",
+      "tokens": [
+        "dark",
+        "don",
+        "gravity",
+        "matter",
+        "mond",
+        "physics",
+        "quantum",
+        "still",
+        "understand",
+        "we"
+      ],
+      "tags": [
+        "gravity",
+        "quantum-gravity",
+        "dark-matter",
+        "mond",
+        "physics"
+      ],
+      "date": "2026/06/10",
+      "slug": "gravity-quantum-dark-matter-mond",
+      "path": "data/2026/06/10/gravity-quantum-dark-matter-mond.md"
+    },
+    {
+      "title": "The Sovereign Individual: why crypto and tech keep citing a 1997 book",
+      "tokens": [
+        "1997",
+        "book",
+        "books",
+        "citing",
+        "crypto",
+        "digital",
+        "individual",
+        "keep",
+        "libertarian",
+        "sovereign",
+        "sovereignty",
+        "tech"
+      ],
+      "tags": [
+        "sovereign-individual",
+        "crypto",
+        "digital-sovereignty",
+        "books",
+        "libertarian"
+      ],
+      "date": "2026/06/10",
+      "slug": "sovereign-individual-book",
+      "path": "data/2026/06/10/sovereign-individual-book.md"
+    },
+    {
+      "title": "What makes technical denim and performance fabrics actually work",
+      "tokens": [
+        "actually",
+        "apparel",
+        "denim",
+        "elastane",
+        "fabrics",
+        "makes",
+        "materials",
+        "performance",
+        "science",
+        "technical",
+        "textiles",
+        "work"
+      ],
+      "tags": [
+        "textiles",
+        "denim",
+        "elastane",
+        "materials-science",
+        "apparel"
+      ],
+      "date": "2026/06/10",
+      "slug": "technical-denim-performance-fabrics",
+      "path": "data/2026/06/10/technical-denim-performance-fabrics.md"
     }
   ]
 }

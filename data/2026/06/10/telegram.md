@@ -1,0 +1,19 @@
+---
+ready: true
+date: 2026-06-10
+platform: telegram
+---
+*Random Learning — 2026-06-10*
+
+Three things I went down the rabbit hole on today.
+
+*1. What physicists are still arguing about gravity*
+The honest state of the field: no consensus. A survey of 1,600+ physicists making the rounds described "deep schisms, not consensus" on the big questions, with gravity and dark matter front and center. Three fights run at once. The oldest: dark matter vs MOND. The standard model says invisible "dark matter haloes" make galaxies' outer stars orbit too fast; MOND says there's no missing mass at all - gravity itself just behaves differently at very low accelerations. The current decisive test is wide binary stars (pairs separated by thousands of AU), and the Gaia satellite data has come back flatly contradictory. The most radical fight is newer: maybe gravity isn't a fundamental force to be quantized, but "emergent" - a side-effect of quantum entanglement, with a January 2026 theory deriving it straight from entropy. Underneath it all is the 100-year-old problem that quantum mechanics and general relativity are both confirmed to absurd precision yet mathematically refuse to fit together. The hopeful turn: physicists now expect quantum-gravity effects to leave fingerprints on gravitational-wave signals, so the next record detection becomes a test.
+
+*2. Why tech keeps citing "The Sovereign Individual" (1997)*
+This 1997 book by James Dale Davidson and Lord William Rees-Mogg predicted that cyber-money and the internet would gut the nation-state's power to tax, creating a borderless "cognitive elite." It's become tech's radical bible: Peter Thiel calls it the most influential book he's read and wrote the 2020 preface; Balaji Srinivasan, Naval Ravikant, and Brian Armstrong all push it. Citing it is now an identity badge for the "network state" crowd. The prediction defenders claim landed is digital cash - they read Bitcoin as the "cyber-money" the book forecast a decade early. The 2026 news peg giving it fresh oxygen: Thiel planting roots in Argentina, where President Milei is pitching the country as a haven for tech billionaires escaping tax and regulation - the book literally recommended "thinly populated regions with temperate climates" like Argentina and New Zealand. The backlash is now its own book (Gil Duran's "The Nerd Reich," 2026), which reframes the predictions as an oligarchy playbook, not individual liberation. The sharpest skeptic line: the "sovereign individual" turned out to be the sovereign billionaire - individuals stayed taxable while elites and corporations got the exits.
+
+*3. What actually makes technical denim work*
+Wirecutter ran two pieces three weeks apart arguing opposite sides - "Denim Nerds Are Right, cotton lasts forever" vs "Denim Nerds Are Wrong, stretch is superior" - and the gear crowd loved it. The fabric everyone points to for toughness is Cordura: reviewers keep repeating that Cordura denim survives 250,000+ abrasion rubs versus 25,000-75,000 for plain cotton, roughly 4x. The catch riders raise: abrasion resistance isn't real-world durability - one tester's "4x tougher" jeans showed seat wear in a week, so the money actually goes into seam and seat construction, not just the fabric spec. On stretch, the consensus is keep elastane to 1-2% and demand core-spun yarn (an elastane core wrapped in cotton) so it holds shape without sagging; wash infrequently, because the synthetic fibers fail first. The motorcycle crowd has the sharpest "is the premium worth it" math, because for them it's literally skin: chase the CE AAA/AA abrasion rating, not the marketing, since plain fashion denim can burst open on first contact with the road. Meanwhile raw-denim purists are unmoved - they still argue heavyweight, no-stretch cotton is the true buy-it-for-life performance fabric.
+
+Researched with last30days across Reddit, X, Hacker News, YouTube, GitHub, and the web.
