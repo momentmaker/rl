@@ -1,0 +1,41 @@
+{
+  "date": "2026/06/11",
+  "topics": [
+    {
+      "title": "AlphaFold and Isomorphic Labs: what AI drug discovery has actually delivered",
+      "brief_file": "alphafold-drug-discovery.md",
+      "tags": [
+        "alphafold",
+        "isomorphic-labs",
+        "drug-discovery",
+        "deepmind",
+        "biology"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Flock Safety's license-plate-reader network and the 2026 surveillance backlash",
+      "brief_file": "flock-alpr-surveillance.md",
+      "tags": [
+        "flock-safety",
+        "alpr",
+        "surveillance",
+        "privacy",
+        "policing"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why airline loyalty programs are worth more than the airlines themselves",
+      "brief_file": "airline-loyalty-programs.md",
+      "tags": [
+        "loyalty-programs",
+        "airlines",
+        "frequent-flyer",
+        "spirit-airlines",
+        "aviation"
+      ],
+      "connections": []
+    }
+  ]
+}

@@ -2,16 +2,19 @@
   "version": 1,
   "retired_ids": [
     103,
+    109,
     125,
     13,
     138,
     176,
     179,
+    183,
     19,
     191,
     196,
     202,
     56,
+    86,
     88
   ],
   "topics": [
@@ -318,6 +321,86 @@
       "date": "2026/06/10",
       "slug": "technical-denim-performance-fabrics",
       "path": "data/2026/06/10/technical-denim-performance-fabrics.md"
+    },
+    {
+      "title": "AlphaFold and Isomorphic Labs: what AI drug discovery has actually delivered",
+      "tokens": [
+        "actually",
+        "ai",
+        "alphafold",
+        "biology",
+        "deepmind",
+        "delivered",
+        "discovery",
+        "drug",
+        "has",
+        "isomorphic",
+        "labs"
+      ],
+      "tags": [
+        "alphafold",
+        "isomorphic-labs",
+        "drug-discovery",
+        "deepmind",
+        "biology"
+      ],
+      "date": "2026/06/11",
+      "slug": "alphafold-drug-discovery",
+      "path": "data/2026/06/11/alphafold-drug-discovery.md"
+    },
+    {
+      "title": "Flock Safety's license-plate-reader network and the 2026 surveillance backlash",
+      "tokens": [
+        "2026",
+        "alpr",
+        "backlash",
+        "flock",
+        "license",
+        "network",
+        "plate",
+        "policing",
+        "privacy",
+        "reader",
+        "safety",
+        "surveillance"
+      ],
+      "tags": [
+        "flock-safety",
+        "alpr",
+        "surveillance",
+        "privacy",
+        "policing"
+      ],
+      "date": "2026/06/11",
+      "slug": "flock-alpr-surveillance",
+      "path": "data/2026/06/11/flock-alpr-surveillance.md"
+    },
+    {
+      "title": "Why airline loyalty programs are worth more than the airlines themselves",
+      "tokens": [
+        "airline",
+        "airlines",
+        "aviation",
+        "flyer",
+        "frequent",
+        "loyalty",
+        "more",
+        "programs",
+        "spirit",
+        "than",
+        "themselves",
+        "worth"
+      ],
+      "tags": [
+        "loyalty-programs",
+        "airlines",
+        "frequent-flyer",
+        "spirit-airlines",
+        "aviation"
+      ],
+      "date": "2026/06/11",
+      "slug": "airline-loyalty-programs",
+      "path": "data/2026/06/11/airline-loyalty-programs.md"
     }
   ]
 }
