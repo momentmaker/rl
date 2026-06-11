@@ -68,12 +68,11 @@ sourced by the runner from `~/.config/rl/env`:
 mkdir -p ~/.config/rl
 cat > ~/.config/rl/env <<'EOF'
 export BRAVE_API_KEY=...            # last30days web backend
-export FROM_BROWSER=chrome          # pull the logged-in X session from Chrome
 export SELF_DIR=$HOME/.cache/rl-self
+export AUTH_TOKEN=...  CT0=...      # X session cookies (auth_token, ct0)
+export FROM_BROWSER=off            # use the tokens above; do NOT read Chrome cookies
 export TELEGRAM_BOT_TOKEN=...       # [rl] alerting bot (same-day failure pings)
 export TELEGRAM_CHAT_ID=...
-# fallback if Chrome cookies can't be read unattended:
-# export AUTH_TOKEN=...  CT0=...
 EOF
 ```
 
@@ -81,8 +80,16 @@ EOF
 user skill (`~/.claude/skills/last30days`) or as a Claude Code plugin
 (`~/.claude/plugins/cache/last30days-skill/<version>/skills/last30days`), with
 its first-run setup complete. Verify with a `--diagnose` check against the
-resolved engine. Pulling the logged-in X session from Chrome raises a one-time
-macOS Keychain prompt on first read — click **Always Allow** once.
+resolved engine (`bird_authenticated: true` means X auth is live).
+
+**X auth + the Keychain prompt.** Authenticate X via the `AUTH_TOKEN`/`CT0`
+cookies (from a logged-in x.com session) rather than `FROM_BROWSER=chrome`.
+`FROM_BROWSER=chrome` makes last30days decrypt Chrome's cookie store every run,
+which raises a recurring macOS **"Chrome Safe Storage"** Keychain prompt that
+"Always Allow" often fails to silence (the requesting `python` binary isn't
+stably code-signed). `FROM_BROWSER=off` skips the cookie read entirely; the env
+tokens still authenticate X. Refresh the tokens when they expire (logging out of
+x.com invalidates `auth_token`).
 
 ### 2. Test before scheduling (the spike)
 
@@ -161,49 +168,45 @@ The daily run only *produces* `tweet.md` / `telegram.md` (with `ready: true` set
 by the gate). A separate **Hermes** scheduled job posts them, decoupled from the
 rl run so it no-ops cleanly on days rl skips.
 
-- **`ops/hermes-rl-post.py`** — the Hermes `--script` preprocessor. Finds
-  `data/<today>/`, checks `ready: true`, extracts the frontmatter-stripped post
-  bodies, and emits a `POST` / `NO_ENTRY` (heartbeat alert) / `SILENT` contract.
-  Hermes requires `--script` files to live un-symlinked under `~/.hermes/scripts/`,
-  so install a thin real-file shim there that sets `RL_REPO` and `runpy`s this
-  script (a symlink is rejected as traversal; a plain copy breaks repo
-  auto-detection).
-- **Post-once is mark-on-success.** The marker
-  (`~/.local/state/rl-poster/posted-<date>`) is written by the agent *after*
-  `post_tweet` succeeds — not optimistically by the preprocessor. So a run that
-  fails before/at posting (e.g. a transient model-API error) leaves no marker and
-  is safely retryable. The preprocessor emits the marker path on the `MARKER:`
-  line; the poster prompt tells the agent to write it only on success.
-- **Two cron jobs** — a primary and a backup that auto-recovers a failed primary.
-  Both run the same prompt + canonical script; the backup uses a shim that sets
-  `RL_POST_MODE=backup` (retry if no marker yet, else `[SILENT]`; never
-  double-alerts on no-entry):
+- **`ops/hermes-rl-post.py`** — a deterministic poster, run by Hermes in
+  **`--no-agent`** mode (no LLM). It finds `data/<today>/`, checks `ready: true`,
+  extracts the frontmatter-stripped bodies, posts the tweet by driving the
+  logged-in Chrome over CDP (port 9222, the same path the x-poster plugin uses),
+  writes a post-once marker on success, and prints the Telegram body to stdout —
+  which Hermes delivers verbatim (empty stdout = silent run). Hermes requires
+  `--script` files un-symlinked under `~/.hermes/scripts/`, so install a thin
+  real-file shim there that sets `RL_REPO` (and, for the backup, `RL_POST_MODE=
+  backup`) and `runpy`s this canonical copy. It runs under the Hermes venv python
+  (`sys.executable`), which has playwright.
+- **No LLM on purpose.** The agent path failed twice in production — a model-API
+  broken pipe, and the model improvising a stale-token `xurl` call instead of the
+  posting tool. The post is mechanical (fixed text → one CDP call), so `--no-agent`
+  removes that whole class of failure and makes the post-once marker deterministic
+  (the script writes `~/.local/state/rl-poster/posted-<date>` only after the post
+  succeeds; a failed run leaves no marker and is retried by the backup).
+- **Two cron jobs** — primary + a backup that auto-recovers a failed primary
+  (backup mode retries if no marker yet, else prints nothing → silent; stays
+  silent on no-entry so it can't double-alert):
   ```bash
-  hermes cron create "30 8 * * *" "<poster prompt>" \
-    --name rl-daily-post --script rl-post.py \
-    --deliver telegram --workdir <repo>
-  hermes cron create "30 9 * * *" "<same prompt>" \
-    --name rl-daily-post-backup --script rl-post-backup.py \
-    --deliver telegram --workdir <repo>
+  hermes cron create "30 8 * * *" --name rl-daily-post \
+    --script rl-post.py --no-agent --deliver telegram --workdir <repo>
+  hermes cron create "30 9 * * *" --name rl-daily-post-backup \
+    --script rl-post-backup.py --no-agent --deliver telegram --workdir <repo>
   # pause/resume: hermes cron pause|resume rl-daily-post
   # force a retry now: rm ~/.local/state/rl-poster/posted-<date> && hermes cron run rl-daily-post
+  # test the path safely (today already posted -> silent): hermes cron run rl-daily-post-backup
   ```
-  `[SILENT]` is a Hermes delivery-suppression sentinel, so the backup is a true
-  no-op (no Telegram message) on days the primary already posted.
-- **Debug Chrome must stay up.** `post_tweet` drives an already-running Chrome on
-  CDP port 9222 (`~/.config/hermes-chrome` profile, logged into x.com).
-  `ops/hermes-chrome-keeper.sh` + `ops/ai.hermes.chrome-debug.plist` are a
-  LaunchAgent watchdog (RunAtLoad + 60s interval) that relaunches it after
-  reboots/crashes; the dedicated profile keeps x.com/gmail logins persistent.
-  Install:
+- **Debug Chrome must stay up + logged in.** The CDP post drives an
+  already-running Chrome on port 9222 (`~/.config/hermes-chrome` profile, **logged
+  into x.com**). `ops/hermes-chrome-keeper.sh` + `ops/ai.hermes.chrome-debug.plist`
+  are a LaunchAgent watchdog (RunAtLoad + 60s interval) that relaunches it after
+  reboots/crashes; the dedicated profile keeps x.com/gmail logins persistent. The
+  keeper keeps the *process* up but can't re-login — if the x.com session expires,
+  log into x.com once in that Chrome. Install:
   ```bash
   cp ops/ai.hermes.chrome-debug.plist ~/Library/LaunchAgents/
   launchctl load ~/Library/LaunchAgents/ai.hermes.chrome-debug.plist
   ```
-- **x-poster gotcha:** the plugin must load as a Python package — `__init__.py`
-  (not `init.py`), a real Python `Schemas.py` (not the YAML manifest), and
-  case-correct imports. Confirm with `hermes plugins list` (status `enabled`) and
-  watch the agent log for `x-poster plugin registered: post_tweet`.
 
 ## Custom domain (rl.fz.ax)
 
