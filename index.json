@@ -6,14 +6,17 @@
     125,
     13,
     138,
+    173,
     176,
     179,
     183,
+    189,
     19,
     191,
     196,
     202,
     56,
+    83,
     86,
     88
   ],
@@ -401,6 +404,84 @@
       "date": "2026/06/11",
       "slug": "airline-loyalty-programs",
       "path": "data/2026/06/11/airline-loyalty-programs.md"
+    },
+    {
+      "title": "The aesthetic-usability effect and why polished interfaces earn trust",
+      "tokens": [
+        "aesthetic",
+        "dark",
+        "design",
+        "earn",
+        "effect",
+        "interfaces",
+        "patterns",
+        "polished",
+        "trust",
+        "usability",
+        "ux"
+      ],
+      "tags": [
+        "ux",
+        "design",
+        "aesthetic-usability",
+        "dark-patterns",
+        "usability"
+      ],
+      "date": "2026/06/12",
+      "slug": "aesthetic-usability-effect",
+      "path": "data/2026/06/12/aesthetic-usability-effect.md"
+    },
+    {
+      "title": "Building a home GPU server in 2026: build versus rent",
+      "tokens": [
+        "2026",
+        "build",
+        "building",
+        "cost",
+        "gpu",
+        "hardware",
+        "home",
+        "homelab",
+        "llm",
+        "local",
+        "rent",
+        "server",
+        "versus"
+      ],
+      "tags": [
+        "gpu",
+        "homelab",
+        "local-llm",
+        "hardware",
+        "cost"
+      ],
+      "date": "2026/06/12",
+      "slug": "gpu-home-servers-build-vs-rent",
+      "path": "data/2026/06/12/gpu-home-servers-build-vs-rent.md"
+    },
+    {
+      "title": "How addiction rewires the brain and how habits actually break",
+      "tokens": [
+        "actually",
+        "addiction",
+        "brain",
+        "break",
+        "dopamine",
+        "habits",
+        "neuroscience",
+        "recovery",
+        "rewires"
+      ],
+      "tags": [
+        "addiction",
+        "recovery",
+        "dopamine",
+        "habits",
+        "neuroscience"
+      ],
+      "date": "2026/06/12",
+      "slug": "addiction-habit-rewiring",
+      "path": "data/2026/06/12/addiction-habit-rewiring.md"
     }
   ]
 }

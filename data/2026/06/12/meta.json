@@ -1,0 +1,41 @@
+{
+  "date": "2026/06/12",
+  "topics": [
+    {
+      "title": "The aesthetic-usability effect and why polished interfaces earn trust",
+      "brief_file": "aesthetic-usability-effect.md",
+      "tags": [
+        "ux",
+        "design",
+        "aesthetic-usability",
+        "dark-patterns",
+        "usability"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Building a home GPU server in 2026: build versus rent",
+      "brief_file": "gpu-home-servers-build-vs-rent.md",
+      "tags": [
+        "gpu",
+        "homelab",
+        "local-llm",
+        "hardware",
+        "cost"
+      ],
+      "connections": []
+    },
+    {
+      "title": "How addiction rewires the brain and how habits actually break",
+      "brief_file": "addiction-habit-rewiring.md",
+      "tags": [
+        "addiction",
+        "recovery",
+        "dopamine",
+        "habits",
+        "neuroscience"
+      ],
+      "connections": []
+    }
+  ]
+}
