@@ -1,0 +1,41 @@
+{
+  "date": "2026/06/13",
+  "topics": [
+    {
+      "title": "Why third places collapsed and what is actually reviving in-person community",
+      "brief_file": "third-places-decline-revival.md",
+      "tags": [
+        "third-places",
+        "community",
+        "loneliness",
+        "urbanism",
+        "libraries"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What hikers and Camino pilgrims actually use for offline navigation",
+      "brief_file": "offline-navigation-hikers-pilgrims.md",
+      "tags": [
+        "navigation",
+        "offline-maps",
+        "hiking",
+        "gps",
+        "satellite-sos"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The 2026 sweepstakes-casino crackdown and the regulatory-arbitrage playbook",
+      "brief_file": "sweepstakes-casino-crackdown.md",
+      "tags": [
+        "gambling",
+        "regulation",
+        "sweepstakes",
+        "legal",
+        "fintech"
+      ],
+      "connections": []
+    }
+  ]
+}
