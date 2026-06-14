@@ -1,0 +1,41 @@
+{
+  "date": "2026/06/14",
+  "topics": [
+    {
+      "title": "AI data centers, the power grid, and who pays your electricity bill",
+      "brief_file": "data-centers-grid-electricity-bills.md",
+      "tags": [
+        "data-centers",
+        "electricity",
+        "power-grid",
+        "ratepayers",
+        "ai-boom"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why rural Japanese train lines keep getting discontinued",
+      "brief_file": "rural-japan-rail-decline.md",
+      "tags": [
+        "japan",
+        "railways",
+        "depopulation",
+        "rural",
+        "brt"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What makes a data-visualization project go viral and hit the HN front page",
+      "brief_file": "viral-dataviz-hacker-news.md",
+      "tags": [
+        "data-visualization",
+        "hacker-news",
+        "virality",
+        "design",
+        "web-performance"
+      ],
+      "connections": []
+    }
+  ]
+}

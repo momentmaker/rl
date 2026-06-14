@@ -7,6 +7,7 @@
     13,
     138,
     148,
+    169,
     173,
     176,
     179,
@@ -16,6 +17,8 @@
     191,
     196,
     202,
+    211,
+    213,
     45,
     56,
     83,
@@ -563,6 +566,89 @@
       "date": "2026/06/13",
       "slug": "sweepstakes-casino-crackdown",
       "path": "data/2026/06/13/sweepstakes-casino-crackdown.md"
+    },
+    {
+      "title": "AI data centers, the power grid, and who pays your electricity bill",
+      "tokens": [
+        "ai",
+        "bill",
+        "boom",
+        "centers",
+        "data",
+        "electricity",
+        "grid",
+        "pays",
+        "power",
+        "ratepayers",
+        "who"
+      ],
+      "tags": [
+        "data-centers",
+        "electricity",
+        "power-grid",
+        "ratepayers",
+        "ai-boom"
+      ],
+      "date": "2026/06/14",
+      "slug": "data-centers-grid-electricity-bills",
+      "path": "data/2026/06/14/data-centers-grid-electricity-bills.md"
+    },
+    {
+      "title": "Why rural Japanese train lines keep getting discontinued",
+      "tokens": [
+        "brt",
+        "depopulation",
+        "discontinued",
+        "getting",
+        "japan",
+        "japanese",
+        "keep",
+        "lines",
+        "railways",
+        "rural",
+        "train"
+      ],
+      "tags": [
+        "japan",
+        "railways",
+        "depopulation",
+        "rural",
+        "brt"
+      ],
+      "date": "2026/06/14",
+      "slug": "rural-japan-rail-decline",
+      "path": "data/2026/06/14/rural-japan-rail-decline.md"
+    },
+    {
+      "title": "What makes a data-visualization project go viral and hit the HN front page",
+      "tokens": [
+        "data",
+        "design",
+        "front",
+        "go",
+        "hacker",
+        "hit",
+        "hn",
+        "makes",
+        "news",
+        "page",
+        "performance",
+        "project",
+        "viral",
+        "virality",
+        "visualization",
+        "web"
+      ],
+      "tags": [
+        "data-visualization",
+        "hacker-news",
+        "virality",
+        "design",
+        "web-performance"
+      ],
+      "date": "2026/06/14",
+      "slug": "viral-dataviz-hacker-news",
+      "path": "data/2026/06/14/viral-dataviz-hacker-news.md"
     }
   ]
 }
