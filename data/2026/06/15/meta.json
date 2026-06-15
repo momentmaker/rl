@@ -1,0 +1,41 @@
+{
+  "date": "2026/06/15",
+  "topics": [
+    {
+      "title": "Running a kabushiki kaisha in Japan as a foreigner after the 2025 visa reform",
+      "brief_file": "japan-foreigner-kk-business-visa.md",
+      "tags": [
+        "japan",
+        "kabushiki-kaisha",
+        "business-manager-visa",
+        "incorporation",
+        "foreigners"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What companies that kept the four-day workweek say about productivity and revenue",
+      "brief_file": "four-day-workweek-results.md",
+      "tags": [
+        "four-day-week",
+        "productivity",
+        "work",
+        "labor",
+        "results"
+      ],
+      "connections": []
+    },
+    {
+      "title": "How car owners actually stop keyless relay-attack and CAN-injection car theft",
+      "brief_file": "keyless-relay-attack-defense.md",
+      "tags": [
+        "keyless-entry",
+        "relay-attack",
+        "car-theft",
+        "security",
+        "defense"
+      ],
+      "connections": []
+    }
+  ]
+}

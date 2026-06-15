@@ -1,0 +1,32 @@
+🌐 last30days v3.3.2 · synced 2026-06-15
+
+What I learned:
+
+**The 2025 reform redrew the whole map - the Business Manager visa now demands ¥30M capital** - The single biggest thing foreigners running a KK keep returning to is the October 16, 2025 reform, which raised the bar dramatically: to qualify for the Business Manager visa you now need ¥30 million in paid-in capital, at least one full-time Japanese or permanent-resident employee, three years of management experience, and JLPT N2-level Japanese from either the operator or one employee, per [Japan Visa](https://japan-visa.com/visas/business-manager). [Housing Japan](https://housingjapan.com/blog/how-to-set-up-a-business-in-japan-as-a-foreigner/)'s 2026 setup guide frames the same thresholds - ¥30 million in capital and mandatory hiring - as the new baseline anyone residing in Japan has to clear, which is a roughly six-fold jump over the ¥5 million figure that used to be treated as the working floor.
+
+**Incorporating a KK is cheap relative to the capital you must park inside it** - The recurring clarification founders make is that the headline capital number is not a fee that disappears - it is money that must be deposited and then stays in the company, per [Employsome](https://employsome.com/hire/japan/kabushiki-kaisha/)'s KK employer guide. Common capitalization used to sit in the ¥1 million to ¥5 million range, with ¥5 million treated as the practical floor for visa sponsorship; the actual incorporation paperwork and registration costs are a much smaller line item by comparison. The lived takeaway people share is to budget for the cash you have to lock up and leave untouched, not just the one-time filing costs.
+
+**Founders wish they had understood the ongoing compliance burden before incorporating** - A theme that comes up repeatedly is that a KK is not a set-and-forget structure: [Employsome](https://employsome.com/hire/japan/kabushiki-kaisha/) flags that it carries a meaningful annual compliance and maintenance burden once operational, with five recurring obligations - tax filings, social insurance, bookkeeping, and the like - that hit every year regardless of revenue. Several people note that the GK (godo kaisha) is the cheaper, lighter alternative often raised in the same breath, and [SmartStart Japan](https://smartstartjapan.com/ultimate-guide-to-godo-kaisha-in-japan/)'s 2026 GK guide is explicit that a GK can also support a Business Manager visa application, open a corporate bank account, and serve as a Japan subsidiary - which makes the KK-versus-GK choice the decision people most wish they had thought through earlier.
+
+**The reform has triggered visible scrambling, and small family-run businesses are hit hardest** - The mood among foreign owners right now is anxious. [@flipso](https://x.com/flipso/status/2066485955704267106) describes foreign business owners "scrambling to raise capital to stay in Japan," with the tighter rules putting pressure especially on family-run restaurants where the combination of a higher capital requirement, added staffing, and language expectations is hard to meet. [@bobacola](https://x.com/bobacola/status/2066248623369941361) frames the same reform as a double-edged sword: the stated intent is to "weed out paper companies," but in practice it is "also taking down legit businesses at the same time," and notes the broader tax environment - including Japan's 55% inheritance tax - as another reason some owners decide to leave rather than recapitalize.
+
+**The official rule changes are confusing enough that people are leaning on the Immigration FAQ** - Even engaged founders are unsure exactly how the new qualifications apply to their situation, which is why the [Immigration Services Agency FAQ on the business management visa changes](https://www.reddit.com/r/japan/comments/1u52yii/immigration_services_agency_faq_on_changes_to/) surfaced and circulated on [r/japan](https://www.reddit.com/r/japan). Property-focused guidance like [Akiyahub](https://akiyahub.com/articles/business-manager--startup-visa-essentials)'s walkthrough of the Business Manager and Startup visa rules exists precisely because the capital requirements and the steps to running a real (non-shell) business are now the part foreigners most often get wrong. The consistent wish-I-had-known is to verify the current thresholds against the official FAQ rather than older blog posts, because the goalposts moved sharply in late 2025.
+
+KEY PATTERNS from the research:
+1. The October 16, 2025 reform set a ¥30 million capital requirement plus a mandatory full-time Japanese/PR employee, three years of management experience, and JLPT N2 - a major step up from the old ¥5 million floor - per [Japan Visa](https://japan-visa.com/visas/business-manager)
+2. The capital is deposited and stays in the company - it is not a fee - so founders must budget locked-up cash, not just filing costs - per [Employsome](https://employsome.com/hire/japan/kabushiki-kaisha/)
+3. A KK carries a real annual compliance and maintenance burden with five recurring obligations, which surprises new owners - per [Employsome](https://employsome.com/hire/japan/kabushiki-kaisha/)
+4. The godo kaisha (GK) is the lighter, cheaper alternative that can still support a Business Manager visa and a corporate bank account - per [SmartStart Japan](https://smartstartjapan.com/ultimate-guide-to-godo-kaisha-in-japan/)
+5. Foreign owners are scrambling to raise capital to stay, with family-run restaurants squeezed hardest by the higher capital, staffing, and language bars - per [@flipso](https://x.com/flipso/status/2066485955704267106)
+6. The reform aims to weed out paper companies but is also catching legitimate businesses, pushing some owners to leave instead - per [@bobacola](https://x.com/bobacola/status/2066248623369941361)
+
+---
+✅ All agents reported back!
+├─ 🟠 Reddit: 12 threads │ 13,459 upvotes │ 1,791 comments
+├─ 🔵 X: 12 posts │ 215 likes │ 6 reposts
+├─ 🟡 HN: 3 storys │ 36 points │ 2 comments
+├─ 🐙 GitHub: 1 item │ 45 reactions
+├─ 🌐 Web: 5 pages - japan-visa.com, housingjapan.com, employsome.com, akiyahub.com, smartstartjapan.com
+├─ 🗣️ Top voices: @miasoloz, @flipso, @Chimpnnout │ r/japannews, r/japan
+└─ 📎 Raw results saved to /private/tmp/rl_raw_20260615/what-foreigners-running-a-kabushiki-kaisha-company-in-japan-in-2026-say-about-incorporation-costs-the-business-manager-visa-capital-requirements-and-what-they-wish-they-d-known-raw-v3.md
+---

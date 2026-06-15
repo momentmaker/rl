@@ -19,6 +19,9 @@
     202,
     211,
     213,
+    226,
+    233,
+    235,
     45,
     56,
     83,
@@ -649,6 +652,89 @@
       "date": "2026/06/14",
       "slug": "viral-dataviz-hacker-news",
       "path": "data/2026/06/14/viral-dataviz-hacker-news.md"
+    },
+    {
+      "title": "Running a kabushiki kaisha in Japan as a foreigner after the 2025 visa reform",
+      "tokens": [
+        "2025",
+        "after",
+        "business",
+        "foreigner",
+        "foreigners",
+        "incorporation",
+        "japan",
+        "kabushiki",
+        "kaisha",
+        "manager",
+        "reform",
+        "running",
+        "visa"
+      ],
+      "tags": [
+        "japan",
+        "kabushiki-kaisha",
+        "business-manager-visa",
+        "incorporation",
+        "foreigners"
+      ],
+      "date": "2026/06/15",
+      "slug": "japan-foreigner-kk-business-visa",
+      "path": "data/2026/06/15/japan-foreigner-kk-business-visa.md"
+    },
+    {
+      "title": "What companies that kept the four-day workweek say about productivity and revenue",
+      "tokens": [
+        "companies",
+        "day",
+        "four",
+        "kept",
+        "labor",
+        "productivity",
+        "results",
+        "revenue",
+        "say",
+        "week",
+        "work",
+        "workweek"
+      ],
+      "tags": [
+        "four-day-week",
+        "productivity",
+        "work",
+        "labor",
+        "results"
+      ],
+      "date": "2026/06/15",
+      "slug": "four-day-workweek-results",
+      "path": "data/2026/06/15/four-day-workweek-results.md"
+    },
+    {
+      "title": "How car owners actually stop keyless relay-attack and CAN-injection car theft",
+      "tokens": [
+        "actually",
+        "attack",
+        "can",
+        "car",
+        "defense",
+        "entry",
+        "injection",
+        "keyless",
+        "owners",
+        "relay",
+        "security",
+        "stop",
+        "theft"
+      ],
+      "tags": [
+        "keyless-entry",
+        "relay-attack",
+        "car-theft",
+        "security",
+        "defense"
+      ],
+      "date": "2026/06/15",
+      "slug": "keyless-relay-attack-defense",
+      "path": "data/2026/06/15/keyless-relay-attack-defense.md"
     }
   ]
 }
