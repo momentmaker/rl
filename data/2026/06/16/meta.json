@@ -1,0 +1,40 @@
+{
+  "date": "2026/06/16",
+  "topics": [
+    {
+      "title": "AI adoption in 2026 is bifurcating, not stalling",
+      "brief_file": "ai-adoption-2026.md",
+      "tags": [
+        "ai",
+        "adoption",
+        "enterprise",
+        "public-opinion",
+        "labor"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What people actually get from Stoicism in 2026",
+      "brief_file": "stoicism-2026.md",
+      "tags": [
+        "stoicism",
+        "philosophy",
+        "self-help",
+        "ryan-holiday"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Co-living in 2026: investment product versus loneliness response",
+      "brief_file": "cohousing-2026.md",
+      "tags": [
+        "cohousing",
+        "co-living",
+        "housing",
+        "community",
+        "loneliness"
+      ],
+      "connections": []
+    }
+  ]
+}
