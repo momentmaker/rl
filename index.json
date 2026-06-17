@@ -25,6 +25,9 @@
     231,
     233,
     235,
+    238,
+    240,
+    246,
     45,
     56,
     83,
@@ -813,6 +816,100 @@
       "date": "2026/06/16",
       "slug": "cohousing-2026",
       "path": "data/2026/06/16/cohousing-2026.md"
+    },
+    {
+      "title": "If you get carsick reading, the patch wins and Apple's Vehicle Motion Cues is a real first try",
+      "tokens": [
+        "accessibility",
+        "apple",
+        "carsick",
+        "cues",
+        "first",
+        "get",
+        "if",
+        "motion",
+        "patch",
+        "reading",
+        "real",
+        "sensory",
+        "sickness",
+        "try",
+        "vehicle",
+        "vestibular",
+        "wins"
+      ],
+      "tags": [
+        "motion-sickness",
+        "sensory",
+        "vestibular",
+        "accessibility",
+        "apple"
+      ],
+      "date": "2026/06/17",
+      "slug": "carsick-reading-apple-motion-cues",
+      "path": "data/2026/06/17/carsick-reading-apple-motion-cues.md"
+    },
+    {
+      "title": "Fake recruiter coding tests now run malware the moment you clone the repo",
+      "tokens": [
+        "chain",
+        "clone",
+        "coding",
+        "developers",
+        "engineering",
+        "fake",
+        "malware",
+        "moment",
+        "now",
+        "recruiter",
+        "repo",
+        "run",
+        "security",
+        "social",
+        "supply",
+        "tests"
+      ],
+      "tags": [
+        "security",
+        "malware",
+        "supply-chain",
+        "social-engineering",
+        "developers"
+      ],
+      "date": "2026/06/17",
+      "slug": "fake-recruiter-malware-coding-tests",
+      "path": "data/2026/06/17/fake-recruiter-malware-coding-tests.md"
+    },
+    {
+      "title": "Beating phone autopilot is friction and a richer offline life, not deleting apps",
+      "tokens": [
+        "apps",
+        "attention",
+        "autopilot",
+        "beating",
+        "deleting",
+        "digital",
+        "focus",
+        "friction",
+        "habits",
+        "life",
+        "minimalism",
+        "not",
+        "offline",
+        "phone",
+        "psychology",
+        "richer"
+      ],
+      "tags": [
+        "attention",
+        "digital-minimalism",
+        "focus",
+        "psychology",
+        "habits"
+      ],
+      "date": "2026/06/17",
+      "slug": "breaking-phone-autopilot-reclaiming-attention",
+      "path": "data/2026/06/17/breaking-phone-autopilot-reclaiming-attention.md"
     }
   ]
 }

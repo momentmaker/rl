@@ -1,0 +1,41 @@
+{
+  "date": "2026/06/17",
+  "topics": [
+    {
+      "title": "If you get carsick reading, the patch wins and Apple's Vehicle Motion Cues is a real first try",
+      "brief_file": "carsick-reading-apple-motion-cues.md",
+      "tags": [
+        "motion-sickness",
+        "sensory",
+        "vestibular",
+        "accessibility",
+        "apple"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Fake recruiter coding tests now run malware the moment you clone the repo",
+      "brief_file": "fake-recruiter-malware-coding-tests.md",
+      "tags": [
+        "security",
+        "malware",
+        "supply-chain",
+        "social-engineering",
+        "developers"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Beating phone autopilot is friction and a richer offline life, not deleting apps",
+      "brief_file": "breaking-phone-autopilot-reclaiming-attention.md",
+      "tags": [
+        "attention",
+        "digital-minimalism",
+        "focus",
+        "psychology",
+        "habits"
+      ],
+      "connections": []
+    }
+  ]
+}
