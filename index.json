@@ -28,6 +28,9 @@
     238,
     240,
     246,
+    250,
+    252,
+    27,
     45,
     56,
     83,
@@ -910,6 +913,84 @@
       "date": "2026/06/17",
       "slug": "breaking-phone-autopilot-reclaiming-attention",
       "path": "data/2026/06/17/breaking-phone-autopilot-reclaiming-attention.md"
+    },
+    {
+      "title": "What people in AI-heavy jobs say is actually safe from automation",
+      "tokens": [
+        "actually",
+        "ai",
+        "automation",
+        "future",
+        "heavy",
+        "human",
+        "jobs",
+        "judgment",
+        "people",
+        "premium",
+        "safe",
+        "say",
+        "skills",
+        "work"
+      ],
+      "tags": [
+        "ai",
+        "future-of-work",
+        "skills",
+        "human-premium",
+        "judgment"
+      ],
+      "date": "2026/06/18",
+      "slug": "ai-proof-skills-human-premium",
+      "path": "data/2026/06/18/ai-proof-skills-human-premium.md"
+    },
+    {
+      "title": "Bossware and AI productivity-surveillance backlash",
+      "tokens": [
+        "ai",
+        "backlash",
+        "bossware",
+        "labor",
+        "privacy",
+        "productivity",
+        "surveillance",
+        "training",
+        "workplace"
+      ],
+      "tags": [
+        "surveillance",
+        "workplace",
+        "privacy",
+        "labor",
+        "ai-training"
+      ],
+      "date": "2026/06/18",
+      "slug": "bossware-ai-surveillance-backlash",
+      "path": "data/2026/06/18/bossware-ai-surveillance-backlash.md"
+    },
+    {
+      "title": "Version control for large game and binary assets",
+      "tokens": [
+        "assets",
+        "binary",
+        "control",
+        "game",
+        "gamedev",
+        "git",
+        "large",
+        "perforce",
+        "storage",
+        "version"
+      ],
+      "tags": [
+        "version-control",
+        "gamedev",
+        "binary-storage",
+        "perforce",
+        "git"
+      ],
+      "date": "2026/06/18",
+      "slug": "version-control-large-binary-game-assets",
+      "path": "data/2026/06/18/version-control-large-binary-game-assets.md"
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "date": "2026/06/18",
+  "topics": [
+    {
+      "title": "What people in AI-heavy jobs say is actually safe from automation",
+      "brief_file": "ai-proof-skills-human-premium.md",
+      "tags": ["ai", "future-of-work", "skills", "human-premium", "judgment"],
+      "connections": []
+    },
+    {
+      "title": "Bossware and AI productivity-surveillance backlash",
+      "brief_file": "bossware-ai-surveillance-backlash.md",
+      "tags": ["surveillance", "workplace", "privacy", "labor", "ai-training"],
+      "connections": []
+    },
+    {
+      "title": "Version control for large game and binary assets",
+      "brief_file": "version-control-large-binary-game-assets.md",
+      "tags": ["version-control", "gamedev", "binary-storage", "perforce", "git"],
+      "connections": []
+    }
+  ]
+}

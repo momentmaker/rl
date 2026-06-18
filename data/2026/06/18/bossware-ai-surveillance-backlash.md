@@ -1,0 +1,28 @@
+🌐 last30days v3.3.2 · synced 2026-06-18
+
+What I learned:
+
+**Meta became the flashpoint of the bossware backlash** - In April Meta quietly installed mouse-and-keystroke tracking on every work device, telling staff its "models need real examples of how people actually use them - things like mouse movements, clicking buttons, and navigating dropdown menus." Employees revolted: they posted protest flyers in conference rooms and on vending machines, circulated petitions, and openly branded the company an "Employee Data Extraction Factory," per [@v_shakthi](https://x.com/v_shakthi/status/2062053446505910619). After weeks of staff revolt Meta retreated, agreeing to let workers "pause" tracking for 30 minutes when something is "personal," per [Inc.](https://www.inc.com/moses-jeanfrancois/meta-will-now-give-employees-a-30-minute-break-from-ai-surveillance-tool/91354934) - though full opt-out is limited to remote workers with bandwidth concerns and those handling sensitive material.
+
+**The tracking goes far past "are you at your desk"** - What set Meta's workers off was scope creep: the tool also logged code changes, computer sleep/wake cycles, and URLs copied to the clipboard, and reportedly chewed through some employees' entire monthly home-internet data allowance in days, per [The Cool Down](https://www.thecooldown.com/green-business/meta-employees-push-back-surveillance-software/). That matches what the broader monitoring market now sells: vendors openly advertise "AI-based productivity scoring" that "analyzes patterns of activity, task completion, idle time, and engagement levels to generate real-time productivity scores," per [People Managing People](https://peoplemanagingpeople.com/tools/best-remote-employee-monitoring-software/), and a new class of tools that monitor employees' AI usage itself, per [Hubstaff](https://hubstaff.com/blog/tools-that-help-monitor-ai-usage-at-work/).
+
+**Workers describe getting scored and written up by software they can't see** - On [r/work](https://www.reddit.com/r/work/comments/1u8rjtg/got_written_up_for_poor_productivity_today/) a "got written up for poor productivity today" thread captures the daily-life version of this: being disciplined against a metric the worker had no visibility into. It lands inside a wider 2026 mood across [r/antiwork](https://reddit.com/r/antiwork) and [r/recruitinghell](https://reddit.com/r/recruitinghell) where the dominant feeling is that employers want maximal extraction (one PwC-analysis thread on entry-level roles "with senior-level skills in the age of AI" pulled 2,166 upvotes) while offering minimal trust - the same trust gap surveillance widens.
+
+**The pushback is shifting from grumbling to organized refusal** - The clearest signal is that resistance now has leverage. Cornell research found AI-specific monitoring produces *more* dissatisfaction and resistance than human oversight, per [SHRM](https://www.shrm.org/topics-tools/news/employee-relations/ai-surveillance-in-the-workplace-linked-to-employee-resistance--), and survey data shows roughly half of employees would quit over intrusive monitoring while 24% would take a pay cut to avoid it, per [ExpressVPN](https://www.expressvpn.com/blog/workplace-surveillance-trends-us/). That quit-and-compare behavior is now reshaping retention: workers in AI-heavy orgs are more likely to leave and to grill employers about automation in interviews, per [Metaintro](https://www.metaintro.com/blog/worker-backlash-forced-ai-automation-workplace-2026), and organized labor is picking it up, with the AFL-CIO convening a "Workers First AI" summit demanding civil-rights protections.
+
+KEY PATTERNS from the research:
+1. Visible collective action works better than individual evasion - Meta only blinked after flyers, petitions and forum campaigns, not after quiet mouse-jiggling, per [@v_shakthi](https://x.com/v_shakthi/status/2062053446505910619).
+2. The "it's for training our AI" justification is the new trust-destroyer - reframing surveillance as model-training data was the specific trigger for Meta's revolt, per [HR Grapevine](https://www.hrgrapevine.com/us/content/article/2026-06-01-meta-faces-employee-backlash-over-ai-tracking-tool-as-privacy-concerns-grow).
+3. Quitting is the most-cited form of pushback - ~half would leave and 24% would take a pay cut to escape monitoring, per [ExpressVPN](https://www.expressvpn.com/blog/workplace-surveillance-trends-us/).
+4. Being scored by an algorithm stings more than by a human - AI monitoring uniquely raises dissatisfaction and turnover, per [SHRM](https://www.shrm.org/topics-tools/news/employee-relations/ai-surveillance-in-the-workplace-linked-to-employee-resistance--).
+5. Scope creep is the recurring complaint - clipboard URLs, sleep/wake cycles and home-bandwidth drain turned a "productivity" tool into a privacy fight, per [The Cool Down](https://www.thecooldown.com/green-business/meta-employees-push-back-surveillance-software/).
+
+---
+✅ All agents reported back!
+├─ 🟠 Reddit: 23 threads │ 103,479 upvotes │ 6,858 comments
+├─ 🔵 X: 3 posts │ 16 likes │ 5 reposts
+├─ 🐙 GitHub: 1 item │ 1 comments
+├─ 🌐 Web: 13 pages - peoplemanagingpeople.com, hubstaff.com, prodoscore.com, hrgrapevine.com, The Verge, law.vanderbilt.edu, currentware.com, wanywhere.com
+├─ 🗣️ Top voices: @v_shakthi, @convequity, @OwenGregorian │ r/cscareerquestions, r/antiwork, r/jobs
+└─ 📎 Raw results saved to /private/var/folders/nv/zl70w7t90d3d9b6myqydky9c0000gn/T/tmp.AGCDib33UK/what-workers-say-about-bossware-and-ai-productivity-monitoring-creeping-into-their-jobs-in-2026-and-how-they-push-back-raw-v3.md
+---
