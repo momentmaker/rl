@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-19",
+  "topics": [
+    {
+      "title": "AI-generated papers and fabricated citations in peer review",
+      "brief_file": "ai-papers-peer-review.md",
+      "tags": [
+        "ai",
+        "science",
+        "publishing",
+        "peer-review",
+        "citations"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Where classical computer vision still beats deep learning (OpenCV 5)",
+      "brief_file": "classical-cv-vs-deep-learning.md",
+      "tags": [
+        "computer-vision",
+        "opencv",
+        "deep-learning",
+        "edge",
+        "classical-cv"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Shared-presence web toys and live multiplayer cursors",
+      "brief_file": "multiplayer-presence-web-toys.md",
+      "tags": [
+        "web",
+        "multiplayer",
+        "presence",
+        "indie-web",
+        "games"
+      ],
+      "connections": []
+    }
+  ]
+}

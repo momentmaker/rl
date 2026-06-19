@@ -17,6 +17,7 @@
     191,
     196,
     202,
+    204,
     211,
     213,
     224,
@@ -33,6 +34,8 @@
     27,
     45,
     56,
+    64,
+    81,
     83,
     86,
     88,
@@ -991,6 +994,80 @@
       "date": "2026/06/18",
       "slug": "version-control-large-binary-game-assets",
       "path": "data/2026/06/18/version-control-large-binary-game-assets.md"
+    },
+    {
+      "title": "AI-generated papers and fabricated citations in peer review",
+      "tokens": [
+        "ai",
+        "citations",
+        "fabricated",
+        "generated",
+        "papers",
+        "peer",
+        "publishing",
+        "review",
+        "science"
+      ],
+      "tags": [
+        "ai",
+        "science",
+        "publishing",
+        "peer-review",
+        "citations"
+      ],
+      "date": "2026/06/19",
+      "slug": "ai-papers-peer-review",
+      "path": "data/2026/06/19/ai-papers-peer-review.md"
+    },
+    {
+      "title": "Where classical computer vision still beats deep learning (OpenCV 5)",
+      "tokens": [
+        "beats",
+        "classical",
+        "computer",
+        "cv",
+        "deep",
+        "edge",
+        "learning",
+        "opencv",
+        "still",
+        "vision",
+        "where"
+      ],
+      "tags": [
+        "computer-vision",
+        "opencv",
+        "deep-learning",
+        "edge",
+        "classical-cv"
+      ],
+      "date": "2026/06/19",
+      "slug": "classical-cv-vs-deep-learning",
+      "path": "data/2026/06/19/classical-cv-vs-deep-learning.md"
+    },
+    {
+      "title": "Shared-presence web toys and live multiplayer cursors",
+      "tokens": [
+        "cursors",
+        "games",
+        "indie",
+        "live",
+        "multiplayer",
+        "presence",
+        "shared",
+        "toys",
+        "web"
+      ],
+      "tags": [
+        "web",
+        "multiplayer",
+        "presence",
+        "indie-web",
+        "games"
+      ],
+      "date": "2026/06/19",
+      "slug": "multiplayer-presence-web-toys",
+      "path": "data/2026/06/19/multiplayer-presence-web-toys.md"
     }
   ]
 }
