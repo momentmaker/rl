@@ -1,6 +1,7 @@
 {
   "version": 1,
   "retired_ids": [
+    101,
     103,
     109,
     125,
@@ -20,6 +21,7 @@
     204,
     211,
     213,
+    217,
     224,
     226,
     229,
@@ -34,6 +36,7 @@
     27,
     45,
     56,
+    60,
     64,
     81,
     83,
@@ -1068,6 +1071,80 @@
       "date": "2026/06/19",
       "slug": "multiplayer-presence-web-toys",
       "path": "data/2026/06/19/multiplayer-presence-web-toys.md"
+    },
+    {
+      "title": "Aperiodic monotiles: the hat and spectre tile in physics and materials",
+      "tokens": [
+        "aperiodic",
+        "geometry",
+        "hat",
+        "materials",
+        "math",
+        "monotiles",
+        "physics",
+        "spectre",
+        "tile",
+        "tiling"
+      ],
+      "tags": [
+        "math",
+        "tiling",
+        "geometry",
+        "physics",
+        "materials"
+      ],
+      "date": "2026/06/20",
+      "slug": "aperiodic-monotiles",
+      "path": "data/2026/06/20/aperiodic-monotiles.md"
+    },
+    {
+      "title": "Open-source text-to-speech in 2026 versus ElevenLabs",
+      "tokens": [
+        "2026",
+        "ai",
+        "elevenlabs",
+        "local",
+        "open",
+        "source",
+        "speech",
+        "text",
+        "tts",
+        "versus",
+        "voice"
+      ],
+      "tags": [
+        "tts",
+        "open-source",
+        "voice-ai",
+        "speech",
+        "local-ai"
+      ],
+      "date": "2026/06/20",
+      "slug": "open-source-tts-2026",
+      "path": "data/2026/06/20/open-source-tts-2026.md"
+    },
+    {
+      "title": "OpenStreetMap versus Google Maps in 2026",
+      "tokens": [
+        "2026",
+        "data",
+        "geospatial",
+        "google",
+        "maps",
+        "open",
+        "openstreetmap",
+        "versus"
+      ],
+      "tags": [
+        "openstreetmap",
+        "maps",
+        "geospatial",
+        "open-data",
+        "google"
+      ],
+      "date": "2026/06/20",
+      "slug": "openstreetmap-vs-google-maps",
+      "path": "data/2026/06/20/openstreetmap-vs-google-maps.md"
     }
   ]
 }

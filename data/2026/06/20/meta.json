@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-20",
+  "topics": [
+    {
+      "title": "Aperiodic monotiles: the hat and spectre tile in physics and materials",
+      "brief_file": "aperiodic-monotiles.md",
+      "tags": [
+        "math",
+        "tiling",
+        "geometry",
+        "physics",
+        "materials"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Open-source text-to-speech in 2026 versus ElevenLabs",
+      "brief_file": "open-source-tts-2026.md",
+      "tags": [
+        "tts",
+        "open-source",
+        "voice-ai",
+        "speech",
+        "local-ai"
+      ],
+      "connections": []
+    },
+    {
+      "title": "OpenStreetMap versus Google Maps in 2026",
+      "brief_file": "openstreetmap-vs-google-maps.md",
+      "tags": [
+        "openstreetmap",
+        "maps",
+        "geospatial",
+        "open-data",
+        "google"
+      ],
+      "connections": []
+    }
+  ]
+}
