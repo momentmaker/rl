@@ -1,0 +1,32 @@
+🌐 last30days v3.3.2 · synced 2026-06-21
+
+What I learned:
+
+**"Context rot" went from a Chroma research term to a load-bearing concept that practitioners now use unprompted.** The phrase originates from Kelly Hong's Chroma study (covered in Hamel Husain's interview with her, where she walks through how the term "took off" after publication) showing that output quality degrades as input tokens grow — even on deliberately trivial tasks — across Claude Sonnet 4, GPT-4.1, Qwen3-32B, and Gemini 2.5 Flash. The key reframe: a model holding 1M tokens is not the same as a model *using* 1M tokens well, and degradation is non-uniform, not a clean cliff at the window limit ([Context Rot: When Long Context Fails — Hamel Husain × Kelly Hong](https://www.youtube.com/watch?v=3s_N60u0jEY), [Context Rot: Why AI Gets Worse the Longer You Chat](https://www.producttalk.org/context-rot/)).
+
+**Teams running long agent sessions confirm rot is a lived production problem, not a benchmark artifact.** A r/LocalLLaMA thread titled bluntly "Do long agent sessions get 'context rot' for you too?" shows operators reporting agents that lose task coherence, start re-deriving things they already established, and degrade well before the advertised window fills — the consensus failure point in practice lands around 100–130K tokens on 200K-window models, not at 200K ([r/LocalLLaMA: Do long agent sessions get "context rot"?](https://www.reddit.com/r/LocalLLaMA/comments/1u6356v/do_long_agent_sessions_get_context_rot_for_you_too/)).
+
+**The "lost in the middle" position bias is still structurally unsolved in 2026 — it's baked into how attention and RoPE work.** The original Liu et al. "Lost in the Middle" finding (models recall facts placed at the start or end far better than the middle) remains the mechanistic backbone: RoPE's distance-based decay leaves mid-context tokens too far from the primacy bonus at the start and the recency bonus at the end, creating a dead zone. No production model has eliminated position bias; it's mitigated, not removed ([Lost in the Middle — researchgate PDF](https://www.researchgate.net/publication/378284067_Lost_in_the_Middle_How_Language_Models_Use_Long_Contexts), [Atlan: Lost-in-the-Middle Problem](https://atlan.com/know/llm/lost-in-the-middle-problem/)).
+
+**The real benchmark story is NIAH vs. RULER divergence: single-needle retrieval is saturated, but reasoning over long context is not.** Plain Needle-in-a-Haystack is now too easy (GPT-4.1 scores ~100% across its full 1M window), which is exactly why vendors quote it. RULER — which adds multi-needle, multi-hop tracing, and aggregation — exposes the gap: models score roughly 10–25 points below their single-needle NIAH-2 number at the same length, and effective context lands around 50–65% of the marketed window. Inline semantically-similar distractors hurt far more than benign padding ([Atlan: LLM Context Window Limitations 2026](https://atlan.com/know/llm-context-window-limitations/)).
+
+**The mitigation playbook has shifted from "buy a bigger window" to context engineering and external scaffolding.** On the eval/infra side, r/LLMDevs threads push context graphs over flat prompts for complex instruction-following and local proxies that dedupe repeated context to avoid burning tokens; the broader 2026 framing is that the agent bottleneck moved from prompt engineering to getting the right tokens into the right layer at the right time ([r/LLMDevs: Context graphs vs prompts](https://www.reddit.com/r/LLMDevs/comments/1ua1yyt/context_graphs_vs_prompts_for_complex/), [r/LLMDevs: Local proxy for reducing repeated LLM context](https://www.reddit.com/r/LLMDevs/comments/1u1vyab/local_proxy_for_reducing_repeated_llm_context/)).
+
+**Two competing 2026 bets: dissolve the window with recursion, or make the existing window cheap enough to brute-force.** MIT's recursive language models (heavily hyped in Matthew Berman's video) attack rot by having a model recursively decompose and query its own context rather than attending over it flat — scaffolding around the model instead of a longer window. The opposite bet is serving-side: Kimi's open-source Mooncake KV-cache architecture makes long-context serving cheap, so the economics of just feeding more tokens improve even if per-token quality doesn't ([MIT Researchers DESTROY the Context Window Limit — Matthew Berman](https://www.youtube.com/watch?v=huszaaJPjU8), [@ajinkya_ml on Mooncake/Kimi KV cache](https://x.com/ajinkya_ml/status/2068504005127417973)).
+
+KEY PATTERNS from the research:
+
+1. Advertised window ≠ effective window — every benchmarked model degrades, with usable quality typically at 50–65% of the marketed token count, so treat the headline number as a ceiling, not a working budget - per [Atlan: LLM Context Window Limitations 2026](https://atlan.com/know/llm-context-window-limitations/).
+2. NIAH is a vanity metric; RULER-style multi-hop/aggregation evals are where the real degradation shows up (10–25 point drops at the same length) - per [Context Rot: When Long Context Fails](https://www.youtube.com/watch?v=3s_N60u0jEY).
+3. Position bias is structural — RoPE decay plus primacy/recency leaves the middle of the context underweighted, so put critical instructions at the start or end, never buried mid-prompt - per [Lost in the Middle (PDF)](https://www.researchgate.net/publication/378284067_Lost_in_the_Middle_How_Language_Models_Use_Long_Contexts).
+4. Practitioners experience rot as agents losing coherence in long sessions well before the window fills, making active context curation (pruning, summarization, dedup proxies) standard practice - per [r/LocalLLaMA: Do long agent sessions get "context rot"?](https://www.reddit.com/r/LocalLLaMA/comments/1u6356v/do_long_agent_sessions_get_context_rot_for_you_too/).
+5. The frontier splits into "dissolve the window" (recursive LMs, context graphs) vs. "make tokens cheap" (KV-cache serving like Mooncake) rather than just scaling the raw window - per [@ajinkya_ml on Mooncake](https://x.com/ajinkya_ml/status/2068504005127417973).
+
+---
+✅ All agents reported back!
+├─ 🟠 Reddit: 12 threads │ 5,509 upvotes │ 1,701 comments
+├─ 🔵 X: 7 posts │ 746 likes │ 79 reposts
+├─ 🐙 GitHub: 12 items │ 154 reactions │ 27 comments
+├─ 🌐 Web: 4 pages - atlan.com, producttalk.org, researchgate.net
+├─ 🗣️ Top voices: @TheAhmadOsman, @ajinkya_ml, @ChipWireMedia │ r/LocalLLaMA, r/LLMDevs, r/MachineLearning
+└─ 📎 Raw results saved to (raw evidence, not committed)

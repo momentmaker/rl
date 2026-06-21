@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-21",
+  "topics": [
+    {
+      "title": "Japanese railways as real estate empires and land-value capture",
+      "brief_file": "railways-as-real-estate.md",
+      "tags": [
+        "railways",
+        "real-estate",
+        "land-value-capture",
+        "urbanism",
+        "japan"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Context rot: why long-context LLMs underuse their window",
+      "brief_file": "context-rot.md",
+      "tags": [
+        "llm",
+        "context-window",
+        "context-rot",
+        "evaluation",
+        "ai-infra"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Generative UI in 2026: AI interfaces that assemble per task",
+      "brief_file": "generative-ui.md",
+      "tags": [
+        "generative-ui",
+        "ai-native",
+        "interface",
+        "frontend",
+        "design"
+      ],
+      "connections": []
+    }
+  ]
+}

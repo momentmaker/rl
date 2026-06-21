@@ -4,10 +4,12 @@
     101,
     103,
     109,
+    111,
     125,
     13,
     138,
     148,
+    155,
     169,
     173,
     176,
@@ -33,6 +35,7 @@
     246,
     250,
     252,
+    259,
     27,
     45,
     56,
@@ -1145,6 +1148,84 @@
       "date": "2026/06/20",
       "slug": "openstreetmap-vs-google-maps",
       "path": "data/2026/06/20/openstreetmap-vs-google-maps.md"
+    },
+    {
+      "title": "Japanese railways as real estate empires and land-value capture",
+      "tokens": [
+        "capture",
+        "empires",
+        "estate",
+        "japan",
+        "japanese",
+        "land",
+        "railways",
+        "real",
+        "urbanism",
+        "value"
+      ],
+      "tags": [
+        "railways",
+        "real-estate",
+        "land-value-capture",
+        "urbanism",
+        "japan"
+      ],
+      "date": "2026/06/21",
+      "slug": "railways-as-real-estate",
+      "path": "data/2026/06/21/railways-as-real-estate.md"
+    },
+    {
+      "title": "Context rot: why long-context LLMs underuse their window",
+      "tokens": [
+        "ai",
+        "context",
+        "evaluation",
+        "infra",
+        "llm",
+        "llms",
+        "long",
+        "rot",
+        "their",
+        "underuse",
+        "window"
+      ],
+      "tags": [
+        "llm",
+        "context-window",
+        "context-rot",
+        "evaluation",
+        "ai-infra"
+      ],
+      "date": "2026/06/21",
+      "slug": "context-rot",
+      "path": "data/2026/06/21/context-rot.md"
+    },
+    {
+      "title": "Generative UI in 2026: AI interfaces that assemble per task",
+      "tokens": [
+        "2026",
+        "ai",
+        "assemble",
+        "design",
+        "frontend",
+        "generative",
+        "interface",
+        "interfaces",
+        "native",
+        "per",
+        "task",
+        "ui"
+      ],
+      "tags": [
+        "generative-ui",
+        "ai-native",
+        "interface",
+        "frontend",
+        "design"
+      ],
+      "date": "2026/06/21",
+      "slug": "generative-ui",
+      "path": "data/2026/06/21/generative-ui.md"
     }
   ]
 }
