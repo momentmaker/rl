@@ -32,10 +32,13 @@
     235,
     238,
     240,
+    244,
     246,
     250,
     252,
+    255,
     259,
+    266,
     27,
     45,
     56,
@@ -1226,6 +1229,88 @@
       "date": "2026/06/21",
       "slug": "generative-ui",
       "path": "data/2026/06/21/generative-ui.md"
+    },
+    {
+      "title": "The collapsing economics of how-to and self-help book publishing as readers ask AI instead",
+      "tokens": [
+        "ai",
+        "ask",
+        "book",
+        "collapsing",
+        "economics",
+        "help",
+        "instead",
+        "nonfiction",
+        "publishing",
+        "readers",
+        "self"
+      ],
+      "tags": [
+        "publishing",
+        "self-help",
+        "ai",
+        "economics",
+        "nonfiction"
+      ],
+      "date": "2026/06/22",
+      "slug": "ai-killing-nonfiction",
+      "path": "data/2026/06/22/ai-killing-nonfiction.md"
+    },
+    {
+      "title": "Link rot and the digital dark age: how much of the web has already vanished",
+      "tokens": [
+        "age",
+        "already",
+        "archive",
+        "archiving",
+        "dark",
+        "digital",
+        "has",
+        "internet",
+        "link",
+        "much",
+        "preservation",
+        "rot",
+        "vanished",
+        "web"
+      ],
+      "tags": [
+        "link-rot",
+        "web-archiving",
+        "digital-preservation",
+        "internet-archive"
+      ],
+      "date": "2026/06/22",
+      "slug": "link-rot-digital-dark-age",
+      "path": "data/2026/06/22/link-rot-digital-dark-age.md"
+    },
+    {
+      "title": "Full-body AI health scanners and longevity screening: hype versus evidence",
+      "tokens": [
+        "ai",
+        "body",
+        "evidence",
+        "full",
+        "health",
+        "hype",
+        "longevity",
+        "mri",
+        "scanners",
+        "scanning",
+        "screening",
+        "versus",
+        "wellness"
+      ],
+      "tags": [
+        "health-scanning",
+        "longevity",
+        "mri",
+        "ai",
+        "wellness"
+      ],
+      "date": "2026/06/22",
+      "slug": "full-body-health-scanners",
+      "path": "data/2026/06/22/full-body-health-scanners.md"
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-22",
+  "topics": [
+    {
+      "title": "The collapsing economics of how-to and self-help book publishing as readers ask AI instead",
+      "brief_file": "ai-killing-nonfiction.md",
+      "tags": [
+        "publishing",
+        "self-help",
+        "ai",
+        "economics",
+        "nonfiction"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Link rot and the digital dark age: how much of the web has already vanished",
+      "brief_file": "link-rot-digital-dark-age.md",
+      "tags": [
+        "link-rot",
+        "web-archiving",
+        "digital-preservation",
+        "internet-archive"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Full-body AI health scanners and longevity screening: hype versus evidence",
+      "brief_file": "full-body-health-scanners.md",
+      "tags": [
+        "health-scanning",
+        "longevity",
+        "mri",
+        "ai",
+        "wellness"
+      ],
+      "connections": []
+    }
+  ]
+}
