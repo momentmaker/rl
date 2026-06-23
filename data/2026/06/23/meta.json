@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-23",
+  "topics": [
+    {
+      "title": "Prompt injection attacks on AI agents in 2026 and which defenses actually hold up",
+      "brief_file": "prompt-injection-ai-agents.md",
+      "tags": [
+        "prompt-injection",
+        "ai-agents",
+        "security",
+        "defense"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What people say about Kagi search in 2026 — paying to escape Google's AI slop",
+      "brief_file": "kagi-paid-search-vs-google.md",
+      "tags": [
+        "search",
+        "google",
+        "ai-slop",
+        "kagi",
+        "alternatives"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why 1-bit and dithered pixel art is having a revival in 2026",
+      "brief_file": "one-bit-dithered-art-revival.md",
+      "tags": [
+        "1-bit",
+        "dithering",
+        "pixel-art",
+        "aesthetics",
+        "retro"
+      ],
+      "connections": []
+    }
+  ]
+}

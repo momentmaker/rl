@@ -7,6 +7,7 @@
     111,
     125,
     13,
+    131,
     138,
     148,
     155,
@@ -41,6 +42,7 @@
     266,
     27,
     45,
+    49,
     56,
     60,
     64,
@@ -48,6 +50,7 @@
     83,
     86,
     88,
+    92,
     99
   ],
   "topics": [
@@ -1311,6 +1314,84 @@
       "date": "2026/06/22",
       "slug": "full-body-health-scanners",
       "path": "data/2026/06/22/full-body-health-scanners.md"
+    },
+    {
+      "title": "Prompt injection attacks on AI agents in 2026 and which defenses actually hold up",
+      "tokens": [
+        "2026",
+        "actually",
+        "agents",
+        "ai",
+        "attacks",
+        "defense",
+        "defenses",
+        "hold",
+        "injection",
+        "prompt",
+        "security",
+        "up",
+        "which"
+      ],
+      "tags": [
+        "prompt-injection",
+        "ai-agents",
+        "security",
+        "defense"
+      ],
+      "date": "2026/06/23",
+      "slug": "prompt-injection-ai-agents",
+      "path": "data/2026/06/23/prompt-injection-ai-agents.md"
+    },
+    {
+      "title": "What people say about Kagi search in 2026 — paying to escape Google's AI slop",
+      "tokens": [
+        "2026",
+        "ai",
+        "alternatives",
+        "escape",
+        "google",
+        "kagi",
+        "paying",
+        "people",
+        "say",
+        "search",
+        "slop"
+      ],
+      "tags": [
+        "search",
+        "google",
+        "ai-slop",
+        "kagi",
+        "alternatives"
+      ],
+      "date": "2026/06/23",
+      "slug": "kagi-paid-search-vs-google",
+      "path": "data/2026/06/23/kagi-paid-search-vs-google.md"
+    },
+    {
+      "title": "Why 1-bit and dithered pixel art is having a revival in 2026",
+      "tokens": [
+        "2026",
+        "aesthetics",
+        "art",
+        "bit",
+        "dithered",
+        "dithering",
+        "having",
+        "pixel",
+        "retro",
+        "revival"
+      ],
+      "tags": [
+        "1-bit",
+        "dithering",
+        "pixel-art",
+        "aesthetics",
+        "retro"
+      ],
+      "date": "2026/06/23",
+      "slug": "one-bit-dithered-art-revival",
+      "path": "data/2026/06/23/one-bit-dithered-art-revival.md"
     }
   ]
 }
