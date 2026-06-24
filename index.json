@@ -1,12 +1,25 @@
 {
   "version": 1,
   "retired_ids": [
+    13,
+    19,
+    27,
+    45,
+    49,
+    56,
+    60,
+    64,
+    81,
+    83,
+    86,
+    88,
+    92,
+    99,
     101,
     103,
     109,
     111,
     125,
-    13,
     131,
     138,
     148,
@@ -17,7 +30,6 @@
     179,
     183,
     189,
-    19,
     191,
     196,
     202,
@@ -40,18 +52,9 @@
     255,
     259,
     266,
-    27,
-    45,
-    49,
-    56,
-    60,
-    64,
-    81,
-    83,
-    86,
-    88,
-    92,
-    99
+    268,
+    270,
+    281
   ],
   "topics": [
     {
@@ -1392,6 +1395,82 @@
       "date": "2026/06/23",
       "slug": "one-bit-dithered-art-revival",
       "path": "data/2026/06/23/one-bit-dithered-art-revival.md"
+    },
+    {
+      "title": "What makes a hand-drawn imaginary city map feel alive",
+      "tokens": [
+        "alive",
+        "art",
+        "cartography",
+        "city",
+        "drawn",
+        "feel",
+        "hand",
+        "imaginary",
+        "makes",
+        "map",
+        "maps",
+        "worldbuilding"
+      ],
+      "tags": [
+        "maps",
+        "worldbuilding",
+        "cartography",
+        "art"
+      ],
+      "date": "2026/06/24",
+      "slug": "imaginary-cartography",
+      "path": "data/2026/06/24/imaginary-cartography.md"
+    },
+    {
+      "title": "Structured data and llms.txt for AI agents reading your website",
+      "tokens": [
+        "agents",
+        "ai",
+        "data",
+        "llms",
+        "reading",
+        "schema",
+        "structured",
+        "txt",
+        "web",
+        "website"
+      ],
+      "tags": [
+        "structured-data",
+        "ai-agents",
+        "schema",
+        "web",
+        "llms-txt"
+      ],
+      "date": "2026/06/24",
+      "slug": "structured-data-for-ai-agents",
+      "path": "data/2026/06/24/structured-data-for-ai-agents.md"
+    },
+    {
+      "title": "Edo Japan's circular economy: zero-waste by necessity",
+      "tokens": [
+        "circular",
+        "economy",
+        "edo",
+        "history",
+        "japan",
+        "necessity",
+        "recycling",
+        "sustainability",
+        "waste",
+        "zero"
+      ],
+      "tags": [
+        "edo",
+        "circular-economy",
+        "sustainability",
+        "history",
+        "recycling"
+      ],
+      "date": "2026/06/24",
+      "slug": "edo-circular-economy",
+      "path": "data/2026/06/24/edo-circular-economy.md"
     }
   ]
 }

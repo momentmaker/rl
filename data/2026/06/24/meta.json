@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-24",
+  "topics": [
+    {
+      "title": "What makes a hand-drawn imaginary city map feel alive",
+      "brief_file": "imaginary-cartography.md",
+      "tags": [
+        "maps",
+        "worldbuilding",
+        "cartography",
+        "art"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Structured data and llms.txt for AI agents reading your website",
+      "brief_file": "structured-data-for-ai-agents.md",
+      "tags": [
+        "structured-data",
+        "ai-agents",
+        "schema",
+        "web",
+        "llms-txt"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Edo Japan's circular economy: zero-waste by necessity",
+      "brief_file": "edo-circular-economy.md",
+      "tags": [
+        "edo",
+        "circular-economy",
+        "sustainability",
+        "history",
+        "recycling"
+      ],
+      "connections": []
+    }
+  ]
+}
