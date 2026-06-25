@@ -1,25 +1,12 @@
 {
   "version": 1,
   "retired_ids": [
-    13,
-    19,
-    27,
-    45,
-    49,
-    56,
-    60,
-    64,
-    81,
-    83,
-    86,
-    88,
-    92,
-    99,
     101,
     103,
     109,
     111,
     125,
+    13,
     131,
     138,
     148,
@@ -29,7 +16,9 @@
     176,
     179,
     183,
+    187,
     189,
+    19,
     191,
     196,
     202,
@@ -53,8 +42,22 @@
     259,
     266,
     268,
+    27,
     270,
-    281
+    274,
+    281,
+    45,
+    49,
+    56,
+    60,
+    64,
+    81,
+    83,
+    86,
+    88,
+    90,
+    92,
+    99
   ],
   "topics": [
     {
@@ -1471,6 +1474,88 @@
       "date": "2026/06/24",
       "slug": "edo-circular-economy",
       "path": "data/2026/06/24/edo-circular-economy.md"
+    },
+    {
+      "title": "Apple silicon Mac mini and Studio as the local-LLM inference box",
+      "tokens": [
+        "apple",
+        "box",
+        "hardware",
+        "inference",
+        "llm",
+        "local",
+        "mac",
+        "mini",
+        "silicon",
+        "studio"
+      ],
+      "tags": [
+        "apple-silicon",
+        "local-llm",
+        "mac-mini",
+        "mac-studio",
+        "hardware",
+        "inference"
+      ],
+      "date": "2026/06/25",
+      "slug": "apple-silicon-local-llm-box",
+      "path": "data/2026/06/25/apple-silicon-local-llm-box.md"
+    },
+    {
+      "title": "Designing nuclear-waste warning markers to survive deep time",
+      "tokens": [
+        "communication",
+        "deep",
+        "design",
+        "designing",
+        "long",
+        "markers",
+        "now",
+        "nuclear",
+        "semiotics",
+        "survive",
+        "symbols",
+        "time",
+        "warning",
+        "waste"
+      ],
+      "tags": [
+        "nuclear-semiotics",
+        "warning-symbols",
+        "design",
+        "long-now",
+        "communication",
+        "deep-time"
+      ],
+      "date": "2026/06/25",
+      "slug": "warning-symbols-deep-time",
+      "path": "data/2026/06/25/warning-symbols-deep-time.md"
+    },
+    {
+      "title": "Game preservation and console emulation after Nintendo crackdowns",
+      "tokens": [
+        "after",
+        "console",
+        "crackdowns",
+        "dmca",
+        "emulation",
+        "game",
+        "nintendo",
+        "preservation",
+        "roms",
+        "wasm"
+      ],
+      "tags": [
+        "game-preservation",
+        "emulation",
+        "wasm",
+        "dmca",
+        "nintendo",
+        "roms"
+      ],
+      "date": "2026/06/25",
+      "slug": "game-preservation-emulation-2026",
+      "path": "data/2026/06/25/game-preservation-emulation-2026.md"
     }
   ]
 }

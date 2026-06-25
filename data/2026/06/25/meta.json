@@ -1,0 +1,44 @@
+{
+  "date": "2026-06-25",
+  "topics": [
+    {
+      "title": "Apple silicon Mac mini and Studio as the local-LLM inference box",
+      "brief_file": "apple-silicon-local-llm-box.md",
+      "tags": [
+        "apple-silicon",
+        "local-llm",
+        "mac-mini",
+        "mac-studio",
+        "hardware",
+        "inference"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Designing nuclear-waste warning markers to survive deep time",
+      "brief_file": "warning-symbols-deep-time.md",
+      "tags": [
+        "nuclear-semiotics",
+        "warning-symbols",
+        "design",
+        "long-now",
+        "communication",
+        "deep-time"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Game preservation and console emulation after Nintendo crackdowns",
+      "brief_file": "game-preservation-emulation-2026.md",
+      "tags": [
+        "game-preservation",
+        "emulation",
+        "wasm",
+        "dmca",
+        "nintendo",
+        "roms"
+      ],
+      "connections": []
+    }
+  ]
+}
