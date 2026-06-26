@@ -5,6 +5,7 @@
     103,
     109,
     111,
+    119,
     125,
     13,
     131,
@@ -36,6 +37,7 @@
     240,
     244,
     246,
+    248,
     250,
     252,
     255,
@@ -46,6 +48,7 @@
     270,
     274,
     281,
+    287,
     45,
     49,
     56,
@@ -1556,6 +1559,94 @@
       "date": "2026/06/25",
       "slug": "game-preservation-emulation-2026",
       "path": "data/2026/06/25/game-preservation-emulation-2026.md"
+    },
+    {
+      "title": "Why anime animators are paid so little and the production-committee economics behind it",
+      "tokens": [
+        "animation",
+        "animators",
+        "anime",
+        "behind",
+        "committee",
+        "economics",
+        "japan",
+        "labor",
+        "little",
+        "paid",
+        "production",
+        "so",
+        "wages"
+      ],
+      "tags": [
+        "anime",
+        "animation",
+        "labor",
+        "wages",
+        "production-committee",
+        "japan"
+      ],
+      "date": "2026/06/26",
+      "slug": "anime-labor-crisis-production-committee",
+      "path": "data/2026/06/26/anime-labor-crisis-production-committee.md"
+    },
+    {
+      "title": "The 2026 revival of personal blogs, blogrolls and RSS as algorithm-free discovery",
+      "tokens": [
+        "2026",
+        "algorithm",
+        "blogroll",
+        "blogrolls",
+        "blogs",
+        "discovery",
+        "free",
+        "indieweb",
+        "personal",
+        "revival",
+        "rss",
+        "small",
+        "web"
+      ],
+      "tags": [
+        "indieweb",
+        "blogs",
+        "blogroll",
+        "rss",
+        "discovery",
+        "small-web"
+      ],
+      "date": "2026/06/26",
+      "slug": "indie-web-blogroll-rss-revival",
+      "path": "data/2026/06/26/indie-web-blogroll-rss-revival.md"
+    },
+    {
+      "title": "Driver's licenses in Apple and Google Wallet and the 'No Phone Home' privacy fight",
+      "tokens": [
+        "apple",
+        "digital",
+        "driver",
+        "fight",
+        "google",
+        "home",
+        "id",
+        "identity",
+        "licenses",
+        "mdl",
+        "no",
+        "phone",
+        "privacy",
+        "wallet"
+      ],
+      "tags": [
+        "digital-id",
+        "mdl",
+        "wallet",
+        "privacy",
+        "identity",
+        "no-phone-home"
+      ],
+      "date": "2026/06/26",
+      "slug": "digital-id-wallet-mobile-license",
+      "path": "data/2026/06/26/digital-id-wallet-mobile-license.md"
     }
   ]
 }

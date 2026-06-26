@@ -1,0 +1,44 @@
+{
+  "date": "2026-06-26",
+  "topics": [
+    {
+      "title": "Why anime animators are paid so little and the production-committee economics behind it",
+      "brief_file": "anime-labor-crisis-production-committee.md",
+      "tags": [
+        "anime",
+        "animation",
+        "labor",
+        "wages",
+        "production-committee",
+        "japan"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The 2026 revival of personal blogs, blogrolls and RSS as algorithm-free discovery",
+      "brief_file": "indie-web-blogroll-rss-revival.md",
+      "tags": [
+        "indieweb",
+        "blogs",
+        "blogroll",
+        "rss",
+        "discovery",
+        "small-web"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Driver's licenses in Apple and Google Wallet and the 'No Phone Home' privacy fight",
+      "brief_file": "digital-id-wallet-mobile-license.md",
+      "tags": [
+        "digital-id",
+        "mdl",
+        "wallet",
+        "privacy",
+        "identity",
+        "no-phone-home"
+      ],
+      "connections": []
+    }
+  ]
+}
