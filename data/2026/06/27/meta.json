@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-27",
+  "topics": [
+    {
+      "title": "Functional ultrasound neuroimaging vs fMRI",
+      "brief_file": "functional-ultrasound-brain-imaging.md",
+      "tags": [
+        "neuroscience",
+        "ultrasound",
+        "brain-imaging",
+        "fmri",
+        "bci"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The who-is-online presence layer revival on personal sites",
+      "brief_file": "web-presence-layer-revival.md",
+      "tags": [
+        "indie-web",
+        "presence",
+        "real-time",
+        "websites",
+        "privacy"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Offline-first hiking navigation apps people trust",
+      "brief_file": "offline-hiking-navigation-apps.md",
+      "tags": [
+        "hiking",
+        "navigation",
+        "offline-maps",
+        "privacy",
+        "openstreetmap"
+      ],
+      "connections": [
+        {
+          "title": "What hikers and Camino pilgrims actually use for offline navigation",
+          "date": "2026/06/13"
+        }
+      ]
+    }
+  ]
+}
