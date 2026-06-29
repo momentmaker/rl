@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-29",
+  "topics": [
+    {
+      "title": "Rucking — weighted walking as low-injury cardio",
+      "brief_file": "rucking.md",
+      "tags": [
+        "rucking",
+        "fitness",
+        "walking",
+        "health",
+        "footwear"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Double-entry ledgers as the source of truth in fintech",
+      "brief_file": "double-entry-ledgers.md",
+      "tags": [
+        "fintech",
+        "ledger",
+        "double-entry",
+        "idempotency",
+        "engineering"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Traditional Japanese nail-free timber joinery",
+      "brief_file": "japanese-joinery.md",
+      "tags": [
+        "japan",
+        "joinery",
+        "woodworking",
+        "architecture",
+        "seismic"
+      ],
+      "connections": []
+    }
+  ]
+}

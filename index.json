@@ -52,6 +52,9 @@
     281,
     287,
     291,
+    303,
+    305,
+    307,
     45,
     49,
     56,
@@ -1727,6 +1730,79 @@
       "date": "2026/06/27",
       "slug": "offline-hiking-navigation-apps",
       "path": "data/2026/06/27/offline-hiking-navigation-apps.md"
+    },
+    {
+      "title": "Rucking — weighted walking as low-injury cardio",
+      "tokens": [
+        "cardio",
+        "fitness",
+        "footwear",
+        "health",
+        "injury",
+        "low",
+        "rucking",
+        "walking",
+        "weighted"
+      ],
+      "tags": [
+        "rucking",
+        "fitness",
+        "walking",
+        "health",
+        "footwear"
+      ],
+      "date": "2026-06-29",
+      "slug": "rucking",
+      "path": "data/2026/06/29/rucking.md"
+    },
+    {
+      "title": "Double-entry ledgers as the source of truth in fintech",
+      "tokens": [
+        "double",
+        "engineering",
+        "entry",
+        "fintech",
+        "idempotency",
+        "ledger",
+        "ledgers",
+        "source",
+        "truth"
+      ],
+      "tags": [
+        "fintech",
+        "ledger",
+        "double-entry",
+        "idempotency",
+        "engineering"
+      ],
+      "date": "2026-06-29",
+      "slug": "double-entry-ledgers",
+      "path": "data/2026/06/29/double-entry-ledgers.md"
+    },
+    {
+      "title": "Traditional Japanese nail-free timber joinery",
+      "tokens": [
+        "architecture",
+        "free",
+        "japan",
+        "japanese",
+        "joinery",
+        "nail",
+        "seismic",
+        "timber",
+        "traditional",
+        "woodworking"
+      ],
+      "tags": [
+        "japan",
+        "joinery",
+        "woodworking",
+        "architecture",
+        "seismic"
+      ],
+      "date": "2026-06-29",
+      "slug": "japanese-joinery",
+      "path": "data/2026/06/29/japanese-joinery.md"
     }
   ]
 }
