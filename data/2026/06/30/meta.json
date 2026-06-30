@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-30",
+  "topics": [
+    {
+      "title": "Default alive bootstrapping vs raising VC in the AI era",
+      "brief_file": "default-alive-bootstrapping-vs-vc.md",
+      "tags": [
+        "bootstrapping",
+        "vc",
+        "startups",
+        "default-alive",
+        "ai"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why Texans treat H-E-B as more than a grocery store",
+      "brief_file": "heb-disaster-response-employee-first.md",
+      "tags": [
+        "heb",
+        "grocery",
+        "corporate-culture",
+        "disaster-response",
+        "employee-ownership"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Proof-of-personhood and proving you are human online",
+      "brief_file": "proof-of-personhood-human-verification.md",
+      "tags": [
+        "proof-of-personhood",
+        "identity",
+        "ai-slop",
+        "verification",
+        "passkeys"
+      ],
+      "connections": []
+    }
+  ]
+}
