@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-01",
+  "topics": [
+    {
+      "title": "Why mugicha (barley tea) is what Japan drinks all summer",
+      "brief_file": "mugicha-japan-summer-barley-tea.md",
+      "tags": [
+        "mugicha",
+        "barley-tea",
+        "japan",
+        "summer-drink",
+        "hydration"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why almost everyone thinks they are a rare outlier",
+      "brief_file": "why-everyone-thinks-theyre-an-outlier.md",
+      "tags": [
+        "psychology",
+        "illusory-superiority",
+        "false-uniqueness",
+        "cognitive-bias",
+        "statistics"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Precious Plastic's crisis and whether home recycling is worth it",
+      "brief_file": "precious-plastic-home-recycling-2026.md",
+      "tags": [
+        "precious-plastic",
+        "recycling",
+        "open-source",
+        "diy",
+        "sustainability"
+      ],
+      "connections": []
+    }
+  ]
+}

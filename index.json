@@ -58,6 +58,9 @@
     305,
     307,
     309,
+    311,
+    313,
+    315,
     45,
     49,
     56,
@@ -1883,6 +1886,85 @@
       "date": "2026/06/30",
       "slug": "proof-of-personhood-human-verification",
       "path": "data/2026/06/30/proof-of-personhood-human-verification.md"
+    },
+    {
+      "title": "Why mugicha (barley tea) is what Japan drinks all summer",
+      "tokens": [
+        "all",
+        "barley",
+        "drink",
+        "drinks",
+        "hydration",
+        "japan",
+        "mugicha",
+        "summer",
+        "tea"
+      ],
+      "tags": [
+        "mugicha",
+        "barley-tea",
+        "japan",
+        "summer-drink",
+        "hydration"
+      ],
+      "date": "2026/07/01",
+      "slug": "mugicha-japan-summer-barley-tea",
+      "path": "data/2026/07/01/mugicha-japan-summer-barley-tea.md"
+    },
+    {
+      "title": "Why almost everyone thinks they are a rare outlier",
+      "tokens": [
+        "almost",
+        "bias",
+        "cognitive",
+        "everyone",
+        "false",
+        "illusory",
+        "outlier",
+        "psychology",
+        "rare",
+        "statistics",
+        "superiority",
+        "they",
+        "thinks",
+        "uniqueness"
+      ],
+      "tags": [
+        "psychology",
+        "illusory-superiority",
+        "false-uniqueness",
+        "cognitive-bias",
+        "statistics"
+      ],
+      "date": "2026/07/01",
+      "slug": "why-everyone-thinks-theyre-an-outlier",
+      "path": "data/2026/07/01/why-everyone-thinks-theyre-an-outlier.md"
+    },
+    {
+      "title": "Precious Plastic's crisis and whether home recycling is worth it",
+      "tokens": [
+        "crisis",
+        "diy",
+        "home",
+        "open",
+        "plastic",
+        "precious",
+        "recycling",
+        "source",
+        "sustainability",
+        "whether",
+        "worth"
+      ],
+      "tags": [
+        "precious-plastic",
+        "recycling",
+        "open-source",
+        "diy",
+        "sustainability"
+      ],
+      "date": "2026/07/01",
+      "slug": "precious-plastic-home-recycling-2026",
+      "path": "data/2026/07/01/precious-plastic-home-recycling-2026.md"
     }
   ]
 }
