@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/02",
+  "topics": [
+    {
+      "title": "Porsche eFuels and synthetic fuels: real decarbonization path or greenwashing",
+      "brief_file": "porsche-efuels-synthetic-fuels.md",
+      "tags": [
+        "efuels",
+        "synthetic-fuel",
+        "engines",
+        "climate",
+        "cars"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The three-generation rule and why most family businesses die",
+      "brief_file": "family-business-third-generation-shinise.md",
+      "tags": [
+        "family-business",
+        "succession",
+        "shinise",
+        "japan",
+        "longevity"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Marine protected areas, 30x30 and paper parks: what makes fish and shark recovery work",
+      "brief_file": "marine-protected-areas-30x30-paper-parks.md",
+      "tags": [
+        "marine-protected-areas",
+        "conservation",
+        "ocean",
+        "30x30",
+        "sharks"
+      ],
+      "connections": []
+    }
+  ]
+}

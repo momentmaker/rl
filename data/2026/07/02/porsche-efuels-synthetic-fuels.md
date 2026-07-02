@@ -1,0 +1,37 @@
+🌐 last30days v3.3.2 · synced 2026-07-02
+
+What I learned:
+
+**The debate has quietly flipped from "will e-fuels save combustion?" to "does anyone still need them to?"** The premise of the question - keeping ICE alive after a hard 2035 wall - has softened because the wall itself moved. As of December 2025 the EU dropped the full 100% combustion ban and replaced it with a [90% CO2-cut target by 2035](https://www.euronews.com/my-europe/2025/12/16/eu-carmakers-to-comply-with-90-emissions-reduction-by-2035-as-full-combustion-engine-ban-s), letting carmakers offset the last 10% with low-carbon EU steel, e-fuels or biofuels, and explicitly allowing PHEVs, range-extenders and mild hybrids past 2035. [S&P Global Mobility](https://www.spglobal.com/automotive-insights/en/blogs/2025/12/europe-shifts-into-reverse-on-eu-2035-ice-ban) framed it bluntly as "Europe shifts into reverse," with Germany, Italy and Poland driving a "technology neutrality" push and the Cypriot EU Presidency set to mediate the details from January 2026. So e-fuels are no longer the *only* backdoor for combustion - they are now one exemption lane among several, which paradoxically weakens the urgency of the whole e-fuel bet.
+
+**The strongest counter-signal in the last 30 days is that EVs are winning on their own, draining the political oxygen from the exemption fight.** The engine's freshest news items - [the Globe and Mail](https://www.theglobeandmail.com/world/article-spectacular-electric-car-sales-weaken-pressure-to-roll-back-combustion/) and [Economic Times Auto](https://auto.economictimes.indiatimes.com/news/industry/electric-vehicle-sales-surge-challenges-eus-combustion-engine-ban-rollback/132000897) - both carry the EU climate chief's line that a "spectacular" EV sales surge is weakening pressure to dilute the 2035 target. When batteries are already outselling expectations, the argument that Europe needs an expensive synthetic-fuel escape hatch loses force. This is the market quietly answering the greenwashing question before the regulators do.
+
+**On the efficiency math, the expert consensus is brutal and hasn't budged - and it's the backbone of the "greenwashing detour" case.** [Transport & Environment](https://www.transportenvironment.org/articles/e-fuels-too-inefficient-and-expensive-cars-and-trucks-may-be-part-aviations-climate-solution) puts an e-fuel car's well-to-wheel efficiency at roughly 13-15% against about 69% for a battery EV, and concludes electrofuels are "neither efficient nor cost-effective" for road transport. [Fraunhofer ISI](https://www.isi.fraunhofer.de/en/presse/2023/presseinfo-05-efuels-nicht-sinnvoll-fuer-pkw-und-lkw.html) says large-scale e-fuels in cars and trucks simply "does not make sense," with direct electrification up to 5x more efficient per unit of electricity. That 4-6x penalty is why even sympathetic analysts now shove e-fuels toward aviation and heavy transport rather than passenger cars - which is roughly where the [European Commission itself landed as of early June](https://www.mobilityplaza.org/news/39682), seeing a use case mainly in heavy transport.
+
+**In the actual social conversation, the loudest live voices are German taxpayers treating Porsche's eFuel as a political scandal, not a climate solution.** The engine's on-topic X signal is almost entirely German and hostile: [@BSteuerzahler](https://x.com/BSteuerzahler/status/2064310726664016103) ties the "FDP eFuels Lüge" (FDP e-fuels lie) directly to the Lindner-era Porsche pilot-plant subsidy in South America - "Spoiler: die FDP hat uns Wähler verarscht und unser Geld verbrannt" (the FDP conned us voters and burned our money) - and a follow-up jab asks sarcastically how the Chile pilot plant is doing "since you put our tax money in there." Another user notes plainly that "Porsche für eFuels lobbyiert" precisely because BMW and Mercedes share structurally similar problems - i.e. the lobbying is read as incumbent self-preservation, not decarbonization. This is the "souring" the question asks about, and it's showing up as a taxpayer-money grievance rather than an abstract climate debate.
+
+**The one place e-fuels are unambiguously real and accepted is the racetrack - which cuts both ways.** German-language items highlight [Porsche's fully synthetic 98-RON racing fuel via Power-to-Liquid, already deployed at the Nürburgring](https://newsroom.porsche.com/en/press-kits/Porsche-Heritage-Experience/eFuels.html), and Smudo's Team Four Motors racing on alternative fuels for years. Supporters point to this as proof the chemistry works in a real combustion engine today; critics point to the same fact to argue that motorsport and classic cars - not mass-market road cars - are the honest ceiling of the technology. Notably, Porsche's own framing in its [newsroom](https://newsroom.porsche.com/en/innovation/porsche-efuels/porsche-what-are-efuels-35829.html) now calls eFuels a "sensible complement" to electromobility while still targeting 80%+ all-electric deliveries by 2030 - the company is hedging, not betting the house.
+
+KEY PATTERNS from the research:
+
+1. **The question's premise weakened underneath it.** The EU's late-2025 shift from a 100% ban to a [90% CO2 target with multiple exemption paths](https://www.euronews.com/my-europe/2025/12/16/eu-carmakers-to-comply-with-90-emissions-reduction-by-2035-as-full-combustion-engine-ban-s) means e-fuels are no longer combustion's single lifeline - which lowers the stakes of whether they "work."
+
+2. **Efficiency is the load-bearing critique, and it's settled.** The 13-15% vs ~69% well-to-wheel gap ([T&E](https://www.transportenvironment.org/articles/e-fuels-too-inefficient-and-expensive-cars-and-trucks-may-be-part-aviations-climate-solution), [Fraunhofer ISI](https://www.isi.fraunhofer.de/en/presse/2023/presseinfo-05-efuels-nicht-sinnvoll-fuer-pkw-und-lkw.html)) is the single most-cited reason people call passenger-car e-fuels a detour.
+
+3. **EV sales are doing the arguing.** The freshest news beat is that surging EV adoption is [weakening the political case for e-fuel carve-outs](https://www.theglobeandmail.com/world/article-spectacular-electric-car-sales-weaken-pressure-to-roll-back-combustion/), not the reverse.
+
+4. **In social discussion, "souring" reads as a subsidy scandal.** The live German-language X conversation ([@BSteuerzahler](https://x.com/BSteuerzahler/status/2064310726664016103)) treats Porsche's eFuel bet as wasted taxpayer money and industry lobbying, not a good-faith climate play.
+
+5. **Consensus landing zone: aviation, heavy transport, motorsport and classics - not mass-market cars.** Even the [European Commission](https://www.mobilityplaza.org/news/39682) and Porsche's own hedged "complement to electromobility" framing point e-fuels away from the daily driver, which is exactly where the "expensive detour" label sticks hardest.
+
+<!-- PASS-THROUGH FOOTER -->
+---
+✅ All agents reported back!
+├─ 🟠 Reddit: 22 threads │ 93,076 upvotes │ 7,381 comments
+├─ 🔵 X: 5 posts │ 19 likes │ 4 reposts
+├─ 🐙 GitHub: 12 items │ 13 reactions │ 28 comments
+├─ 🌐 Web: 15 pages - en.wikipedia.org, auto.economictimes.indiatimes.com, theglobeandmail.com, newsroom.porsche.com, portal.neo-fuels.com, rse-magazine.com, coltura.org, beuc.eu
+├─ 🗣️ Top voices: @BSteuerzahler, @UlrichSteinbach, @TowarzyszX │ r/europe, r/electricvehicles, r/cars
+└─ 📎 Raw results saved to /private/tmp/rl_raw_20260702/porsche-efuels-synthetic-e-fuels-eu-2035-combustion-engine-raw-v3.md
+---
+<!-- END PASS-THROUGH FOOTER -->

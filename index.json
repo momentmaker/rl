@@ -40,6 +40,7 @@
     244,
     246,
     248,
+    25,
     250,
     252,
     255,
@@ -61,6 +62,8 @@
     311,
     313,
     315,
+    317,
+    319,
     45,
     49,
     56,
@@ -1965,6 +1968,89 @@
       "date": "2026/07/01",
       "slug": "precious-plastic-home-recycling-2026",
       "path": "data/2026/07/01/precious-plastic-home-recycling-2026.md"
+    },
+    {
+      "title": "Porsche eFuels and synthetic fuels: real decarbonization path or greenwashing",
+      "tokens": [
+        "cars",
+        "climate",
+        "decarbonization",
+        "efuels",
+        "engines",
+        "fuel",
+        "fuels",
+        "greenwashing",
+        "path",
+        "porsche",
+        "real",
+        "synthetic"
+      ],
+      "tags": [
+        "efuels",
+        "synthetic-fuel",
+        "engines",
+        "climate",
+        "cars"
+      ],
+      "date": "2026/07/02",
+      "slug": "porsche-efuels-synthetic-fuels",
+      "path": "data/2026/07/02/porsche-efuels-synthetic-fuels.md"
+    },
+    {
+      "title": "The three-generation rule and why most family businesses die",
+      "tokens": [
+        "business",
+        "businesses",
+        "die",
+        "family",
+        "generation",
+        "japan",
+        "longevity",
+        "most",
+        "rule",
+        "shinise",
+        "succession",
+        "three"
+      ],
+      "tags": [
+        "family-business",
+        "succession",
+        "shinise",
+        "japan",
+        "longevity"
+      ],
+      "date": "2026/07/02",
+      "slug": "family-business-third-generation-shinise",
+      "path": "data/2026/07/02/family-business-third-generation-shinise.md"
+    },
+    {
+      "title": "Marine protected areas, 30x30 and paper parks: what makes fish and shark recovery work",
+      "tokens": [
+        "30x30",
+        "areas",
+        "conservation",
+        "fish",
+        "makes",
+        "marine",
+        "ocean",
+        "paper",
+        "parks",
+        "protected",
+        "recovery",
+        "shark",
+        "sharks",
+        "work"
+      ],
+      "tags": [
+        "marine-protected-areas",
+        "conservation",
+        "ocean",
+        "30x30",
+        "sharks"
+      ],
+      "date": "2026/07/02",
+      "slug": "marine-protected-areas-30x30-paper-parks",
+      "path": "data/2026/07/02/marine-protected-areas-30x30-paper-parks.md"
     }
   ]
 }
