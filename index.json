@@ -37,6 +37,7 @@
     235,
     238,
     240,
+    242,
     244,
     246,
     248,
@@ -51,6 +52,7 @@
     27,
     270,
     274,
+    277,
     281,
     287,
     291,
@@ -69,6 +71,7 @@
     56,
     60,
     64,
+    68,
     81,
     83,
     86,
@@ -2051,6 +2054,76 @@
       "date": "2026/07/02",
       "slug": "marine-protected-areas-30x30-paper-parks",
       "path": "data/2026/07/02/marine-protected-areas-30x30-paper-parks.md"
+    },
+    {
+      "title": "Why people quit Anki and spaced repetition",
+      "tokens": [
+        "anki",
+        "habits",
+        "learning",
+        "memory",
+        "people",
+        "quit",
+        "repetition",
+        "spaced"
+      ],
+      "tags": [
+        "learning",
+        "spaced-repetition",
+        "anki",
+        "memory",
+        "habits"
+      ],
+      "date": "2026/07/03",
+      "slug": "anki-spaced-repetition-dropout",
+      "path": "data/2026/07/03/anki-spaced-repetition-dropout.md"
+    },
+    {
+      "title": "AI circular financing and whether the datacenter boom is a bubble",
+      "tokens": [
+        "ai",
+        "boom",
+        "bubble",
+        "circular",
+        "datacenter",
+        "economics",
+        "financing",
+        "nvidia",
+        "whether"
+      ],
+      "tags": [
+        "ai",
+        "bubble",
+        "circular-financing",
+        "economics",
+        "nvidia"
+      ],
+      "date": "2026/07/03",
+      "slug": "ai-circular-financing-bubble",
+      "path": "data/2026/07/03/ai-circular-financing-bubble.md"
+    },
+    {
+      "title": "The em dash as an AI writing tell",
+      "tokens": [
+        "ai",
+        "authenticity",
+        "dash",
+        "detection",
+        "em",
+        "language",
+        "tell",
+        "writing"
+      ],
+      "tags": [
+        "ai-writing",
+        "em-dash",
+        "detection",
+        "authenticity",
+        "language"
+      ],
+      "date": "2026/07/03",
+      "slug": "em-dash-ai-writing-tell",
+      "path": "data/2026/07/03/em-dash-ai-writing-tell.md"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/03",
+  "topics": [
+    {
+      "title": "Why people quit Anki and spaced repetition",
+      "brief_file": "anki-spaced-repetition-dropout.md",
+      "tags": [
+        "learning",
+        "spaced-repetition",
+        "anki",
+        "memory",
+        "habits"
+      ],
+      "connections": []
+    },
+    {
+      "title": "AI circular financing and whether the datacenter boom is a bubble",
+      "brief_file": "ai-circular-financing-bubble.md",
+      "tags": [
+        "ai",
+        "bubble",
+        "circular-financing",
+        "economics",
+        "nvidia"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The em dash as an AI writing tell",
+      "brief_file": "em-dash-ai-writing-tell.md",
+      "tags": [
+        "ai-writing",
+        "em-dash",
+        "detection",
+        "authenticity",
+        "language"
+      ],
+      "connections": []
+    }
+  ]
+}
