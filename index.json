@@ -11,6 +11,7 @@
     131,
     135,
     138,
+    140,
     148,
     155,
     169,
@@ -54,6 +55,7 @@
     274,
     277,
     281,
+    285,
     287,
     291,
     297,
@@ -66,6 +68,7 @@
     315,
     317,
     319,
+    321,
     45,
     49,
     56,
@@ -2124,6 +2127,79 @@
       "date": "2026/07/03",
       "slug": "em-dash-ai-writing-tell",
       "path": "data/2026/07/03/em-dash-ai-writing-tell.md"
+    },
+    {
+      "title": "Costco's anti-Amazon contrarian model",
+      "tokens": [
+        "amazon",
+        "anti",
+        "consumer",
+        "contrarian",
+        "costco",
+        "membership",
+        "model",
+        "retail"
+      ],
+      "tags": [
+        "retail",
+        "costco",
+        "amazon",
+        "membership",
+        "consumer"
+      ],
+      "date": "2026/07/04",
+      "slug": "costco-anti-amazon",
+      "path": "data/2026/07/04/costco-anti-amazon.md"
+    },
+    {
+      "title": "Workslop: AI busywork dumped on coworkers",
+      "tokens": [
+        "ai",
+        "busywork",
+        "coworkers",
+        "culture",
+        "dumped",
+        "productivity",
+        "work",
+        "workslop"
+      ],
+      "tags": [
+        "ai",
+        "work",
+        "productivity",
+        "workslop",
+        "culture"
+      ],
+      "date": "2026/07/04",
+      "slug": "workslop-ai-busywork",
+      "path": "data/2026/07/04/workslop-ai-busywork.md"
+    },
+    {
+      "title": "How demoscene coders fit 3D worlds into 4KB intros",
+      "tokens": [
+        "3d",
+        "4kb",
+        "coders",
+        "coding",
+        "compression",
+        "creative",
+        "demoscene",
+        "fit",
+        "graphics",
+        "intros",
+        "procedural",
+        "worlds"
+      ],
+      "tags": [
+        "demoscene",
+        "creative-coding",
+        "graphics",
+        "procedural",
+        "compression"
+      ],
+      "date": "2026/07/04",
+      "slug": "demoscene-4kb-intros",
+      "path": "data/2026/07/04/demoscene-4kb-intros.md"
     }
   ]
 }

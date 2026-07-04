@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/04",
+  "topics": [
+    {
+      "title": "Costco's anti-Amazon contrarian model",
+      "brief_file": "costco-anti-amazon.md",
+      "tags": [
+        "retail",
+        "costco",
+        "amazon",
+        "membership",
+        "consumer"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Workslop: AI busywork dumped on coworkers",
+      "brief_file": "workslop-ai-busywork.md",
+      "tags": [
+        "ai",
+        "work",
+        "productivity",
+        "workslop",
+        "culture"
+      ],
+      "connections": []
+    },
+    {
+      "title": "How demoscene coders fit 3D worlds into 4KB intros",
+      "brief_file": "demoscene-4kb-intros.md",
+      "tags": [
+        "demoscene",
+        "creative-coding",
+        "graphics",
+        "procedural",
+        "compression"
+      ],
+      "connections": []
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+---
+ready: true
+---
+*Random Learning - 4 July 2026*
+
+Three things I went down the rabbit hole on today.
+
+*1. Why Costco is the "anti-Amazon"*
+The $4.99 rotisserie chicken loses money on purpose - it's a loss-leader to pull you in the door, and it's still the same price it was 30+ years ago. The trick is that Costco barely profits on what it sells you; the actual engine is the membership card. When it raised fees for the first time in 7 years, renewals barely moved (92.1%), because the sunk cost of the card makes you shop to justify it. The other loyalty anchor is Kirkland, the house brand people actively seek out (~$90B in sales, ~15-20% cheaper than national brands at equal quality). The contrast with Amazon landed hard this month: Prime Day order sizes fell ~17% year over year, and shoppers are borrowing Cory Doctorow's word - "enshittification" - for exactly the direction Costco isn't going. There's a sharp counter-take too: some argue the cheap chicken and $1.50 hot dog aren't gifts, they're "traps" engineered to get you inside.
+
+*2. "Workslop" - the AI busywork now getting people in trouble*
+A Stanford/BetterUp study coined the term, and it went mainstream this month: AI-generated work that looks polished but offloads the actual thinking onto whoever receives it. When producing output is nearly free, the thinking gets skipped and dumped downstream. The numbers: ~40% of desk workers hit by it in a month, ~2 hours of rework each time, roughly a $9M/year hidden tax at a 10,000-person company. But workers say the real damage isn't the wasted hours - it's trust. Recipients rate the sender less trustworthy, less capable, and a third don't want to work with them again. The pushback has gone hard: one CEO threatened to fire the next person who sent an unedited ChatGPT email; others banned AI company-wide. The smartest framing is that this is a management failure - "use AI or else" mandates with no quality bar make employees rationally optimize for looking-productive over being-productive. (And yes, the em dash is the tell everyone uses to catch it.)
+
+*3. How demoscene coders fit a whole 3D world into 4KB*
+A "4K intro" is a 4096-byte program that generates an animated 3D world roughly 10,000x larger than itself. The whole trick: ship the recipe, not the result. Instead of storing textures, meshes, and music, you store the code that generates them at launch. The 3D geometry is often one math function (a signed distance field) that a single shader "raymarches" into a scene. The legendary proof is .kkrieger, a 2004 first-person shooter that's 97KB but would be 200-300MB stored normally - its textures are saved as their creation steps, not pixels. The last mile is brutal compression tooling (Crinkler, Shader Minifier) that trades instructions for bytes. And the scene is thriving: 8+ countries now recognize the demoscene as intangible cultural heritage, and parties like Revision 2026 still draw crowds. The honest reason it survives isn't the tech - it's that people made friends who have the same bug.
