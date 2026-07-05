@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/05",
+  "topics": [
+    {
+      "title": "Gaussian splatting vs NeRF: what won for 3D scene capture",
+      "brief_file": "gaussian-splatting-vs-nerf.md",
+      "tags": [
+        "graphics",
+        "gaussian-splatting",
+        "nerf",
+        "3d",
+        "rendering"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why Chinese AI labs publish detailed papers while US labs went closed",
+      "brief_file": "chinese-labs-open-research.md",
+      "tags": [
+        "ai",
+        "research-culture",
+        "open-science",
+        "china",
+        "labs"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The small web and handmade web revival in 2026",
+      "brief_file": "small-web-revival.md",
+      "tags": [
+        "small-web",
+        "indie-web",
+        "handmade",
+        "culture",
+        "internet"
+      ],
+      "connections": []
+    }
+  ]
+}

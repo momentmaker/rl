@@ -47,6 +47,7 @@
     252,
     255,
     259,
+    261,
     264,
     266,
     268,
@@ -58,6 +59,7 @@
     285,
     287,
     291,
+    295,
     297,
     303,
     305,
@@ -69,6 +71,7 @@
     317,
     319,
     321,
+    325,
     45,
     49,
     56,
@@ -2200,6 +2203,84 @@
       "date": "2026/07/04",
       "slug": "demoscene-4kb-intros",
       "path": "data/2026/07/04/demoscene-4kb-intros.md"
+    },
+    {
+      "title": "Gaussian splatting vs NeRF: what won for 3D scene capture",
+      "tokens": [
+        "3d",
+        "capture",
+        "gaussian",
+        "graphics",
+        "nerf",
+        "rendering",
+        "scene",
+        "splatting",
+        "vs",
+        "won"
+      ],
+      "tags": [
+        "graphics",
+        "gaussian-splatting",
+        "nerf",
+        "3d",
+        "rendering"
+      ],
+      "date": "2026/07/05",
+      "slug": "gaussian-splatting-vs-nerf",
+      "path": "data/2026/07/05/gaussian-splatting-vs-nerf.md"
+    },
+    {
+      "title": "Why Chinese AI labs publish detailed papers while US labs went closed",
+      "tokens": [
+        "ai",
+        "china",
+        "chinese",
+        "closed",
+        "culture",
+        "detailed",
+        "labs",
+        "open",
+        "papers",
+        "publish",
+        "research",
+        "science",
+        "us",
+        "went",
+        "while"
+      ],
+      "tags": [
+        "ai",
+        "research-culture",
+        "open-science",
+        "china",
+        "labs"
+      ],
+      "date": "2026/07/05",
+      "slug": "chinese-labs-open-research",
+      "path": "data/2026/07/05/chinese-labs-open-research.md"
+    },
+    {
+      "title": "The small web and handmade web revival in 2026",
+      "tokens": [
+        "2026",
+        "culture",
+        "handmade",
+        "indie",
+        "internet",
+        "revival",
+        "small",
+        "web"
+      ],
+      "tags": [
+        "small-web",
+        "indie-web",
+        "handmade",
+        "culture",
+        "internet"
+      ],
+      "date": "2026/07/05",
+      "slug": "small-web-revival",
+      "path": "data/2026/07/05/small-web-revival.md"
     }
   ]
 }
