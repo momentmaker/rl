@@ -72,6 +72,9 @@
     319,
     321,
     325,
+    327,
+    329,
+    331,
     45,
     49,
     56,
@@ -2281,6 +2284,86 @@
       "date": "2026/07/05",
       "slug": "small-web-revival",
       "path": "data/2026/07/05/small-web-revival.md"
+    },
+    {
+      "title": "Bambu Lab firmware lockdown vs the open 3D-printer legacy",
+      "tokens": [
+        "3d",
+        "bambu",
+        "firmware",
+        "hardware",
+        "lab",
+        "legacy",
+        "lockdown",
+        "open",
+        "printer",
+        "printing",
+        "repair",
+        "reprap",
+        "right",
+        "vs"
+      ],
+      "tags": [
+        "3d-printing",
+        "open-hardware",
+        "bambu",
+        "reprap",
+        "right-to-repair"
+      ],
+      "date": "2026/07/06",
+      "slug": "bambu-open-3d-printing",
+      "path": "data/2026/07/06/bambu-open-3d-printing.md"
+    },
+    {
+      "title": "Why brands turn to junk after private-equity acquisition",
+      "tokens": [
+        "acquisition",
+        "after",
+        "brands",
+        "consumer",
+        "enshittification",
+        "equity",
+        "junk",
+        "private",
+        "shrinkflation",
+        "turn"
+      ],
+      "tags": [
+        "brands",
+        "private-equity",
+        "enshittification",
+        "consumer",
+        "shrinkflation"
+      ],
+      "date": "2026/07/06",
+      "slug": "brands-after-private-equity",
+      "path": "data/2026/07/06/brands-after-private-equity.md"
+    },
+    {
+      "title": "Phantom islands: places mapped for centuries that never existed",
+      "tokens": [
+        "cartography",
+        "centuries",
+        "existed",
+        "folklore",
+        "history",
+        "islands",
+        "mapped",
+        "maps",
+        "never",
+        "phantom",
+        "places"
+      ],
+      "tags": [
+        "maps",
+        "cartography",
+        "history",
+        "phantom-islands",
+        "folklore"
+      ],
+      "date": "2026/07/06",
+      "slug": "phantom-islands",
+      "path": "data/2026/07/06/phantom-islands.md"
     }
   ]
 }

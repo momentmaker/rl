@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/06",
+  "topics": [
+    {
+      "title": "Bambu Lab firmware lockdown vs the open 3D-printer legacy",
+      "brief_file": "bambu-open-3d-printing.md",
+      "tags": [
+        "3d-printing",
+        "open-hardware",
+        "bambu",
+        "reprap",
+        "right-to-repair"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why brands turn to junk after private-equity acquisition",
+      "brief_file": "brands-after-private-equity.md",
+      "tags": [
+        "brands",
+        "private-equity",
+        "enshittification",
+        "consumer",
+        "shrinkflation"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Phantom islands: places mapped for centuries that never existed",
+      "brief_file": "phantom-islands.md",
+      "tags": [
+        "maps",
+        "cartography",
+        "history",
+        "phantom-islands",
+        "folklore"
+      ],
+      "connections": []
+    }
+  ]
+}
