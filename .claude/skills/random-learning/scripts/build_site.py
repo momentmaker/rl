@@ -128,16 +128,14 @@ def split_brief(text: str) -> dict:
     return {"badge": badge, "body": body, "footer": footer_lines, "invitation": invitation}
 
 
-_LAST30DAYS_BRAND_RE = re.compile(
-    r"^(#\s+.+?)(:\s*What\s+the\s+Community\s+Says\s*\(/Last30Days\))?\s*$",
-    re.MULTILINE,
-)
-
-
 def _strip_last30days_branding(body: str) -> str:
-    """Remove the ``: What the Community Says (/Last30Days)`` suffix from the
-    first heading line (typically ``# Title: What the Community Says...``)."""
-    return _LAST30DAYS_BRAND_RE.sub(r"\1", body, count=1)
+    """Remove any leading ``# …`` heading from the body.
+
+    The page already renders the topic title as an ``<h2>`` above the brief
+    (see day.html), so a redundant first-level heading inside the body would
+    duplicate the topic name and add an extra heading level.
+    """
+    return re.sub(r"^#\s+.*$", "", body, count=1, flags=re.MULTILINE).strip()
 
 
 def _render_badge(badge: str | None) -> str:
