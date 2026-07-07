@@ -15,6 +15,7 @@
     148,
     155,
     169,
+    171,
     173,
     176,
     179,
@@ -24,6 +25,7 @@
     19,
     191,
     196,
+    200,
     202,
     204,
     211,
@@ -75,6 +77,7 @@
     327,
     329,
     331,
+    333,
     45,
     49,
     56,
@@ -2364,6 +2367,70 @@
       "date": "2026/07/06",
       "slug": "phantom-islands",
       "path": "data/2026/07/06/phantom-islands.md"
+    },
+    {
+      "title": "AI forecasting bots vs human superforecasters",
+      "tokens": [
+        "ai",
+        "bots",
+        "forecasting",
+        "human",
+        "markets",
+        "prediction",
+        "superforecasters",
+        "vs"
+      ],
+      "tags": [
+        "ai",
+        "forecasting",
+        "prediction-markets"
+      ],
+      "date": "2026/07/07",
+      "slug": "ai-superforecaster-bots",
+      "path": "data/2026/07/07/ai-superforecaster-bots.md"
+    },
+    {
+      "title": "The retro handheld emulation scene: Anbernic, Retroid, MiSTer",
+      "tokens": [
+        "anbernic",
+        "emulation",
+        "fpga",
+        "gaming",
+        "handheld",
+        "mister",
+        "retro",
+        "retroid",
+        "scene"
+      ],
+      "tags": [
+        "retro-gaming",
+        "emulation",
+        "fpga"
+      ],
+      "date": "2026/07/07",
+      "slug": "retro-emulation-handhelds",
+      "path": "data/2026/07/07/retro-emulation-handhelds.md"
+    },
+    {
+      "title": "Generative art after AI image generators",
+      "tokens": [
+        "after",
+        "ai",
+        "art",
+        "coding",
+        "creative",
+        "generative",
+        "generators",
+        "image"
+      ],
+      "tags": [
+        "generative-art",
+        "creative-coding",
+        "ai"
+      ],
+      "date": "2026/07/07",
+      "slug": "generative-art-after-ai",
+      "path": "data/2026/07/07/generative-art-after-ai.md"
     }
   ]
 }

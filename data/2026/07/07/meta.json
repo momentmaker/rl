@@ -1,0 +1,35 @@
+{
+  "date": "2026/07/07",
+  "topics": [
+    {
+      "title": "AI forecasting bots vs human superforecasters",
+      "brief_file": "ai-superforecaster-bots.md",
+      "tags": [
+        "ai",
+        "forecasting",
+        "prediction-markets"
+      ],
+      "connections": []
+    },
+    {
+      "title": "The retro handheld emulation scene: Anbernic, Retroid, MiSTer",
+      "brief_file": "retro-emulation-handhelds.md",
+      "tags": [
+        "retro-gaming",
+        "emulation",
+        "fpga"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Generative art after AI image generators",
+      "brief_file": "generative-art-after-ai.md",
+      "tags": [
+        "generative-art",
+        "creative-coding",
+        "ai"
+      ],
+      "connections": []
+    }
+  ]
+}
