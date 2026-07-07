@@ -87,9 +87,12 @@ def split_brief(text: str) -> dict:
     """Pull the last30days badge, body, source-footer tree, and invitation apart.
 
     The engine emits: a `🌐 last30days …` badge line, the synthesis body, a
-    footer block fenced by `---` that starts with `✅ All agents reported back!`,
+    footer block fenced by `---` that starts with `✅ All agents reported back!`",
     then a short invitation. Briefs without that shape (e.g. plain test fixtures)
     fall through as body-only so rendering never depends on the engine format.
+
+    Strips the `/Last30Days` branding suffix (e.g. ``: What the Community Says``)
+    from the first heading so it never appears on the public site.
     """
     lines = text.splitlines()
     i = 0
@@ -116,13 +119,25 @@ def split_brief(text: str) -> dict:
                 break
 
     if foot_start is None:
-        body = "\n".join(lines[i:]).strip()
+        body = _strip_last30days_branding("\n".join(lines[i:]).strip())
         return {"badge": badge, "body": body, "footer": None, "invitation": ""}
 
-    body = "\n".join(lines[i:foot_start]).strip()
+    body = _strip_last30days_branding("\n".join(lines[i:foot_start]).strip())
     footer_lines = [ln for ln in lines[foot_start + 1:foot_end] if ln.strip()]
     invitation = "\n".join(lines[(foot_end + 1):]).strip() if foot_end else ""
     return {"badge": badge, "body": body, "footer": footer_lines, "invitation": invitation}
+
+
+_LAST30DAYS_BRAND_RE = re.compile(
+    r"^(#\s+.+?)(:\s*What\s+the\s+Community\s+Says\s*\(/Last30Days\))?\s*$",
+    re.MULTILINE,
+)
+
+
+def _strip_last30days_branding(body: str) -> str:
+    """Remove the ``: What the Community Says (/Last30Days)`` suffix from the
+    first heading line (typically ``# Title: What the Community Says...``)."""
+    return _LAST30DAYS_BRAND_RE.sub(r"\1", body, count=1)
 
 
 def _render_badge(badge: str | None) -> str:
