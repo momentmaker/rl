@@ -1,0 +1,46 @@
+{
+  "date": "2026/07/08",
+  "topics": [
+    {
+      "title": "AI bug-hunting vs the slop flood: what OSS maintainers face in 2026",
+      "brief_file": "ai-bug-hunting-slop-reports.md",
+      "tags": [
+        "security",
+        "ai",
+        "open-source",
+        "vulnerabilities",
+        "maintainers"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Local LLMs people actually run in 2026: Mac mini, consumer GPUs, and the frontier gap",
+      "brief_file": "local-llm-consumer-hardware.md",
+      "tags": [
+        "local-models",
+        "llm",
+        "hardware",
+        "inference",
+        "coding"
+      ],
+      "connections": [
+        {
+          "title": "Apple silicon Mac mini and Studio as the local-LLM inference box",
+          "date": "2026/06/25"
+        }
+      ]
+    },
+    {
+      "title": "Organic Maps vs CoMaps: why the privacy-map community split",
+      "brief_file": "organic-maps-comaps-fork.md",
+      "tags": [
+        "maps",
+        "openstreetmap",
+        "privacy",
+        "open-source",
+        "fork"
+      ],
+      "connections": []
+    }
+  ]
+}

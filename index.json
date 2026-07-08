@@ -14,7 +14,9 @@
     140,
     148,
     155,
+    158,
     169,
+    17,
     171,
     173,
     176,
@@ -78,6 +80,7 @@
     329,
     331,
     333,
+    337,
     45,
     49,
     56,
@@ -2431,6 +2434,94 @@
       "date": "2026/07/07",
       "slug": "generative-art-after-ai",
       "path": "data/2026/07/07/generative-art-after-ai.md"
+    },
+    {
+      "title": "AI bug-hunting vs the slop flood: what OSS maintainers face in 2026",
+      "tokens": [
+        "2026",
+        "ai",
+        "bug",
+        "face",
+        "flood",
+        "hunting",
+        "maintainers",
+        "open",
+        "oss",
+        "security",
+        "slop",
+        "source",
+        "vs",
+        "vulnerabilities"
+      ],
+      "tags": [
+        "security",
+        "ai",
+        "open-source",
+        "vulnerabilities",
+        "maintainers"
+      ],
+      "date": "2026/07/08",
+      "slug": "ai-bug-hunting-slop-reports",
+      "path": "data/2026/07/08/ai-bug-hunting-slop-reports.md"
+    },
+    {
+      "title": "Local LLMs people actually run in 2026: Mac mini, consumer GPUs, and the frontier gap",
+      "tokens": [
+        "2026",
+        "actually",
+        "coding",
+        "consumer",
+        "frontier",
+        "gap",
+        "gpus",
+        "hardware",
+        "inference",
+        "llm",
+        "llms",
+        "local",
+        "mac",
+        "mini",
+        "models",
+        "people",
+        "run"
+      ],
+      "tags": [
+        "local-models",
+        "llm",
+        "hardware",
+        "inference",
+        "coding"
+      ],
+      "date": "2026/07/08",
+      "slug": "local-llm-consumer-hardware",
+      "path": "data/2026/07/08/local-llm-consumer-hardware.md"
+    },
+    {
+      "title": "Organic Maps vs CoMaps: why the privacy-map community split",
+      "tokens": [
+        "comaps",
+        "community",
+        "fork",
+        "map",
+        "maps",
+        "open",
+        "openstreetmap",
+        "organic",
+        "privacy",
+        "source",
+        "split",
+        "vs"
+      ],
+      "tags": [
+        "maps",
+        "openstreetmap",
+        "privacy",
+        "open-source",
+        "fork"
+      ],
+      "date": "2026/07/08",
+      "slug": "organic-maps-comaps-fork",
+      "path": "data/2026/07/08/organic-maps-comaps-fork.md"
     }
   ]
 }
