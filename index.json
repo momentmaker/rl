@@ -5,6 +5,7 @@
     103,
     109,
     111,
+    117,
     119,
     125,
     13,
@@ -81,6 +82,8 @@
     331,
     333,
     337,
+    340,
+    342,
     45,
     49,
     56,
@@ -2522,6 +2525,87 @@
       "date": "2026/07/08",
       "slug": "organic-maps-comaps-fork",
       "path": "data/2026/07/08/organic-maps-comaps-fork.md"
+    },
+    {
+      "title": "Japanese train station departure melodies and the composers behind them",
+      "tokens": [
+        "behind",
+        "composers",
+        "culture",
+        "departure",
+        "design",
+        "japan",
+        "japanese",
+        "melodies",
+        "music",
+        "sound",
+        "station",
+        "them",
+        "train",
+        "trains"
+      ],
+      "tags": [
+        "japan",
+        "trains",
+        "music",
+        "sound-design",
+        "culture"
+      ],
+      "date": "2026/07/09",
+      "slug": "eki-melodies-japan-departure-jingles",
+      "path": "data/2026/07/09/eki-melodies-japan-departure-jingles.md"
+    },
+    {
+      "title": "AI agents deleting production databases and the guardrails teams add",
+      "tokens": [
+        "add",
+        "agents",
+        "ai",
+        "databases",
+        "deleting",
+        "guardrails",
+        "production",
+        "safety",
+        "teams"
+      ],
+      "tags": [
+        "ai-agents",
+        "production",
+        "guardrails",
+        "safety",
+        "databases"
+      ],
+      "date": "2026/07/09",
+      "slug": "ai-agents-deleting-production-databases",
+      "path": "data/2026/07/09/ai-agents-deleting-production-databases.md"
+    },
+    {
+      "title": "Self-hosted Slack and Discord alternatives people actually run in 2026",
+      "tokens": [
+        "2026",
+        "actually",
+        "alternatives",
+        "chat",
+        "communication",
+        "discord",
+        "hosted",
+        "matrix",
+        "mattermost",
+        "people",
+        "run",
+        "self",
+        "slack"
+      ],
+      "tags": [
+        "self-hosted",
+        "chat",
+        "matrix",
+        "mattermost",
+        "communication"
+      ],
+      "date": "2026/07/09",
+      "slug": "self-hosted-team-chat-alternatives",
+      "path": "data/2026/07/09/self-hosted-team-chat-alternatives.md"
     }
   ]
 }

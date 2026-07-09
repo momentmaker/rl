@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/09",
+  "topics": [
+    {
+      "title": "Japanese train station departure melodies and the composers behind them",
+      "brief_file": "eki-melodies-japan-departure-jingles.md",
+      "tags": [
+        "japan",
+        "trains",
+        "music",
+        "sound-design",
+        "culture"
+      ],
+      "connections": []
+    },
+    {
+      "title": "AI agents deleting production databases and the guardrails teams add",
+      "brief_file": "ai-agents-deleting-production-databases.md",
+      "tags": [
+        "ai-agents",
+        "production",
+        "guardrails",
+        "safety",
+        "databases"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Self-hosted Slack and Discord alternatives people actually run in 2026",
+      "brief_file": "self-hosted-team-chat-alternatives.md",
+      "tags": [
+        "self-hosted",
+        "chat",
+        "matrix",
+        "mattermost",
+        "communication"
+      ],
+      "connections": []
+    }
+  ]
+}
