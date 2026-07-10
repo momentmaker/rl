@@ -1,0 +1,44 @@
+{
+  "date": "2026/07/10",
+  "topics": [
+    {
+      "title": "Mac mini as an always-on headless home server",
+      "brief_file": "mac-mini-headless-home-server.md",
+      "tags": [
+        "mac-mini",
+        "homelab",
+        "self-hosting",
+        "tailscale",
+        "remote-access",
+        "ai-agents"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Online malware-analysis sandboxes and their traps",
+      "brief_file": "malware-analysis-sandboxes.md",
+      "tags": [
+        "malware",
+        "sandbox",
+        "virustotal",
+        "security",
+        "threat-intel",
+        "ioc"
+      ],
+      "connections": []
+    },
+    {
+      "title": "QR-code phishing (quishing) and how it now beats MFA",
+      "brief_file": "qr-code-phishing-quishing.md",
+      "tags": [
+        "quishing",
+        "qr-code",
+        "phishing",
+        "security",
+        "mfa",
+        "social-engineering"
+      ],
+      "connections": []
+    }
+  ]
+}

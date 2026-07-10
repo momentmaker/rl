@@ -23,6 +23,7 @@
     176,
     179,
     183,
+    185,
     187,
     189,
     19,
@@ -34,6 +35,7 @@
     211,
     213,
     217,
+    219,
     221,
     224,
     226,
@@ -61,6 +63,7 @@
     274,
     277,
     281,
+    283,
     285,
     287,
     291,
@@ -2606,6 +2609,90 @@
       "date": "2026/07/09",
       "slug": "self-hosted-team-chat-alternatives",
       "path": "data/2026/07/09/self-hosted-team-chat-alternatives.md"
+    },
+    {
+      "title": "Mac mini as an always-on headless home server",
+      "tokens": [
+        "access",
+        "agents",
+        "ai",
+        "always",
+        "headless",
+        "home",
+        "homelab",
+        "hosting",
+        "mac",
+        "mini",
+        "remote",
+        "self",
+        "server",
+        "tailscale"
+      ],
+      "tags": [
+        "mac-mini",
+        "homelab",
+        "self-hosting",
+        "tailscale",
+        "remote-access",
+        "ai-agents"
+      ],
+      "date": "2026/07/10",
+      "slug": "mac-mini-headless-home-server",
+      "path": "data/2026/07/10/mac-mini-headless-home-server.md"
+    },
+    {
+      "title": "Online malware-analysis sandboxes and their traps",
+      "tokens": [
+        "analysis",
+        "intel",
+        "ioc",
+        "malware",
+        "online",
+        "sandbox",
+        "sandboxes",
+        "security",
+        "their",
+        "threat",
+        "traps",
+        "virustotal"
+      ],
+      "tags": [
+        "malware",
+        "sandbox",
+        "virustotal",
+        "security",
+        "threat-intel",
+        "ioc"
+      ],
+      "date": "2026/07/10",
+      "slug": "malware-analysis-sandboxes",
+      "path": "data/2026/07/10/malware-analysis-sandboxes.md"
+    },
+    {
+      "title": "QR-code phishing (quishing) and how it now beats MFA",
+      "tokens": [
+        "beats",
+        "code",
+        "engineering",
+        "mfa",
+        "now",
+        "phishing",
+        "qr",
+        "quishing",
+        "security",
+        "social"
+      ],
+      "tags": [
+        "quishing",
+        "qr-code",
+        "phishing",
+        "security",
+        "mfa",
+        "social-engineering"
+      ],
+      "date": "2026/07/10",
+      "slug": "qr-code-phishing-quishing",
+      "path": "data/2026/07/10/qr-code-phishing-quishing.md"
     }
   ]
 }

@@ -1,0 +1,31 @@
+🌐 last30days v3.3.2 · synced 2026-07-10
+
+What I learned:
+
+**"Quishing" is just phishing wearing a QR code, and the reason it works is that the code is an image, not a link.** The framing that keeps coming up is that this is ["the same scam techniques that existed in email for 20 years"](https://www.youtube.com/watch?v=OeaCk1Wz4b8) — only now the malicious URL is baked into a black-and-white square, which does two useful things for the attacker. First, an image sails straight past the URL scanners and link-rewriting that email security gateways rely on, because there's no clickable link to inspect. Second, scanning it hops you from a monitored corporate laptop onto your *personal* phone — off the managed device, off the company network, and away from most of the protections IT set up. As one explainer notes, your phone just asks ["Do you want to open this link?" and most people tap yes without thinking"](https://www.youtube.com/watch?v=Gnset_dnkaU).
+
+**It shows up in two flavors — QR codes emailed to you, and stickers slapped over real ones in the physical world.** The digital version is a QR in an email that ["looks like it's from Microsoft 365 or your company's IT department saying your account needs re-verification"](https://www.youtube.com/watch?v=OeaCk1Wz4b8) — a login lure you're nudged to open on your phone. The physical version is cheaper and sneakier: someone prints a QR sticker and pastes it over the legitimate one on a parking meter, a restaurant table, a poster, or a payment machine. You scan "scan here to pay," land on a page that looks exactly like the parking company's portal, type your card number and CVV, and pay $3 — and only [three hours later](https://www.youtube.com/watch?v=Gnset_dnkaU) does the real charge show up. A [2022 GoSecure study](https://www.youtube.com/watch?v=dcd_K270nw0) found these public-space sticker placements are one of the easiest attacks to pull off, and the FBI issued a public warning about it the same year; the tell is often that the lookalike domain was "registered 48 hours ago in a country you've never visited."
+
+**The 2026 escalation is two things: AI volume and man-in-the-middle kits that beat MFA.** Phishing overall is being mass-produced — [AI phishing "jumped 14x"](https://www.techtimes.com/articles/319720/20260704/ai-phishing-scams-jumped-14x-how-spot-smishing-qr-fraud-voice-clones.htm) across smishing, QR fraud, and voice clones (July 4) — and quishing rode the wave, with QR codes reportedly making up [roughly 12% of tracked phishing emails by 2025](https://www.youtube.com/watch?v=OeaCk1Wz4b8) after jumping five-fold in a single year. The nastier development: Google's June 2026 advisory flagged [AITM-enabled quishing that mirrors a legitimate login flow — "including the MFA challenge — to capture both the password and the active session cookie simultaneously"](https://www.techtimes.com/articles/319720/20260704/ai-phishing-scams-jumped-14x-how-spot-smishing-qr-fraud-voice-clones.htm). In other words the fake page proxies the real one in real time, so completing your MFA prompt hands the attacker a live session anyway. The toolchain is commodity, too — [fake-QR and clone-payment-site kits sell on the dark web for under $50](https://www.youtube.com/watch?v=Gnset_dnkaU) — and real-world abuse is already visible, e.g. China's ["ScanScam," where criminals redirected public QR codes](https://www.sixthtone.com/news/1018752/) to malicious pages.
+
+**The defenses everyone lands on are behavioral, and they're genuinely cheap — the recurring pitch is "10 seconds each."** Nobody's answer is a magic scanner; it's a handful of habits: preview the destination URL your camera surfaces *before* tapping open, and bail if the domain looks off or freshly minted; never enter card or login details on a page you reached by scanning a sticker — go to the official app or type the address yourself; physically check payment-machine and table QR codes for a sticker layered on top (["visible if you actually look for 2 seconds"](https://www.youtube.com/watch?v=OeaCk1Wz4b8)); and treat any unexpected QR in an email — especially an "urgent re-verify your account" one — as hostile by default. As a CompTIA Security+ [walkthrough](https://www.youtube.com/watch?v=MMlMnmOca5E) frames the whole category: social engineering "doesn't attack the computer, it attacks the person reading the screen" — which is exactly why the fix is a pause, not a product.
+
+KEY PATTERNS from the research:
+1. QR bypasses email URL filtering because it's an image, and moves the victim onto an unmanaged personal phone — the two structural reasons quishing works, per [The Cyber Patel](https://www.youtube.com/watch?v=OeaCk1Wz4b8)
+2. Two attack surfaces: QR-in-email login lures (fake M365/IT re-verification) and physical sticker overlays on meters, tables, and payment machines, per [SAFEZEROD](https://www.youtube.com/watch?v=Gnset_dnkaU)
+3. MFA is no longer a backstop — AITM quishing proxies the real login including the MFA prompt to steal the session cookie, per Google's June 2026 advisory via [TechTimes](https://www.techtimes.com/articles/319720/20260704/ai-phishing-scams-jumped-14x-how-spot-smishing-qr-fraud-voice-clones.htm)
+4. It's commodity crime — AI drove a 14x phishing jump and clone-site + fake-QR kits sell for under $50; real cases like China's "[ScanScam](https://www.sixthtone.com/news/1018752/)" are already here
+5. The effective defenses are behavioral and near-free — preview the URL, never pay/login from a scanned sticker, check for overlay stickers, distrust unexpected email QR codes
+
+<!-- PASS-THROUGH FOOTER: emit verbatim in the model response per LAW 5. -->
+---
+✅ All agents reported back!
+├─ 🔵 X: 20 posts │ 24 likes │ 8 reposts
+├─ 🔴 YouTube: 4 videos │ 27 views │ 4/4 with transcripts
+├─ 🟡 HN: 11 storys │ 435 points │ 56 comments
+├─ 🐙 GitHub: 20 items │ 25 reactions │ 64 comments
+├─ 🌐 Web: 3 pages - phishbee-io.up.railway.app, techtimes.com, trueqrcode.com
+├─ 🗣️ Top voices: @siasatpk, @seonho_family, @kumar6575
+└─ 📎 Raw results saved to ~/.cache/rl-raw-2026-07-10/t3q/qr-code-phishing-quishing-in-2026-how-the-attacks-work-now-and-what-actually-stops-people-from-getting-caught-raw.md
+---
+<!-- END PASS-THROUGH FOOTER -->
