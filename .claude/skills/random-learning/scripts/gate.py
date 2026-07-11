@@ -48,12 +48,33 @@ def _normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text.translate(_ZERO_WIDTH).lower())
 
 
+# Hosts that carry the resource's unique id in the query string. Stripping the
+# query for these would collapse distinct items (different HN threads / YouTube
+# videos) onto one host+path, so any brief citing HN/YouTube would false-positive
+# as leaking a saved HN/YouTube entry. Keep the id param for these hosts only.
+_QUERY_ID_HOSTS = {
+    "youtube.com": "v",
+    "m.youtube.com": "v",
+    "news.ycombinator.com": "id",
+}
+
+
 def _canonical_url(url: str) -> str:
-    """Scheme/www/query/trailing-slash-insensitive host+path form for leak matching."""
-    u = url.strip().lower().split("?", 1)[0].split("#", 1)[0]
-    u = re.sub(r"^[a-z]+://", "", u)
-    u = re.sub(r"^www\.", "", u)
-    return u.rstrip("/")
+    """Scheme/www/query/trailing-slash-insensitive host+path form for leak matching.
+
+    For id-in-query hosts (YouTube, HN) the identifying query param is retained,
+    so two different videos/threads do not canonicalize to the same host+path. An
+    exact saved-URL leak still matches (same id); only genuinely different items
+    are told apart.
+    """
+    base = url.strip().lower().split("#", 1)[0]
+    path = re.sub(r"^www\.", "", re.sub(r"^[a-z]+://", "", base.split("?", 1)[0])).rstrip("/")
+    key = _QUERY_ID_HOSTS.get(path.split("/", 1)[0])
+    if key and "?" in base:
+        params = dict(p.split("=", 1) for p in base.split("?", 1)[1].split("&") if "=" in p)
+        if params.get(key):
+            return f"{path}?{key}={params[key]}"
+    return path
 
 
 def _shingle_leak(needle_norm: str, haystack_norm: str, n: int = 5) -> bool:

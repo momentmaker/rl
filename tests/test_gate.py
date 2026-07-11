@@ -153,6 +153,27 @@ def test_privacy_canonical_url_leak_fails(tmp_path):
     assert not gate.run(day, source_urls=["https://www.lawsofsoftwareengineering.com/"]).ok
 
 
+def test_id_in_query_hosts_distinguish_items(tmp_path):
+    # HN threads / YouTube videos carry their id in the query string; a brief citing a
+    # DIFFERENT item than the guarded (saved) one must not false-positive as a leak.
+    day, _ = make_valid_day(tmp_path)
+    (day / "async-in-rust.md").write_text(
+        _brief("Async")
+        + "\nsee https://news.ycombinator.com/item?id=48746914"
+        + " and https://www.youtube.com/watch?v=S4om7JClc30\n"
+    )
+    guarded = [
+        "https://news.ycombinator.com/item?id=47852835",
+        "https://www.youtube.com/watch?v=LF3aUIM57uw",
+    ]
+    assert gate.run(day, source_urls=guarded).ok  # different items -> no leak
+    # ...but citing the EXACT saved item is still caught.
+    (day / "async-in-rust.md").write_text(
+        _brief("Async") + "\nsee https://news.ycombinator.com/item?id=47852835\n"
+    )
+    assert not gate.run(day, source_urls=guarded).ok
+
+
 def test_source_why_leak_fails(tmp_path):
     day, _ = make_valid_day(tmp_path)
     why = "i keep getting confused by pinning and futures"
