@@ -4,6 +4,7 @@
     101,
     103,
     109,
+    11,
     111,
     117,
     119,
@@ -87,12 +88,14 @@
     337,
     340,
     342,
+    38,
     45,
     49,
     56,
     60,
     64,
     68,
+    8,
     81,
     83,
     86,
@@ -2693,6 +2696,88 @@
       "date": "2026/07/10",
       "slug": "qr-code-phishing-quishing",
       "path": "data/2026/07/10/qr-code-phishing-quishing.md"
+    },
+    {
+      "title": "How autonomous AI agents pay each other in 2026",
+      "tokens": [
+        "2026",
+        "agent",
+        "agents",
+        "ai",
+        "autonomous",
+        "crypto",
+        "each",
+        "other",
+        "pay",
+        "payments",
+        "stablecoins",
+        "x402"
+      ],
+      "tags": [
+        "agent-payments",
+        "x402",
+        "stablecoins",
+        "crypto",
+        "agents"
+      ],
+      "date": "2026/07/11",
+      "slug": "agent-to-agent-payments",
+      "path": "data/2026/07/11/agent-to-agent-payments.md"
+    },
+    {
+      "title": "AI image models vs. manga artists: the consent fight over style",
+      "tokens": [
+        "ai",
+        "art",
+        "artists",
+        "consent",
+        "fight",
+        "image",
+        "manga",
+        "mimicry",
+        "models",
+        "over",
+        "slop",
+        "style",
+        "vs"
+      ],
+      "tags": [
+        "ai-art",
+        "manga",
+        "style-mimicry",
+        "consent",
+        "ai-slop"
+      ],
+      "date": "2026/07/11",
+      "slug": "ai-image-models-vs-manga-artists",
+      "path": "data/2026/07/11/ai-image-models-vs-manga-artists.md"
+    },
+    {
+      "title": "Everyone is a token arbitrageur? AI leverage vs the ROI reality",
+      "tokens": [
+        "ai",
+        "arbitrage",
+        "arbitrageur",
+        "economics",
+        "everyone",
+        "leverage",
+        "productivity",
+        "reality",
+        "roi",
+        "token",
+        "vs",
+        "work"
+      ],
+      "tags": [
+        "token-arbitrage",
+        "ai-work",
+        "productivity",
+        "economics",
+        "leverage"
+      ],
+      "date": "2026/07/11",
+      "slug": "token-arbitrage-ai-leverage",
+      "path": "data/2026/07/11/token-arbitrage-ai-leverage.md"
     }
   ]
 }

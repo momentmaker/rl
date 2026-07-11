@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/11",
+  "topics": [
+    {
+      "title": "How autonomous AI agents pay each other in 2026",
+      "brief_file": "agent-to-agent-payments.md",
+      "tags": [
+        "agent-payments",
+        "x402",
+        "stablecoins",
+        "crypto",
+        "agents"
+      ],
+      "connections": []
+    },
+    {
+      "title": "AI image models vs. manga artists: the consent fight over style",
+      "brief_file": "ai-image-models-vs-manga-artists.md",
+      "tags": [
+        "ai-art",
+        "manga",
+        "style-mimicry",
+        "consent",
+        "ai-slop"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Everyone is a token arbitrageur? AI leverage vs the ROI reality",
+      "brief_file": "token-arbitrage-ai-leverage.md",
+      "tags": [
+        "token-arbitrage",
+        "ai-work",
+        "productivity",
+        "economics",
+        "leverage"
+      ],
+      "connections": []
+    }
+  ]
+}
