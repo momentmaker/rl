@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/12",
+  "topics": [
+    {
+      "title": "AI compute governance: can export controls and compute caps throttle frontier AI?",
+      "brief_file": "ai-compute-governance.md",
+      "tags": [
+        "ai",
+        "compute",
+        "governance",
+        "export-controls",
+        "hardware"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Tailwind fatigue and the post-Tailwind CSS stack in 2026",
+      "brief_file": "post-tailwind-css-stack.md",
+      "tags": [
+        "css",
+        "tailwind",
+        "frontend",
+        "build-tools",
+        "tooling"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Running image-generation models locally on your phone or laptop in 2026",
+      "brief_file": "local-image-generation-models.md",
+      "tags": [
+        "image-gen",
+        "local-inference",
+        "on-device",
+        "diffusion",
+        "npu"
+      ],
+      "connections": []
+    }
+  ]
+}

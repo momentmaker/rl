@@ -23,6 +23,7 @@
     173,
     176,
     179,
+    181,
     183,
     185,
     187,
@@ -70,6 +71,7 @@
     291,
     295,
     297,
+    301,
     303,
     305,
     307,
@@ -88,6 +90,7 @@
     337,
     340,
     342,
+    349,
     38,
     45,
     49,
@@ -2778,6 +2781,85 @@
       "date": "2026/07/11",
       "slug": "token-arbitrage-ai-leverage",
       "path": "data/2026/07/11/token-arbitrage-ai-leverage.md"
+    },
+    {
+      "title": "AI compute governance: can export controls and compute caps throttle frontier AI?",
+      "tokens": [
+        "ai",
+        "can",
+        "caps",
+        "compute",
+        "controls",
+        "export",
+        "frontier",
+        "governance",
+        "hardware",
+        "throttle"
+      ],
+      "tags": [
+        "ai",
+        "compute",
+        "governance",
+        "export-controls",
+        "hardware"
+      ],
+      "date": "2026/07/12",
+      "slug": "ai-compute-governance",
+      "path": "data/2026/07/12/ai-compute-governance.md"
+    },
+    {
+      "title": "Tailwind fatigue and the post-Tailwind CSS stack in 2026",
+      "tokens": [
+        "2026",
+        "build",
+        "css",
+        "fatigue",
+        "frontend",
+        "post",
+        "stack",
+        "tailwind",
+        "tooling",
+        "tools"
+      ],
+      "tags": [
+        "css",
+        "tailwind",
+        "frontend",
+        "build-tools",
+        "tooling"
+      ],
+      "date": "2026/07/12",
+      "slug": "post-tailwind-css-stack",
+      "path": "data/2026/07/12/post-tailwind-css-stack.md"
+    },
+    {
+      "title": "Running image-generation models locally on your phone or laptop in 2026",
+      "tokens": [
+        "2026",
+        "device",
+        "diffusion",
+        "gen",
+        "generation",
+        "image",
+        "inference",
+        "laptop",
+        "local",
+        "locally",
+        "models",
+        "npu",
+        "phone",
+        "running"
+      ],
+      "tags": [
+        "image-gen",
+        "local-inference",
+        "on-device",
+        "diffusion",
+        "npu"
+      ],
+      "date": "2026/07/12",
+      "slug": "local-image-generation-models",
+      "path": "data/2026/07/12/local-image-generation-models.md"
     }
   ]
 }
