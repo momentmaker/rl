@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic Archive · Random Learning</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0c0a09;
+    color: #cdbfa8;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+  canvas { display: block; }
+  #info {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.6s;
+    z-index: 10;
+  }
+  #info h1 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #6f6657;
+  }
+  #info p {
+    font-size: 0.7rem;
+    color: #4a3d2c;
+    margin-top: 0.3rem;
+  }
+  #credit {
+    position: fixed;
+    bottom: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    color: #2a241e;
+    letter-spacing: 0.15em;
+    pointer-events: none;
+    z-index: 10;
+  }
+  #tooltip {
+    position: fixed;
+    pointer-events: none;
+    z-index: 20;
+    background: rgba(12, 10, 9, 0.94);
+    border: 1px solid rgba(180, 84, 31, 0.5);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    max-width: 320px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    backdrop-filter: blur(8px);
+  }
+  #tooltip.visible { opacity: 1; }
+  #tooltip .tt-title {
+    color: #f4c79a;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
+  }
+  #tooltip .tt-date {
+    color: #6f6657;
+    font-size: 0.7rem;
+  }
+  #tooltip .tt-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+  }
+  #tooltip .tt-tag {
+    background: #1f1914;
+    color: #b4541f;
+    font-size: 0.55rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="info">
+  <h1>✦ Cosmic Archive ✦</h1>
+  <p>hover to explore · click to read</p>
+</div>
+
+<div id="tooltip"></div>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const tooltip = document.getElementById('tooltip');
+const info = document.getElementById('info');
+
+let W, H;
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+const DATA = [
+{"t": "Conway's Law in the age of AI agents", "d": "2026/06/07", "tag": "conways-law,org-design,ai-agents,microservices"},
+{"t": "How fairy tales got sanitized: the dark original Pinocchio", "d": "2026/06/07", "tag": "fairy-tales,grimm,pinocchio,sanitization,culture"},
+{"t": "Sogo shosha and why Buffett bet on Japanese trading houses", "d": "2026/06/07", "tag": "sogo-shosha,buffett,japan-business,investing"},
+{"t": "The 1,200-year Kyoto cherry blossom record and climate change", "d": "2026/06/08", "tag": "cherry-blossoms,phenology,climate-change,kyoto,japan"},
+{"t": "The hippie trail and its revival: overland London to India", "d": "2026/06/08", "tag": "hippie-trail,overland-travel,india,history,adventures-overland"},
+{"t": "The history of pigments: colors once worth more than gold", "d": "2026/06/08", "tag": "pigments,color,art-history,ultramarine,chemistry"},
+{"t": "Do mineral hot springs actually do anything? The balneotherapy evidence and the geology", "d": "2026/06/09", "tag": "hot-springs,balneotherapy,geothermal,geology,wellness"},
+{"t": "What sand really is, and why the world is running out of it", "d": "2026/06/09", "tag": "sand,geology,sand-mining,microscopy,environment"},
+{"t": "How Japanese konbini conquered convenience, from Toshifumi Suzuki to 7-Eleven", "d": "2026/06/09", "tag": "konbini,seven-eleven,japan,retail,toshifumi-suzuki"},
+{"t": "What we still don't understand about gravity: quantum gravity, dark matter, and MOND", "d": "2026/06/10", "tag": "gravity,quantum-gravity,dark-matter,mond,physics"},
+{"t": "The Sovereign Individual: why crypto and tech keep citing a 1997 book", "d": "2026/06/10", "tag": "sovereign-individual,crypto,digital-sovereignty,books,libertarian"},
+{"t": "What makes technical denim and performance fabrics actually work", "d": "2026/06/10", "tag": "textiles,denim,elastane,materials-science,apparel"},
+{"t": "AlphaFold and Isomorphic Labs: what AI drug discovery has actually delivered", "d": "2026/06/11", "tag": "alphafold,isomorphic-labs,drug-discovery,deepmind,biology"},
+{"t": "Flock Safety's license-plate-reader network and the 2026 surveillance backlash", "d": "2026/06/11", "tag": "flock-safety,alpr,surveillance,privacy,policing"},
+{"t": "Why airline loyalty programs are worth more than the airlines themselves", "d": "2026/06/11", "tag": "loyalty-programs,airlines,frequent-flyer,spirit-airlines,aviation"},
+{"t": "The aesthetic-usability effect and why polished interfaces earn trust", "d": "2026/06/12", "tag": "ux,design,aesthetic-usability,dark-patterns,usability"},
+{"t": "Building a home GPU server in 2026: build versus rent", "d": "2026/06/12", "tag": "gpu,homelab,local-llm,hardware,cost"},
+{"t": "How addiction rewires the brain and how habits actually break", "d": "2026/06/12", "tag": "addiction,recovery,dopamine,habits,neuroscience"},
+{"t": "Why third places collapsed and what is actually reviving in-person community", "d": "2026/06/13", "tag": "third-places,community,loneliness,urbanism,libraries"},
+{"t": "What hikers and Camino pilgrims actually use for offline navigation", "d": "2026/06/13", "tag": "navigation,offline-maps,hiking,gps,satellite-sos"},
+{"t": "The 2026 sweepstakes-casino crackdown and the regulatory-arbitrage playbook", "d": "2026/06/13", "tag": "gambling,regulation,sweepstakes,legal,fintech"},
+{"t": "AI data centers, the power grid, and who pays your electricity bill", "d": "2026/06/14", "tag": "data-centers,electricity,power-grid,ratepayers,ai-boom"},
+{"t": "Why rural Japanese train lines keep getting discontinued", "d": "2026/06/14", "tag": "japan,railways,depopulation,rural,brt"},
+{"t": "What makes a data-visualization project go viral and hit the HN front page", "d": "2026/06/14", "tag": "data-visualization,hacker-news,virality,design,web-performance"},
+{"t": "Running a kabushiki kaisha in Japan as a foreigner after the 2025 visa reform", "d": "2026/06/15", "tag": "japan,kabushiki-kaisha,business-manager-visa,incorporation,foreigners"},
+{"t": "What companies that kept the four-day workweek say about productivity and revenue", "d": "2026/06/15", "tag": "four-day-week,productivity,work,labor,results"},
+{"t": "How car owners actually stop keyless relay-attack and CAN-injection car theft", "d": "2026/06/15", "tag": "keyless-entry,relay-attack,car-theft,security,defense"},
+{"t": "AI adoption in 2026 is bifurcating, not stalling", "d": "2026/06/16", "tag": "ai,adoption,enterprise,public-opinion,labor"},
+{"t": "What people actually get from Stoicism in 2026", "d": "2026/06/16", "tag": "stoicism,philosophy,self-help,ryan-holiday"},
+{"t": "Co-living in 2026: investment product versus loneliness response", "d": "2026/06/16", "tag": "cohousing,co-living,housing,community,loneliness"},
+{"t": "If you get carsick reading, the patch wins and Apple's Vehicle Motion Cues is a real first try", "d": "2026/06/17", "tag": "motion-sickness,sensory,vestibular,accessibility,apple"},
+{"t": "Fake recruiter coding tests now run malware the moment you clone the repo", "d": "2026/06/17", "tag": "security,malware,supply-chain,social-engineering,developers"},
+{"t": "Beating phone autopilot is friction and a richer offline life, not deleting apps", "d": "2026/06/17", "tag": "attention,digital-minimalism,focus,psychology,habits"},
+{"t": "What people in AI-heavy jobs say is actually safe from automation", "d": "2026/06/18", "tag": "ai,future-of-work,skills,human-premium,judgment"},
+{"t": "Bossware and AI productivity-surveillance backlash", "d": "2026/06/18", "tag": "surveillance,workplace,privacy,labor,ai-training"},
+{"t": "Version control for large game and binary assets", "d": "2026/06/18", "tag": "version-control,gamedev,binary-storage,perforce,git"},
+{"t": "AI-generated papers and fabricated citations in peer review", "d": "2026/06/19", "tag": "ai,science,publishing,peer-review,citations"},
+{"t": "Where classical computer vision still beats deep learning (OpenCV 5)", "d": "2026/06/19", "tag": "computer-vision,opencv,deep-learning,edge,classical-cv"},
+{"t": "Shared-presence web toys and live multiplayer cursors", "d": "2026/06/19", "tag": "web,multiplayer,presence,indie-web,games"},
+{"t": "Aperiodic monotiles: the hat and spectre tile in physics and materials", "d": "2026/06/20", "tag": "math,tiling,geometry,physics,materials"},
+{"t": "Open-source text-to-speech in 2026 versus ElevenLabs", "d": "2026/06/20", "tag": "tts,open-source,voice-ai,speech,local-ai"},
+{"t": "OpenStreetMap versus Google Maps in 2026", "d": "2026/06/20", "tag": "openstreetmap,maps,geospatial,open-data,google"},
+{"t": "Japanese railways as real estate empires and land-value capture", "d": "2026/06/21", "tag": "railways,real-estate,land-value-capture,urbanism,japan"},
+{"t": "Context rot: why long-context LLMs underuse their window", "d": "2026/06/21", "tag": "llm,context-window,context-rot,evaluation,ai-infra"},
+{"t": "Generative UI in 2026: AI interfaces that assemble per task", "d": "2026/06/21", "tag": "generative-ui,ai-native,interface,frontend,design"},
+{"t": "The collapsing economics of how-to and self-help book publishing as readers ask AI instead", "d": "2026/06/22", "tag": "publishing,self-help,ai,economics,nonfiction"},
+{"t": "Link rot and the digital dark age: how much of the web has already vanished", "d": "2026/06/22", "tag": "link-rot,web-archiving,digital-preservation,internet-archive"},
+{"t": "Full-body AI health scanners and longevity screening: hype versus evidence", "d": "2026/06/22", "tag": "health-scanning,longevity,mri,ai,wellness"},
+{"t": "Prompt injection attacks on AI agents in 2026 and which defenses actually hold up", "d": "2026/06/23", "tag": "prompt-injection,ai-agents,security,defense"},
+{"t": "What people say about Kagi search in 2026 \u2014 paying to escape Google's AI slop", "d": "2026/06/23", "tag": "search,google,ai-slop,kagi,alternatives"},
+{"t": "Why 1-bit and dithered pixel art is having a revival in 2026", "d": "2026/06/23", "tag": "1-bit,dithering,pixel-art,aesthetics,retro"},
+{"t": "What makes a hand-drawn imaginary city map feel alive", "d": "2026/06/24", "tag": "maps,worldbuilding,cartography,art"},
+{"t": "Structured data and llms.txt for AI agents reading your website", "d": "2026/06/24", "tag": "structured-data,ai-agents,schema,web,llms-txt"},
+{"t": "Edo Japan's circular economy: zero-waste by necessity", "d": "2026/06/24", "tag": "edo,circular-economy,sustainability,history,recycling"},
+{"t": "Apple silicon Mac mini and Studio as the local-LLM inference box", "d": "2026/06/25", "tag": "apple-silicon,local-llm,mac-mini,mac-studio,hardware,inference"},
+{"t": "Designing nuclear-waste warning markers to survive deep time", "d": "2026/06/25", "tag": "nuclear-semiotics,warning-symbols,design,long-now,communication,deep-time"},
+{"t": "Game preservation and console emulation after Nintendo crackdowns", "d": "2026/06/25", "tag": "game-preservation,emulation,wasm,dmca,nintendo,roms"},
+{"t": "Why anime animators are paid so little and the production-committee economics behind it", "d": "2026/06/26", "tag": "anime,animation,labor,wages,production-committee,japan"},
+{"t": "The 2026 revival of personal blogs, blogrolls and RSS as algorithm-free discovery", "d": "2026/06/26", "tag": "indieweb,blogs,blogroll,rss,discovery,small-web"},
+{"t": "Driver's licenses in Apple and Google Wallet and the 'No Phone Home' privacy fight", "d": "2026/06/26", "tag": "digital-id,mdl,wallet,privacy,identity,no-phone-home"},
+{"t": "Functional ultrasound neuroimaging vs fMRI", "d": "2026/06/27", "tag": "neuroscience,ultrasound,brain-imaging,fmri,bci"},
+{"t": "The who-is-online presence layer revival on personal sites", "d": "2026/06/27", "tag": "indie-web,presence,real-time,websites,privacy"},
+{"t": "Offline-first hiking navigation apps people trust", "d": "2026/06/27", "tag": "hiking,navigation,offline-maps,privacy,openstreetmap"},
+{"t": "Rucking \u2014 weighted walking as low-injury cardio", "d": "2026-06-29", "tag": "rucking,fitness,walking,health,footwear"},
+{"t": "Double-entry ledgers as the source of truth in fintech", "d": "2026-06-29", "tag": "fintech,ledger,double-entry,idempotency,engineering"},
+{"t": "Traditional Japanese nail-free timber joinery", "d": "2026-06-29", "tag": "japan,joinery,woodworking,architecture,seismic"},
+{"t": "Default alive bootstrapping vs raising VC in the AI era", "d": "2026/06/30", "tag": "bootstrapping,vc,startups,default-alive,ai"},
+{"t": "Why Texans treat H-E-B as more than a grocery store", "d": "2026/06/30", "tag": "heb,grocery,corporate-culture,disaster-response,employee-ownership"},
+{"t": "Proof-of-personhood and proving you are human online", "d": "2026/06/30", "tag": "proof-of-personhood,identity,ai-slop,verification,passkeys"},
+{"t": "Why mugicha (barley tea) is what Japan drinks all summer", "d": "2026/07/01", "tag": "mugicha,barley-tea,japan,summer-drink,hydration"},
+{"t": "Why almost everyone thinks they are a rare outlier", "d": "2026/07/01", "tag": "psychology,illusory-superiority,false-uniqueness,cognitive-bias,statistics"},
+{"t": "Precious Plastic's crisis and whether home recycling is worth it", "d": "2026/07/01", "tag": "precious-plastic,recycling,open-source,diy,sustainability"},
+{"t": "Porsche eFuels and synthetic fuels: real decarbonization path or greenwashing", "d": "2026/07/02", "tag": "efuels,synthetic-fuel,engines,climate,cars"},
+{"t": "The three-generation rule and why most family businesses die", "d": "2026/07/02", "tag": "family-business,succession,shinise,japan,longevity"},
+{"t": "Marine protected areas, 30x30 and paper parks: what makes fish and shark recovery work", "d": "2026/07/02", "tag": "marine-protected-areas,conservation,ocean,30x30,sharks"},
+{"t": "Why people quit Anki and spaced repetition", "d": "2026/07/03", "tag": "learning,spaced-repetition,anki,memory,habits"},
+{"t": "AI circular financing and whether the datacenter boom is a bubble", "d": "2026/07/03", "tag": "ai,bubble,circular-financing,economics,nvidia"},
+{"t": "The em dash as an AI writing tell", "d": "2026/07/03", "tag": "ai-writing,em-dash,detection,authenticity,language"},
+{"t": "Costco's anti-Amazon contrarian model", "d": "2026/07/04", "tag": "retail,costco,amazon,membership,consumer"},
+{"t": "Workslop: AI busywork dumped on coworkers", "d": "2026/07/04", "tag": "ai,work,productivity,workslop,culture"},
+{"t": "How demoscene coders fit 3D worlds into 4KB intros", "d": "2026/07/04", "tag": "demoscene,creative-coding,graphics,procedural,compression"},
+{"t": "Gaussian splatting vs NeRF: what won for 3D scene capture", "d": "2026/07/05", "tag": "graphics,gaussian-splatting,nerf,3d,rendering"},
+{"t": "Why Chinese AI labs publish detailed papers while US labs went closed", "d": "2026/07/05", "tag": "ai,research-culture,open-science,china,labs"},
+{"t": "The small web and handmade web revival in 2026", "d": "2026/07/05", "tag": "small-web,indie-web,handmade,culture,internet"},
+{"t": "Bambu Lab firmware lockdown vs the open 3D-printer legacy", "d": "2026/07/06", "tag": "3d-printing,open-hardware,bambu,reprap,right-to-repair"},
+{"t": "Why brands turn to junk after private-equity acquisition", "d": "2026/07/06", "tag": "brands,private-equity,enshittification,consumer,shrinkflation"},
+{"t": "Phantom islands: places mapped for centuries that never existed", "d": "2026/07/06", "tag": "maps,cartography,history,phantom-islands,folklore"},
+{"t": "AI forecasting bots vs human superforecasters", "d": "2026/07/07", "tag": "ai,forecasting,prediction-markets"},
+{"t": "The retro handheld emulation scene: Anbernic, Retroid, MiSTer", "d": "2026/07/07", "tag": "retro-gaming,emulation,fpga"},
+{"t": "Generative art after AI image generators", "d": "2026/07/07", "tag": "generative-art,creative-coding,ai"},
+{"t": "AI bug-hunting vs the slop flood: what OSS maintainers face in 2026", "d": "2026/07/08", "tag": "security,ai,open-source,vulnerabilities,maintainers"},
+{"t": "Local LLMs people actually run in 2026: Mac mini, consumer GPUs, and the frontier gap", "d": "2026/07/08", "tag": "local-models,llm,hardware,inference,coding"},
+{"t": "Organic Maps vs CoMaps: why the privacy-map community split", "d": "2026/07/08", "tag": "maps,openstreetmap,privacy,open-source,fork"},
+{"t": "Japanese train station departure melodies and the composers behind them", "d": "2026/07/09", "tag": "japan,trains,music,sound-design,culture"},
+{"t": "AI agents deleting production databases and the guardrails teams add", "d": "2026/07/09", "tag": "ai-agents,production,guardrails,safety,databases"},
+{"t": "Self-hosted Slack and Discord alternatives people actually run in 2026", "d": "2026/07/09", "tag": "self-hosted,chat,matrix,mattermost,communication"},
+{"t": "Mac mini as an always-on headless home server", "d": "2026/07/10", "tag": "mac-mini,homelab,self-hosting,tailscale,remote-access,ai-agents"},
+{"t": "Online malware-analysis sandboxes and their traps", "d": "2026/07/10", "tag": "malware,sandbox,virustotal,security,threat-intel,ioc"},
+{"t": "QR-code phishing (quishing) and how it now beats MFA", "d": "2026/07/10", "tag": "quishing,qr-code,phishing,security,mfa,social-engineering"},
+{"t": "How autonomous AI agents pay each other in 2026", "d": "2026/07/11", "tag": "agent-payments,x402,stablecoins,crypto,agents"},
+{"t": "AI image models vs. manga artists: the consent fight over style", "d": "2026/07/11", "tag": "ai-art,manga,style-mimicry,consent,ai-slop"},
+{"t": "Everyone is a token arbitrageur? AI leverage vs the ROI reality", "d": "2026/07/11", "tag": "token-arbitrage,ai-work,productivity,economics,leverage"},
+{"t": "AI compute governance: can export controls and compute caps throttle frontier AI?", "d": "2026/07/12", "tag": "ai,compute,governance,export-controls,hardware"},
+{"t": "Tailwind fatigue and the post-Tailwind CSS stack in 2026", "d": "2026/07/12", "tag": "css,tailwind,frontend,build-tools,tooling"},
+{"t": "Running image-generation models locally on your phone or laptop in 2026", "d": "2026/07/12", "tag": "image-gen,local-inference,on-device,diffusion,npu"}
+]; 
+
+let stars = [];
+let bgStars = [];
+let hoveredStar = null;
+let time = 0;
+let mouseX = 0, mouseY = 0;
+
+function init() {
+  const n = DATA.length;
+  const cx = W / 2, cy = H / 2;
+  const maxR = Math.min(W, H) * 0.36;
+  
+  stars = DATA.map((t, i) => {
+    const angle = i * 2.3999;
+    const r = maxR * (0.25 + 0.75 * (i / n));
+    return {
+      title: t.t,
+      date: t.d,
+      tags: t.tag ? t.tag.split(',') : [],
+      x: cx + Math.cos(angle) * r + (Math.random() - 0.5) * 15,
+      y: cy + Math.sin(angle) * r + (Math.random() - 0.5) * 15,
+      baseRadius: 2.5 + ((i * 7) % 4),
+      pulse: (i * 2.094) % (Math.PI * 2),
+      href: '/' + t.d.replace(/\//g, '/') + '/'
+    };
+  });
+
+  bgStars = [];
+  for (let i = 0; i < 350; i++) {
+    bgStars.push({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: 0.2 + Math.random() * 0.8,
+      b: 0.2 + Math.random() * 0.5
+    });
+  }
+}
+
+function draw() {
+  time += 0.003;
+  
+  ctx.clearRect(0, 0, W, H);
+
+  const grad = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, Math.max(W, H) * 0.6);
+  grad.addColorStop(0, '#1a1410');
+  grad.addColorStop(0.5, '#0e0b09');
+  grad.addColorStop(1, '#060403');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  for (const s of bgStars) {
+    const tw = 0.5 + 0.5 * Math.sin(time * 2 + s.x * 0.01 + s.y * 0.01);
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r * tw, 0, Math.PI * 2);
+    ctx.fillStyle = ;
+    ctx.fill();
+  }
+
+  for (let i = 0; i < stars.length; i++) {
+    for (let j = i + 1; j < stars.length; j++) {
+      const shared = stars[i].tags.filter(t => stars[j].tags.includes(t));
+      if (shared.length === 0) continue;
+      const dx = stars[i].x - stars[j].x;
+      const dy = stars[i].y - stars[j].y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist > 280) continue;
+      const alpha = Math.min(0.2, shared.length * 0.05);
+      ctx.strokeStyle = ;
+      ctx.lineWidth = 0.5;
+      ctx.beginPath();
+      ctx.moveTo(stars[i].x, stars[i].y);
+      ctx.lineTo(stars[j].x, stars[j].y);
+      ctx.stroke();
+    }
+  }
+
+  for (const star of stars) {
+    const glow = 0.4 + 0.6 * (0.5 + 0.5 * Math.sin(time * 2 + star.pulse));
+    const r = star.baseRadius * (0.8 + 0.4 * glow);
+    
+    const grd = ctx.createRadialGradient(star.x, star.y, 0, star.x, star.y, r * 5);
+    grd.addColorStop(0, );
+    grd.addColorStop(1, 'rgba(244, 199, 154, 0)');
+    ctx.fillStyle = grd;
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, r * 5, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = ;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, r * 0.35, 0, Math.PI * 2);
+    ctx.fillStyle = '#f4c79a';
+    ctx.fill();
+  }
+
+  requestAnimationFrame(draw);
+}
+
+canvas.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  
+  let found = null;
+  for (const star of stars) {
+    const dx = mouseX - star.x;
+    const dy = mouseY - star.y;
+    if (dx * dx + dy * dy < 324) {
+      found = star;
+      break;
+    }
+  }
+
+  if (found !== hoveredStar) {
+    hoveredStar = found;
+    info.style.opacity = found ? '0' : '1';
+    if (found) {
+      tooltip.innerHTML =         '<div class="tt-title">✦ ' + found.title + '</div>' +         '<div class="tt-date">' + found.date + '</div>' +         (found.tags.length ? '<div class="tt-tags">' + found.tags.map(t => '<span class="tt-tag">' + t + '</span>').join('') + '</div>' : '');
+      tooltip.classList.add('visible');
+    } else {
+      tooltip.classList.remove('visible');
+    }
+  }
+
+  if (found) {
+    tooltip.style.left = Math.min(e.clientX + 20, W - 340) + 'px';
+    tooltip.style.top = Math.max(24, e.clientY - 10) + 'px';
+    canvas.style.cursor = 'pointer';
+  } else {
+    canvas.style.cursor = 'default';
+  }
+});
+
+canvas.addEventListener('click', () => {
+  if (hoveredStar) window.open('/' + hoveredStar.date.replace(/-/g, '/') + '/#' + hoveredStar.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, ''), '_blank');
+});
+
+init();
+draw();
+</script>
+</body>
+</html>
