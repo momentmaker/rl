@@ -15,6 +15,7 @@
     138,
     140,
     148,
+    15,
     155,
     158,
     169,
@@ -90,11 +91,13 @@
     337,
     340,
     342,
+    344,
     349,
     38,
     45,
     49,
     56,
+    58,
     60,
     64,
     68,
@@ -2860,6 +2863,88 @@
       "date": "2026/07/12",
       "slug": "local-image-generation-models",
       "path": "data/2026/07/12/local-image-generation-models.md"
+    },
+    {
+      "title": "Sonic branding: how brands design their audio logos and signature sounds",
+      "tokens": [
+        "audio",
+        "brand",
+        "branding",
+        "brands",
+        "design",
+        "logos",
+        "marketing",
+        "signature",
+        "sonic",
+        "sound",
+        "sounds",
+        "their"
+      ],
+      "tags": [
+        "sound-branding",
+        "audio",
+        "marketing",
+        "design",
+        "brand"
+      ],
+      "date": "2026/07/13",
+      "slug": "sonic-branding-audio-identity",
+      "path": "data/2026/07/13/sonic-branding-audio-identity.md"
+    },
+    {
+      "title": "Taste and discernment as the scarce skill in the age of AI coding",
+      "tokens": [
+        "age",
+        "ai",
+        "coding",
+        "craft",
+        "discernment",
+        "engineering",
+        "judgment",
+        "scarce",
+        "skill",
+        "software",
+        "taste"
+      ],
+      "tags": [
+        "ai",
+        "taste",
+        "judgment",
+        "craft",
+        "software-engineering"
+      ],
+      "date": "2026/07/13",
+      "slug": "taste-discernment-ai-era",
+      "path": "data/2026/07/13/taste-discernment-ai-era.md"
+    },
+    {
+      "title": "In-browser video editors with WebCodecs: client-side, no-upload media processing",
+      "tokens": [
+        "browser",
+        "client",
+        "dev",
+        "editors",
+        "first",
+        "local",
+        "media",
+        "no",
+        "processing",
+        "side",
+        "upload",
+        "video",
+        "web",
+        "webcodecs"
+      ],
+      "tags": [
+        "webcodecs",
+        "browser",
+        "video",
+        "local-first",
+        "web-dev"
+      ],
+      "date": "2026/07/13",
+      "slug": "webcodecs-in-browser-video",
+      "path": "data/2026/07/13/webcodecs-in-browser-video.md"
     }
   ]
 }

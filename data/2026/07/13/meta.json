@@ -1,0 +1,41 @@
+{
+  "date": "2026/07/13",
+  "topics": [
+    {
+      "title": "Sonic branding: how brands design their audio logos and signature sounds",
+      "brief_file": "sonic-branding-audio-identity.md",
+      "tags": [
+        "sound-branding",
+        "audio",
+        "marketing",
+        "design",
+        "brand"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Taste and discernment as the scarce skill in the age of AI coding",
+      "brief_file": "taste-discernment-ai-era.md",
+      "tags": [
+        "ai",
+        "taste",
+        "judgment",
+        "craft",
+        "software-engineering"
+      ],
+      "connections": []
+    },
+    {
+      "title": "In-browser video editors with WebCodecs: client-side, no-upload media processing",
+      "brief_file": "webcodecs-in-browser-video.md",
+      "tags": [
+        "webcodecs",
+        "browser",
+        "video",
+        "local-first",
+        "web-dev"
+      ],
+      "connections": []
+    }
+  ]
+}
