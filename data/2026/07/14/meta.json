@@ -1,0 +1,44 @@
+{
+  "date": "2026/07/14",
+  "topics": [
+    {
+      "title": "The Billion Dollar PDF: documents that crystallize an era and move markets",
+      "brief_file": "billion-dollar-pdf.md",
+      "tags": [
+        "investing",
+        "mental-models",
+        "attention",
+        "documents",
+        "ideas"
+      ],
+      "slug": "billion-dollar-pdf",
+      "connections": []
+    },
+    {
+      "title": "Comprehensible input and immersion for language learning in 2026",
+      "brief_file": "comprehensible-input-language-learning.md",
+      "tags": [
+        "language-learning",
+        "comprehensible-input",
+        "immersion",
+        "ai-tutors",
+        "study"
+      ],
+      "slug": "comprehensible-input-language-learning",
+      "connections": []
+    },
+    {
+      "title": "Synthetic data vs human-labeled data: the bifurcating AI data supply chain",
+      "brief_file": "synthetic-vs-human-data.md",
+      "tags": [
+        "synthetic-data",
+        "annotation",
+        "training-data",
+        "ai",
+        "data-quality"
+      ],
+      "slug": "synthetic-vs-human-data",
+      "connections": []
+    }
+  ]
+}

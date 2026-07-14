@@ -56,6 +56,7 @@
     250,
     252,
     255,
+    257,
     259,
     261,
     264,
@@ -93,6 +94,8 @@
     342,
     344,
     349,
+    351,
+    353,
     38,
     45,
     49,
@@ -2945,6 +2948,85 @@
       "date": "2026/07/13",
       "slug": "webcodecs-in-browser-video",
       "path": "data/2026/07/13/webcodecs-in-browser-video.md"
+    },
+    {
+      "title": "The Billion Dollar PDF: documents that crystallize an era and move markets",
+      "tokens": [
+        "attention",
+        "billion",
+        "crystallize",
+        "documents",
+        "dollar",
+        "era",
+        "ideas",
+        "investing",
+        "markets",
+        "mental",
+        "models",
+        "move",
+        "pdf"
+      ],
+      "tags": [
+        "investing",
+        "mental-models",
+        "attention",
+        "documents",
+        "ideas"
+      ],
+      "date": "2026/07/14",
+      "slug": "billion-dollar-pdf",
+      "path": "data/2026/07/14/billion-dollar-pdf.md"
+    },
+    {
+      "title": "Comprehensible input and immersion for language learning in 2026",
+      "tokens": [
+        "2026",
+        "ai",
+        "comprehensible",
+        "immersion",
+        "input",
+        "language",
+        "learning",
+        "study",
+        "tutors"
+      ],
+      "tags": [
+        "language-learning",
+        "comprehensible-input",
+        "immersion",
+        "ai-tutors",
+        "study"
+      ],
+      "date": "2026/07/14",
+      "slug": "comprehensible-input-language-learning",
+      "path": "data/2026/07/14/comprehensible-input-language-learning.md"
+    },
+    {
+      "title": "Synthetic data vs human-labeled data: the bifurcating AI data supply chain",
+      "tokens": [
+        "ai",
+        "annotation",
+        "bifurcating",
+        "chain",
+        "data",
+        "human",
+        "labeled",
+        "quality",
+        "supply",
+        "synthetic",
+        "training",
+        "vs"
+      ],
+      "tags": [
+        "synthetic-data",
+        "annotation",
+        "training-data",
+        "ai",
+        "data-quality"
+      ],
+      "date": "2026/07/14",
+      "slug": "synthetic-vs-human-data",
+      "path": "data/2026/07/14/synthetic-vs-human-data.md"
     }
   ]
 }
