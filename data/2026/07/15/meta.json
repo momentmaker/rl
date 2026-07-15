@@ -1,0 +1,44 @@
+{
+  "date": "2026/07/15",
+  "topics": [
+    {
+      "title": "Does EV battery recycling actually pay off in 2026?",
+      "brief_file": "ev-battery-recycling-economics.md",
+      "tags": [
+        "battery-recycling",
+        "ev",
+        "lithium",
+        "economics",
+        "energy"
+      ],
+      "slug": "ev-battery-recycling-economics",
+      "connections": []
+    },
+    {
+      "title": "Robotaxis vs rideshare: who's actually getting undercut in 2026",
+      "brief_file": "robotaxis-rideshare-pricing.md",
+      "tags": [
+        "robotaxi",
+        "waymo",
+        "rideshare",
+        "autonomous-vehicles",
+        "pricing"
+      ],
+      "slug": "robotaxis-rideshare-pricing",
+      "connections": []
+    },
+    {
+      "title": "The craft and collecting of great opening lines in fiction",
+      "brief_file": "opening-lines-craft.md",
+      "tags": [
+        "literature",
+        "writing",
+        "first-lines",
+        "craft",
+        "novels"
+      ],
+      "slug": "opening-lines-craft",
+      "connections": []
+    }
+  ]
+}

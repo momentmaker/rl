@@ -96,6 +96,9 @@
     349,
     351,
     353,
+    356,
+    358,
+    360,
     38,
     45,
     49,
@@ -3027,6 +3030,85 @@
       "date": "2026/07/14",
       "slug": "synthetic-vs-human-data",
       "path": "data/2026/07/14/synthetic-vs-human-data.md"
+    },
+    {
+      "title": "Does EV battery recycling actually pay off in 2026?",
+      "tokens": [
+        "2026",
+        "actually",
+        "battery",
+        "does",
+        "economics",
+        "energy",
+        "ev",
+        "lithium",
+        "off",
+        "pay",
+        "recycling"
+      ],
+      "tags": [
+        "battery-recycling",
+        "ev",
+        "lithium",
+        "economics",
+        "energy"
+      ],
+      "date": "2026/07/15",
+      "slug": "ev-battery-recycling-economics",
+      "path": "data/2026/07/15/ev-battery-recycling-economics.md"
+    },
+    {
+      "title": "Robotaxis vs rideshare: who's actually getting undercut in 2026",
+      "tokens": [
+        "2026",
+        "actually",
+        "autonomous",
+        "getting",
+        "pricing",
+        "rideshare",
+        "robotaxi",
+        "robotaxis",
+        "undercut",
+        "vehicles",
+        "vs",
+        "waymo",
+        "who"
+      ],
+      "tags": [
+        "robotaxi",
+        "waymo",
+        "rideshare",
+        "autonomous-vehicles",
+        "pricing"
+      ],
+      "date": "2026/07/15",
+      "slug": "robotaxis-rideshare-pricing",
+      "path": "data/2026/07/15/robotaxis-rideshare-pricing.md"
+    },
+    {
+      "title": "The craft and collecting of great opening lines in fiction",
+      "tokens": [
+        "collecting",
+        "craft",
+        "fiction",
+        "first",
+        "great",
+        "lines",
+        "literature",
+        "novels",
+        "opening",
+        "writing"
+      ],
+      "tags": [
+        "literature",
+        "writing",
+        "first-lines",
+        "craft",
+        "novels"
+      ],
+      "date": "2026/07/15",
+      "slug": "opening-lines-craft",
+      "path": "data/2026/07/15/opening-lines-craft.md"
     }
   ]
 }
