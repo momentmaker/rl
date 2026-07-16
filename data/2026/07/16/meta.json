@@ -1,0 +1,44 @@
+{
+  "date": "2026/07/16",
+  "topics": [
+    {
+      "title": "Is Sanskrit really the ideal language for AI?",
+      "brief_file": "sanskrit-ai-language.md",
+      "tags": [
+        "sanskrit",
+        "nlp",
+        "ai",
+        "linguistics",
+        "panini"
+      ],
+      "slug": "sanskrit-ai-language",
+      "connections": []
+    },
+    {
+      "title": "Could today's LLMs actually be conscious?",
+      "brief_file": "llm-consciousness.md",
+      "tags": [
+        "ai-consciousness",
+        "llm",
+        "interpretability",
+        "model-welfare",
+        "philosophy-of-mind"
+      ],
+      "slug": "llm-consciousness",
+      "connections": []
+    },
+    {
+      "title": "Building Telegram bots on serverless and edge platforms",
+      "brief_file": "telegram-serverless-bots.md",
+      "tags": [
+        "telegram",
+        "serverless",
+        "cloudflare-workers",
+        "bots",
+        "edge"
+      ],
+      "slug": "telegram-serverless-bots",
+      "connections": []
+    }
+  ]
+}

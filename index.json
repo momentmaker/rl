@@ -99,6 +99,9 @@
     356,
     358,
     360,
+    362,
+    364,
+    370,
     38,
     45,
     49,
@@ -3109,6 +3112,80 @@
       "date": "2026/07/15",
       "slug": "opening-lines-craft",
       "path": "data/2026/07/15/opening-lines-craft.md"
+    },
+    {
+      "title": "Is Sanskrit really the ideal language for AI?",
+      "tokens": [
+        "ai",
+        "ideal",
+        "language",
+        "linguistics",
+        "nlp",
+        "panini",
+        "really",
+        "sanskrit"
+      ],
+      "tags": [
+        "sanskrit",
+        "nlp",
+        "ai",
+        "linguistics",
+        "panini"
+      ],
+      "date": "2026/07/16",
+      "slug": "sanskrit-ai-language",
+      "path": "data/2026/07/16/sanskrit-ai-language.md"
+    },
+    {
+      "title": "Could today's LLMs actually be conscious?",
+      "tokens": [
+        "actually",
+        "ai",
+        "conscious",
+        "consciousness",
+        "could",
+        "interpretability",
+        "llm",
+        "llms",
+        "mind",
+        "model",
+        "philosophy",
+        "today",
+        "welfare"
+      ],
+      "tags": [
+        "ai-consciousness",
+        "llm",
+        "interpretability",
+        "model-welfare",
+        "philosophy-of-mind"
+      ],
+      "date": "2026/07/16",
+      "slug": "llm-consciousness",
+      "path": "data/2026/07/16/llm-consciousness.md"
+    },
+    {
+      "title": "Building Telegram bots on serverless and edge platforms",
+      "tokens": [
+        "bots",
+        "building",
+        "cloudflare",
+        "edge",
+        "platforms",
+        "serverless",
+        "telegram",
+        "workers"
+      ],
+      "tags": [
+        "telegram",
+        "serverless",
+        "cloudflare-workers",
+        "bots",
+        "edge"
+      ],
+      "date": "2026/07/16",
+      "slug": "telegram-serverless-bots",
+      "path": "data/2026/07/16/telegram-serverless-bots.md"
     }
   ]
 }
