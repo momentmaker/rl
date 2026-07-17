@@ -3,6 +3,7 @@
   "retired_ids": [
     101,
     103,
+    107,
     109,
     11,
     111,
@@ -18,6 +19,7 @@
     15,
     155,
     158,
+    166,
     169,
     17,
     171,
@@ -89,6 +91,7 @@
     329,
     331,
     333,
+    335,
     337,
     340,
     342,
@@ -3186,6 +3189,95 @@
       "date": "2026/07/16",
       "slug": "telegram-serverless-bots",
       "path": "data/2026/07/16/telegram-serverless-bots.md"
+    },
+    {
+      "title": "Running Claude Code on cheaper and local models: does BYO-model actually work?",
+      "tokens": [
+        "actually",
+        "ai",
+        "byo",
+        "cheaper",
+        "claude",
+        "code",
+        "cost",
+        "deepseek",
+        "does",
+        "local",
+        "model",
+        "models",
+        "optimization",
+        "qwen",
+        "running",
+        "work"
+      ],
+      "tags": [
+        "ai",
+        "claude-code",
+        "deepseek",
+        "qwen",
+        "local-model",
+        "cost-optimization"
+      ],
+      "date": "2026/07/17",
+      "slug": "byo-model-coding-clis",
+      "path": "data/2026/07/17/byo-model-coding-clis.md"
+    },
+    {
+      "title": "Files over apps: the plain-markdown notes revival and Obsidian alternatives",
+      "tokens": [
+        "alternatives",
+        "apps",
+        "files",
+        "first",
+        "local",
+        "markdown",
+        "notes",
+        "notion",
+        "obsidian",
+        "over",
+        "pkm",
+        "plain",
+        "revival"
+      ],
+      "tags": [
+        "notes",
+        "markdown",
+        "obsidian",
+        "notion",
+        "pkm",
+        "local-first"
+      ],
+      "date": "2026/07/17",
+      "slug": "files-over-apps-notes",
+      "path": "data/2026/07/17/files-over-apps-notes.md"
+    },
+    {
+      "title": "Kongo Gumi and the world's oldest companies: how Japan's shinise last centuries",
+      "tokens": [
+        "business",
+        "centuries",
+        "companies",
+        "gumi",
+        "japan",
+        "kongo",
+        "last",
+        "longevity",
+        "oldest",
+        "shinise",
+        "succession",
+        "world"
+      ],
+      "tags": [
+        "japan",
+        "business",
+        "longevity",
+        "shinise",
+        "kongo-gumi",
+        "succession"
+      ],
+      "date": "2026/07/17",
+      "slug": "kongo-gumi-oldest-companies",
+      "path": "data/2026/07/17/kongo-gumi-oldest-companies.md"
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "date": "2026/07/17",
+  "topics": [
+    {
+      "title": "Running Claude Code on cheaper and local models: does BYO-model actually work?",
+      "brief_file": "byo-model-coding-clis.md",
+      "tags": [
+        "ai",
+        "claude-code",
+        "deepseek",
+        "qwen",
+        "local-model",
+        "cost-optimization"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Files over apps: the plain-markdown notes revival and Obsidian alternatives",
+      "brief_file": "files-over-apps-notes.md",
+      "tags": [
+        "notes",
+        "markdown",
+        "obsidian",
+        "notion",
+        "pkm",
+        "local-first"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Kongo Gumi and the world's oldest companies: how Japan's shinise last centuries",
+      "brief_file": "kongo-gumi-oldest-companies.md",
+      "tags": [
+        "japan",
+        "business",
+        "longevity",
+        "shinise",
+        "kongo-gumi",
+        "succession"
+      ],
+      "connections": [
+        {
+          "title": "The three-generation rule and why most family businesses die",
+          "date": "2026/07/02"
+        }
+      ]
+    }
+  ]
+}
