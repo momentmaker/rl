@@ -1,0 +1,48 @@
+{
+  "date": "2026/07/18",
+  "topics": [
+    {
+      "title": "Do reusable rockets actually make launches cheaper in 2026?",
+      "brief_file": "reusable-rockets-economics.md",
+      "tags": [
+        "reusable-rockets",
+        "spacex",
+        "starship",
+        "launch-economics",
+        "space"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Real-time voice agents: latency, interruptions, and cascade vs speech-to-speech",
+      "brief_file": "real-time-voice-agents.md",
+      "tags": [
+        "voice-agents",
+        "real-time",
+        "latency",
+        "tts",
+        "speech-to-speech",
+        "conversational-ai"
+      ],
+      "connections": [
+        {
+          "title": "Open-source text-to-speech in 2026 versus ElevenLabs",
+          "date": "2026/06/20"
+        }
+      ]
+    },
+    {
+      "title": "AI 2040 and the fight over an optimistic superintelligence plan",
+      "brief_file": "positive-ai-futures-vs-doomers.md",
+      "tags": [
+        "ai-2040",
+        "superintelligence",
+        "ai-safety",
+        "ai-futures",
+        "doomers",
+        "forecasting"
+      ],
+      "connections": []
+    }
+  ]
+}
