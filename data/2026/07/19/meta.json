@@ -1,0 +1,48 @@
+{
+  "date": "2026/07/19",
+  "topics": [
+    {
+      "title": "Giving AI agents their own spending budgets and credit cards",
+      "brief_file": "agent-budgets.md",
+      "tags": [
+        "ai-agents",
+        "agent-payments",
+        "x402",
+        "autonomy",
+        "guardrails",
+        "stablecoins"
+      ],
+      "connections": [
+        {
+          "title": "How autonomous AI agents pay each other in 2026",
+          "date": "2026/07/11"
+        }
+      ]
+    },
+    {
+      "title": "Why AI coding agents grep instead of vector search over code",
+      "brief_file": "agents-grep-vs-vector.md",
+      "tags": [
+        "ai-agents",
+        "code-search",
+        "context-window",
+        "retrieval",
+        "coding",
+        "llm"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Recording talking-head and screen demos with AI video editors",
+      "brief_file": "screen-demos.md",
+      "tags": [
+        "video",
+        "video-editing",
+        "content-creation",
+        "screen-recording",
+        "local-first"
+      ],
+      "connections": []
+    }
+  ]
+}

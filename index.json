@@ -10,6 +10,7 @@
     117,
     119,
     125,
+    129,
     13,
     131,
     135,
@@ -19,6 +20,7 @@
     15,
     155,
     158,
+    163,
     166,
     169,
     17,
@@ -74,6 +76,7 @@
     285,
     287,
     291,
+    293,
     295,
     297,
     301,
@@ -3364,6 +3367,94 @@
       "date": "2026/07/18",
       "slug": "positive-ai-futures-vs-doomers",
       "path": "data/2026/07/18/positive-ai-futures-vs-doomers.md"
+    },
+    {
+      "title": "Giving AI agents their own spending budgets and credit cards",
+      "tokens": [
+        "agent",
+        "agents",
+        "ai",
+        "autonomy",
+        "budgets",
+        "cards",
+        "credit",
+        "giving",
+        "guardrails",
+        "own",
+        "payments",
+        "spending",
+        "stablecoins",
+        "their",
+        "x402"
+      ],
+      "tags": [
+        "ai-agents",
+        "agent-payments",
+        "x402",
+        "autonomy",
+        "guardrails",
+        "stablecoins"
+      ],
+      "date": "2026/07/19",
+      "slug": "agent-budgets",
+      "path": "data/2026/07/19/agent-budgets.md"
+    },
+    {
+      "title": "Why AI coding agents grep instead of vector search over code",
+      "tokens": [
+        "agents",
+        "ai",
+        "code",
+        "coding",
+        "context",
+        "grep",
+        "instead",
+        "llm",
+        "over",
+        "retrieval",
+        "search",
+        "vector",
+        "window"
+      ],
+      "tags": [
+        "ai-agents",
+        "code-search",
+        "context-window",
+        "retrieval",
+        "coding",
+        "llm"
+      ],
+      "date": "2026/07/19",
+      "slug": "agents-grep-vs-vector",
+      "path": "data/2026/07/19/agents-grep-vs-vector.md"
+    },
+    {
+      "title": "Recording talking-head and screen demos with AI video editors",
+      "tokens": [
+        "ai",
+        "content",
+        "creation",
+        "demos",
+        "editing",
+        "editors",
+        "first",
+        "head",
+        "local",
+        "recording",
+        "screen",
+        "talking",
+        "video"
+      ],
+      "tags": [
+        "video",
+        "video-editing",
+        "content-creation",
+        "screen-recording",
+        "local-first"
+      ],
+      "date": "2026/07/19",
+      "slug": "screen-demos",
+      "path": "data/2026/07/19/screen-demos.md"
     }
   ]
 }
