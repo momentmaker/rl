@@ -1,0 +1,23 @@
+{
+  "date": "2026/07/20",
+  "topics": [
+    {
+      "title": "Where clinical psychedelic therapy actually stands in 2026",
+      "brief_file": "psychedelic-therapy-2026.md",
+      "tags": ["psychedelics", "psilocybin", "mdma", "clinical-trials", "mental-health"],
+      "connections": []
+    },
+    {
+      "title": "The context layer for AI agents: governed data access over bolted-on RAG",
+      "brief_file": "agent-context-layer.md",
+      "tags": ["ai-agents", "context-layer", "data-integration", "mcp", "infrastructure"],
+      "connections": []
+    },
+    {
+      "title": "Safety nets for autonomous coding agents: sandboxes, checkpoints, and rollback",
+      "brief_file": "agent-safety-nets.md",
+      "tags": ["ai-agents", "sandbox", "versioning", "rollback", "security"],
+      "connections": []
+    }
+  ]
+}
