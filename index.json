@@ -37,6 +37,7 @@
     189,
     19,
     191,
+    193,
     196,
     200,
     202,
@@ -77,6 +78,7 @@
     283,
     285,
     287,
+    289,
     291,
     293,
     295,
@@ -111,6 +113,7 @@
     360,
     362,
     364,
+    368,
     370,
     374,
     38,
@@ -3541,6 +3544,89 @@
       "date": "2026/07/20",
       "slug": "agent-safety-nets",
       "path": "data/2026/07/20/agent-safety-nets.md"
+    },
+    {
+      "title": "Models that fine-tune themselves toward a target behavior",
+      "tokens": [
+        "ai",
+        "behavior",
+        "fine",
+        "improvement",
+        "inkling",
+        "models",
+        "open",
+        "self",
+        "target",
+        "themselves",
+        "toward",
+        "tune",
+        "tuning",
+        "weights"
+      ],
+      "tags": [
+        "ai",
+        "self-improvement",
+        "fine-tuning",
+        "open-weights",
+        "inkling"
+      ],
+      "date": "2026/07/21",
+      "slug": "self-fine-tuning-models",
+      "path": "data/2026/07/21/self-fine-tuning-models.md"
+    },
+    {
+      "title": "The silicon baton pass: Nvidia's AI-chip moat and who threatens it",
+      "tokens": [
+        "ai",
+        "asics",
+        "baton",
+        "chip",
+        "cuda",
+        "gpu",
+        "hardware",
+        "moat",
+        "nvidia",
+        "pass",
+        "silicon",
+        "threatens",
+        "who"
+      ],
+      "tags": [
+        "silicon",
+        "gpu",
+        "nvidia",
+        "cuda",
+        "asics",
+        "hardware"
+      ],
+      "date": "2026/07/21",
+      "slug": "silicon-baton-pass",
+      "path": "data/2026/07/21/silicon-baton-pass.md"
+    },
+    {
+      "title": "Learning with AI vs offloading to AI: cognitive offloading and skill atrophy",
+      "tokens": [
+        "ai",
+        "atrophy",
+        "cognition",
+        "cognitive",
+        "education",
+        "learning",
+        "offloading",
+        "skill",
+        "skills",
+        "vs"
+      ],
+      "tags": [
+        "learning",
+        "cognition",
+        "ai",
+        "skills",
+        "education"
+      ],
+      "date": "2026/07/21",
+      "slug": "learning-with-ai",
+      "path": "data/2026/07/21/learning-with-ai.md"
     }
   ]
 }

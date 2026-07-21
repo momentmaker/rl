@@ -1,0 +1,23 @@
+{
+  "date": "2026/07/21",
+  "topics": [
+    {
+      "title": "Models that fine-tune themselves toward a target behavior",
+      "brief_file": "self-fine-tuning-models.md",
+      "tags": ["ai", "self-improvement", "fine-tuning", "open-weights", "inkling"],
+      "connections": []
+    },
+    {
+      "title": "The silicon baton pass: Nvidia's AI-chip moat and who threatens it",
+      "brief_file": "silicon-baton-pass.md",
+      "tags": ["silicon", "gpu", "nvidia", "cuda", "asics", "hardware"],
+      "connections": []
+    },
+    {
+      "title": "Learning with AI vs offloading to AI: cognitive offloading and skill atrophy",
+      "brief_file": "learning-with-ai.md",
+      "tags": ["learning", "cognition", "ai", "skills", "education"],
+      "connections": []
+    }
+  ]
+}
