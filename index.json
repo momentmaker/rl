@@ -115,7 +115,10 @@
     364,
     368,
     370,
+    372,
     374,
+    376,
+    379,
     38,
     45,
     49,
@@ -3627,6 +3630,86 @@
       "date": "2026/07/21",
       "slug": "learning-with-ai",
       "path": "data/2026/07/21/learning-with-ai.md"
+    },
+    {
+      "title": "Ads inside ChatGPT: OpenAI's ad business and the LLM attention economy",
+      "tokens": [
+        "ad",
+        "ads",
+        "advertising",
+        "ai",
+        "attention",
+        "business",
+        "chatgpt",
+        "economy",
+        "inside",
+        "llm",
+        "native",
+        "openai"
+      ],
+      "tags": [
+        "advertising",
+        "chatgpt",
+        "openai",
+        "ai-native",
+        "attention-economy"
+      ],
+      "date": "2026/07/22",
+      "slug": "ai-native-advertising-chatgpt",
+      "path": "data/2026/07/22/ai-native-advertising-chatgpt.md"
+    },
+    {
+      "title": "Interactive castle atlases and how medieval fortifications were engineered",
+      "tokens": [
+        "atlases",
+        "castle",
+        "castles",
+        "data",
+        "engineered",
+        "fortification",
+        "fortifications",
+        "history",
+        "interactive",
+        "maps",
+        "medieval",
+        "open",
+        "were"
+      ],
+      "tags": [
+        "castles",
+        "maps",
+        "open-data",
+        "fortification",
+        "history"
+      ],
+      "date": "2026/07/22",
+      "slug": "interactive-castle-atlases",
+      "path": "data/2026/07/22/interactive-castle-atlases.md"
+    },
+    {
+      "title": "On-device speech-to-text in 2026: Moonshine, Parakeet, and Whisper alternatives",
+      "tokens": [
+        "2026",
+        "alternatives",
+        "asr",
+        "device",
+        "local",
+        "moonshine",
+        "parakeet",
+        "speech",
+        "text",
+        "whisper"
+      ],
+      "tags": [
+        "speech-to-text",
+        "on-device",
+        "asr",
+        "whisper",
+        "local"
+      ],
+      "date": "2026/07/22",
+      "slug": "on-device-speech-to-text",
+      "path": "data/2026/07/22/on-device-speech-to-text.md"
     }
   ]
 }

@@ -1,0 +1,46 @@
+{
+  "date": "2026/07/22",
+  "topics": [
+    {
+      "title": "Ads inside ChatGPT: OpenAI's ad business and the LLM attention economy",
+      "brief_file": "ai-native-advertising-chatgpt.md",
+      "tags": [
+        "advertising",
+        "chatgpt",
+        "openai",
+        "ai-native",
+        "attention-economy"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Interactive castle atlases and how medieval fortifications were engineered",
+      "brief_file": "interactive-castle-atlases.md",
+      "tags": [
+        "castles",
+        "maps",
+        "open-data",
+        "fortification",
+        "history"
+      ],
+      "connections": []
+    },
+    {
+      "title": "On-device speech-to-text in 2026: Moonshine, Parakeet, and Whisper alternatives",
+      "brief_file": "on-device-speech-to-text.md",
+      "tags": [
+        "speech-to-text",
+        "on-device",
+        "asr",
+        "whisper",
+        "local"
+      ],
+      "connections": [
+        {
+          "title": "Open-source text-to-speech in 2026 versus ElevenLabs",
+          "date": "2026/06/20"
+        }
+      ]
+    }
+  ]
+}
