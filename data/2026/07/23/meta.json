@@ -1,0 +1,46 @@
+{
+  "date": "2026/07/23",
+  "topics": [
+    {
+      "title": "MLX vs llama.cpp for local LLM inference on Apple Silicon in 2026",
+      "brief_file": "mlx-vs-llama-cpp.md",
+      "tags": [
+        "mlx",
+        "llama-cpp",
+        "apple-silicon",
+        "local-models",
+        "inference"
+      ],
+      "connections": [
+        {
+          "title": "Apple silicon Mac mini and Studio as the local-LLM inference box",
+          "date": "2026/06/25"
+        }
+      ]
+    },
+    {
+      "title": "DeepSeek V4 vs Qwen 3.6 for local coding models in 2026",
+      "brief_file": "deepseek-v4-vs-qwen-3-6.md",
+      "tags": [
+        "deepseek",
+        "qwen",
+        "local-models",
+        "coding",
+        "open-weights"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Astro vs Next.js in 2026",
+      "brief_file": "astro-vs-nextjs.md",
+      "tags": [
+        "astro",
+        "nextjs",
+        "web-frameworks",
+        "javascript",
+        "html-first"
+      ],
+      "connections": []
+    }
+  ]
+}

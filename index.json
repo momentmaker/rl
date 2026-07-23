@@ -79,6 +79,7 @@
     285,
     287,
     289,
+    29,
     291,
     293,
     295,
@@ -120,6 +121,8 @@
     376,
     379,
     38,
+    381,
+    41,
     45,
     49,
     56,
@@ -3710,6 +3713,83 @@
       "date": "2026/07/22",
       "slug": "on-device-speech-to-text",
       "path": "data/2026/07/22/on-device-speech-to-text.md"
+    },
+    {
+      "title": "MLX vs llama.cpp for local LLM inference on Apple Silicon in 2026",
+      "tokens": [
+        "2026",
+        "apple",
+        "cpp",
+        "inference",
+        "llama",
+        "llm",
+        "local",
+        "mlx",
+        "models",
+        "silicon",
+        "vs"
+      ],
+      "tags": [
+        "mlx",
+        "llama-cpp",
+        "apple-silicon",
+        "local-models",
+        "inference"
+      ],
+      "date": "2026/07/23",
+      "slug": "mlx-vs-llama-cpp",
+      "path": "data/2026/07/23/mlx-vs-llama-cpp.md"
+    },
+    {
+      "title": "DeepSeek V4 vs Qwen 3.6 for local coding models in 2026",
+      "tokens": [
+        "2026",
+        "coding",
+        "deepseek",
+        "local",
+        "models",
+        "open",
+        "qwen",
+        "v4",
+        "vs",
+        "weights"
+      ],
+      "tags": [
+        "deepseek",
+        "qwen",
+        "local-models",
+        "coding",
+        "open-weights"
+      ],
+      "date": "2026/07/23",
+      "slug": "deepseek-v4-vs-qwen-3-6",
+      "path": "data/2026/07/23/deepseek-v4-vs-qwen-3-6.md"
+    },
+    {
+      "title": "Astro vs Next.js in 2026",
+      "tokens": [
+        "2026",
+        "astro",
+        "first",
+        "frameworks",
+        "html",
+        "javascript",
+        "js",
+        "next",
+        "nextjs",
+        "vs",
+        "web"
+      ],
+      "tags": [
+        "astro",
+        "nextjs",
+        "web-frameworks",
+        "javascript",
+        "html-first"
+      ],
+      "date": "2026/07/23",
+      "slug": "astro-vs-nextjs",
+      "path": "data/2026/07/23/astro-vs-nextjs.md"
     }
   ]
 }
