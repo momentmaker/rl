@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-24",
+  "topics": [
+    {
+      "title": "Local model as the orchestrator calling out to cloud frontier models",
+      "brief_file": "local-llm-orchestrator-frontier-models.md",
+      "tags": [
+        "local-llm",
+        "orchestration",
+        "agents",
+        "routing",
+        "cost-optimization"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Design tokens as the contract between AI design tools and code",
+      "brief_file": "design-tokens-ai-handoff.md",
+      "tags": [
+        "design-tokens",
+        "design-systems",
+        "ai-design",
+        "frontend",
+        "handoff"
+      ],
+      "connections": []
+    },
+    {
+      "title": "AI-native video editors: prompt- and agent-driven timeline editing",
+      "brief_file": "ai-native-video-editors.md",
+      "tags": [
+        "video-editing",
+        "ai-native",
+        "agents",
+        "creative-tools",
+        "timeline"
+      ],
+      "connections": []
+    }
+  ]
+}

@@ -72,6 +72,7 @@
     268,
     27,
     270,
+    272,
     274,
     277,
     281,
@@ -122,6 +123,7 @@
     379,
     38,
     381,
+    383,
     41,
     45,
     49,
@@ -131,6 +133,7 @@
     64,
     66,
     68,
+    70,
     8,
     81,
     83,
@@ -3790,6 +3793,87 @@
       "date": "2026/07/23",
       "slug": "astro-vs-nextjs",
       "path": "data/2026/07/23/astro-vs-nextjs.md"
+    },
+    {
+      "title": "Local model as the orchestrator calling out to cloud frontier models",
+      "tokens": [
+        "agents",
+        "calling",
+        "cloud",
+        "cost",
+        "frontier",
+        "llm",
+        "local",
+        "model",
+        "models",
+        "optimization",
+        "orchestration",
+        "orchestrator",
+        "out",
+        "routing"
+      ],
+      "tags": [
+        "local-llm",
+        "orchestration",
+        "agents",
+        "routing",
+        "cost-optimization"
+      ],
+      "date": "2026/07/24",
+      "slug": "local-llm-orchestrator-frontier-models",
+      "path": "data/2026/07/24/local-llm-orchestrator-frontier-models.md"
+    },
+    {
+      "title": "Design tokens as the contract between AI design tools and code",
+      "tokens": [
+        "ai",
+        "between",
+        "code",
+        "contract",
+        "design",
+        "frontend",
+        "handoff",
+        "systems",
+        "tokens",
+        "tools"
+      ],
+      "tags": [
+        "design-tokens",
+        "design-systems",
+        "ai-design",
+        "frontend",
+        "handoff"
+      ],
+      "date": "2026/07/24",
+      "slug": "design-tokens-ai-handoff",
+      "path": "data/2026/07/24/design-tokens-ai-handoff.md"
+    },
+    {
+      "title": "AI-native video editors: prompt- and agent-driven timeline editing",
+      "tokens": [
+        "agent",
+        "agents",
+        "ai",
+        "creative",
+        "driven",
+        "editing",
+        "editors",
+        "native",
+        "prompt",
+        "timeline",
+        "tools",
+        "video"
+      ],
+      "tags": [
+        "video-editing",
+        "ai-native",
+        "agents",
+        "creative-tools",
+        "timeline"
+      ],
+      "date": "2026/07/24",
+      "slug": "ai-native-video-editors",
+      "path": "data/2026/07/24/ai-native-video-editors.md"
     }
   ]
 }
