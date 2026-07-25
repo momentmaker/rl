@@ -15,6 +15,7 @@
     129,
     13,
     131,
+    133,
     135,
     138,
     140,
@@ -124,6 +125,8 @@
     38,
     381,
     383,
+    388,
+    390,
     41,
     45,
     49,
@@ -3874,6 +3877,80 @@
       "date": "2026/07/24",
       "slug": "ai-native-video-editors",
       "path": "data/2026/07/24/ai-native-video-editors.md"
+    },
+    {
+      "title": "LLM-as-a-judge: trusting model-graded evals",
+      "tokens": [
+        "agents",
+        "ai",
+        "calibration",
+        "evals",
+        "evaluation",
+        "graded",
+        "judge",
+        "llm",
+        "model",
+        "testing",
+        "trusting"
+      ],
+      "tags": [
+        "llm-judge",
+        "evaluation",
+        "ai-agents",
+        "testing",
+        "calibration"
+      ],
+      "date": "2026/07/25",
+      "slug": "llm-as-a-judge-evals",
+      "path": "data/2026/07/25/llm-as-a-judge-evals.md"
+    },
+    {
+      "title": "Print-in-place compliant mechanisms and 3D-printed flexure hinges",
+      "tokens": [
+        "3d",
+        "compliant",
+        "design",
+        "flexure",
+        "hinges",
+        "materials",
+        "mechanical",
+        "mechanisms",
+        "place",
+        "print",
+        "printed",
+        "printing"
+      ],
+      "tags": [
+        "compliant-mechanisms",
+        "3d-printing",
+        "mechanical-design",
+        "print-in-place",
+        "materials"
+      ],
+      "date": "2026/07/25",
+      "slug": "print-in-place-compliant-mechanisms",
+      "path": "data/2026/07/25/print-in-place-compliant-mechanisms.md"
+    },
+    {
+      "title": "Typology photography and documenting vernacular architecture",
+      "tokens": [
+        "architecture",
+        "art",
+        "documenting",
+        "photography",
+        "typology",
+        "vernacular"
+      ],
+      "tags": [
+        "photography",
+        "typology",
+        "architecture",
+        "vernacular",
+        "art"
+      ],
+      "date": "2026/07/25",
+      "slug": "typology-photography-vernacular",
+      "path": "data/2026/07/25/typology-photography-vernacular.md"
     }
   ]
 }

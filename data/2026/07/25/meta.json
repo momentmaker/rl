@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-25",
+  "topics": [
+    {
+      "title": "LLM-as-a-judge: trusting model-graded evals",
+      "brief_file": "llm-as-a-judge-evals.md",
+      "tags": [
+        "llm-judge",
+        "evaluation",
+        "ai-agents",
+        "testing",
+        "calibration"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Print-in-place compliant mechanisms and 3D-printed flexure hinges",
+      "brief_file": "print-in-place-compliant-mechanisms.md",
+      "tags": [
+        "compliant-mechanisms",
+        "3d-printing",
+        "mechanical-design",
+        "print-in-place",
+        "materials"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Typology photography and documenting vernacular architecture",
+      "brief_file": "typology-photography-vernacular.md",
+      "tags": [
+        "photography",
+        "typology",
+        "architecture",
+        "vernacular",
+        "art"
+      ],
+      "connections": []
+    }
+  ]
+}
