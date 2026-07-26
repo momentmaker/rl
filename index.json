@@ -43,6 +43,7 @@
     200,
     202,
     204,
+    209,
     211,
     213,
     217,
@@ -116,6 +117,7 @@
     360,
     362,
     364,
+    366,
     368,
     370,
     372,
@@ -128,6 +130,7 @@
     388,
     390,
     41,
+    43,
     45,
     49,
     56,
@@ -3951,6 +3954,92 @@
       "date": "2026/07/25",
       "slug": "typology-photography-vernacular",
       "path": "data/2026/07/25/typology-photography-vernacular.md"
+    },
+    {
+      "title": "Where tokenization bites: the LLM failures engineers blame on the tokenizer",
+      "tokens": [
+        "bites",
+        "blame",
+        "bpe",
+        "byte",
+        "engineers",
+        "failures",
+        "internals",
+        "level",
+        "llm",
+        "llms",
+        "model",
+        "models",
+        "tokenization",
+        "tokenizer",
+        "where"
+      ],
+      "tags": [
+        "tokenization",
+        "llms",
+        "byte-level-models",
+        "bpe",
+        "model-internals"
+      ],
+      "date": "2026/07/26",
+      "slug": "tokenizer-failures-byte-level-models",
+      "path": "data/2026/07/26/tokenizer-failures-byte-level-models.md"
+    },
+    {
+      "title": "What agent memory people actually keep between sessions",
+      "tokens": [
+        "actually",
+        "agent",
+        "agents",
+        "between",
+        "coding",
+        "context",
+        "engineering",
+        "keep",
+        "memory",
+        "people",
+        "persistence",
+        "provenance",
+        "sessions"
+      ],
+      "tags": [
+        "agent-memory",
+        "persistence",
+        "context-engineering",
+        "coding-agents",
+        "provenance"
+      ],
+      "date": "2026/07/26",
+      "slug": "agent-memory-between-sessions",
+      "path": "data/2026/07/26/agent-memory-between-sessions.md"
+    },
+    {
+      "title": "Terminal demos as build artifacts: VHS, asciinema, and agent screencasts",
+      "tokens": [
+        "agent",
+        "artifacts",
+        "asciinema",
+        "build",
+        "cli",
+        "demos",
+        "developer",
+        "documentation",
+        "recording",
+        "screencasts",
+        "terminal",
+        "tooling",
+        "vhs"
+      ],
+      "tags": [
+        "terminal-recording",
+        "developer-tooling",
+        "documentation",
+        "demos",
+        "cli"
+      ],
+      "date": "2026/07/26",
+      "slug": "terminal-demos-as-build-artifacts",
+      "path": "data/2026/07/26/terminal-demos-as-build-artifacts.md"
     }
   ]
 }

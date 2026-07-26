@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-26",
+  "topics": [
+    {
+      "title": "Where tokenization bites: the LLM failures engineers blame on the tokenizer",
+      "brief_file": "tokenizer-failures-byte-level-models.md",
+      "tags": [
+        "tokenization",
+        "llms",
+        "byte-level-models",
+        "bpe",
+        "model-internals"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What agent memory people actually keep between sessions",
+      "brief_file": "agent-memory-between-sessions.md",
+      "tags": [
+        "agent-memory",
+        "persistence",
+        "context-engineering",
+        "coding-agents",
+        "provenance"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Terminal demos as build artifacts: VHS, asciinema, and agent screencasts",
+      "brief_file": "terminal-demos-as-build-artifacts.md",
+      "tags": [
+        "terminal-recording",
+        "developer-tooling",
+        "documentation",
+        "demos",
+        "cli"
+      ],
+      "connections": []
+    }
+  ]
+}
