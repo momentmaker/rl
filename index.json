@@ -46,6 +46,7 @@
     209,
     211,
     213,
+    215,
     217,
     219,
     221,
@@ -77,6 +78,7 @@
     272,
     274,
     277,
+    279,
     281,
     283,
     285,
@@ -98,6 +100,7 @@
     317,
     319,
     321,
+    323,
     325,
     327,
     329,
@@ -4040,6 +4043,96 @@
       "date": "2026/07/26",
       "slug": "terminal-demos-as-build-artifacts",
       "path": "data/2026/07/26/terminal-demos-as-build-artifacts.md"
+    },
+    {
+      "title": "Stop conditions: when a coding agent loop is actually done",
+      "tokens": [
+        "actually",
+        "agent",
+        "agents",
+        "coding",
+        "conditions",
+        "done",
+        "engineering",
+        "loop",
+        "loops",
+        "stop",
+        "verification",
+        "when"
+      ],
+      "tags": [
+        "coding-agents",
+        "agent-loops",
+        "loop-engineering",
+        "verification",
+        "stop-conditions"
+      ],
+      "date": "2026/07/27",
+      "slug": "agent-loop-stop-conditions",
+      "path": "data/2026/07/27/agent-loop-stop-conditions.md"
+    },
+    {
+      "title": "What people wire up so agents can read PDFs, images, audio and video",
+      "tokens": [
+        "agents",
+        "audio",
+        "can",
+        "coding",
+        "developer",
+        "document",
+        "images",
+        "mcp",
+        "multimodal",
+        "parsing",
+        "pdfs",
+        "people",
+        "read",
+        "so",
+        "tooling",
+        "up",
+        "video",
+        "wire"
+      ],
+      "tags": [
+        "multimodal",
+        "coding-agents",
+        "document-parsing",
+        "mcp",
+        "developer-tooling"
+      ],
+      "date": "2026/07/27",
+      "slug": "agents-reading-binary-files",
+      "path": "data/2026/07/27/agents-reading-binary-files.md"
+    },
+    {
+      "title": "Copy-in components vs headless libraries after shadcn's Base UI switch",
+      "tokens": [
+        "after",
+        "base",
+        "components",
+        "copy",
+        "design",
+        "frontend",
+        "headless",
+        "libraries",
+        "react",
+        "registries",
+        "shadcn",
+        "switch",
+        "systems",
+        "ui",
+        "vs"
+      ],
+      "tags": [
+        "react",
+        "ui-components",
+        "design-systems",
+        "frontend",
+        "registries"
+      ],
+      "date": "2026/07/27",
+      "slug": "headless-vs-copy-in-components",
+      "path": "data/2026/07/27/headless-vs-copy-in-components.md"
     }
   ]
 }

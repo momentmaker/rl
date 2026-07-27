@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-27",
+  "topics": [
+    {
+      "title": "Stop conditions: when a coding agent loop is actually done",
+      "brief_file": "agent-loop-stop-conditions.md",
+      "tags": [
+        "coding-agents",
+        "agent-loops",
+        "loop-engineering",
+        "verification",
+        "stop-conditions"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What people wire up so agents can read PDFs, images, audio and video",
+      "brief_file": "agents-reading-binary-files.md",
+      "tags": [
+        "multimodal",
+        "coding-agents",
+        "document-parsing",
+        "mcp",
+        "developer-tooling"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Copy-in components vs headless libraries after shadcn's Base UI switch",
+      "brief_file": "headless-vs-copy-in-components.md",
+      "tags": [
+        "react",
+        "ui-components",
+        "design-systems",
+        "frontend",
+        "registries"
+      ],
+      "connections": []
+    }
+  ]
+}
