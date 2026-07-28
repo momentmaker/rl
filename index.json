@@ -21,6 +21,7 @@
     140,
     148,
     15,
+    152,
     155,
     158,
     163,
@@ -132,6 +133,7 @@
     383,
     388,
     390,
+    392,
     41,
     43,
     45,
@@ -139,6 +141,7 @@
     56,
     58,
     60,
+    62,
     64,
     66,
     68,
@@ -4133,6 +4136,90 @@
       "date": "2026/07/27",
       "slug": "headless-vs-copy-in-components",
       "path": "data/2026/07/27/headless-vs-copy-in-components.md"
+    },
+    {
+      "title": "Harness vs model: what actually moves a coding agent's benchmark score",
+      "tokens": [
+        "actually",
+        "agent",
+        "agents",
+        "benchmark",
+        "benchmarks",
+        "coding",
+        "evaluation",
+        "harness",
+        "model",
+        "moves",
+        "scaffolding",
+        "score",
+        "vs"
+      ],
+      "tags": [
+        "agent-harness",
+        "benchmarks",
+        "coding-agents",
+        "evaluation",
+        "scaffolding"
+      ],
+      "date": "2026/07/28",
+      "slug": "agent-harness-vs-model",
+      "path": "data/2026/07/28/agent-harness-vs-model.md"
+    },
+    {
+      "title": "Buy-it-for-life: how people decide what is actually durable now",
+      "tokens": [
+        "actually",
+        "brands",
+        "buy",
+        "consumer",
+        "decide",
+        "durability",
+        "durable",
+        "life",
+        "now",
+        "people",
+        "repair",
+        "warranties"
+      ],
+      "tags": [
+        "consumer",
+        "durability",
+        "brands",
+        "warranties",
+        "repair"
+      ],
+      "date": "2026/07/28",
+      "slug": "buy-it-for-life-2026",
+      "path": "data/2026/07/28/buy-it-for-life-2026.md"
+    },
+    {
+      "title": "Whether the junior developer entry path still exists",
+      "tokens": [
+        "careers",
+        "developer",
+        "engineering",
+        "entry",
+        "exists",
+        "hiring",
+        "junior",
+        "juniors",
+        "labor",
+        "market",
+        "path",
+        "software",
+        "still",
+        "whether"
+      ],
+      "tags": [
+        "careers",
+        "hiring",
+        "juniors",
+        "software-engineering",
+        "labor-market"
+      ],
+      "date": "2026/07/28",
+      "slug": "junior-developer-entry-path",
+      "path": "data/2026/07/28/junior-developer-entry-path.md"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-28",
+  "topics": [
+    {
+      "title": "Harness vs model: what actually moves a coding agent's benchmark score",
+      "brief_file": "agent-harness-vs-model.md",
+      "tags": [
+        "agent-harness",
+        "benchmarks",
+        "coding-agents",
+        "evaluation",
+        "scaffolding"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Buy-it-for-life: how people decide what is actually durable now",
+      "brief_file": "buy-it-for-life-2026.md",
+      "tags": [
+        "consumer",
+        "durability",
+        "brands",
+        "warranties",
+        "repair"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Whether the junior developer entry path still exists",
+      "brief_file": "junior-developer-entry-path.md",
+      "tags": [
+        "careers",
+        "hiring",
+        "juniors",
+        "software-engineering",
+        "labor-market"
+      ],
+      "connections": []
+    }
+  ]
+}
