@@ -19,6 +19,8 @@
     135,
     138,
     140,
+    144,
+    146,
     148,
     15,
     152,
@@ -41,6 +43,7 @@
     191,
     193,
     196,
+    198,
     200,
     202,
     204,
@@ -4220,6 +4223,96 @@
       "date": "2026/07/28",
       "slug": "junior-developer-entry-path",
       "path": "data/2026/07/28/junior-developer-entry-path.md"
+    },
+    {
+      "title": "Ensemble AI code review: does a second reviewer find real bugs?",
+      "tokens": [
+        "agent",
+        "agents",
+        "ai",
+        "bugs",
+        "code",
+        "cross",
+        "does",
+        "ensemble",
+        "false",
+        "find",
+        "model",
+        "multi",
+        "positives",
+        "real",
+        "review",
+        "reviewer",
+        "second"
+      ],
+      "tags": [
+        "code-review",
+        "multi-agent",
+        "ai-agents",
+        "false-positives",
+        "cross-model"
+      ],
+      "date": "2026/07/29",
+      "slug": "ai-code-review-second-pass",
+      "path": "data/2026/07/29/ai-code-review-second-pass.md"
+    },
+    {
+      "title": "Quantization quality cliffs: where 4-bit stops being good enough",
+      "tokens": [
+        "being",
+        "bit",
+        "calling",
+        "cliffs",
+        "enough",
+        "gguf",
+        "good",
+        "local",
+        "models",
+        "qat",
+        "quality",
+        "quantization",
+        "stops",
+        "tool",
+        "where"
+      ],
+      "tags": [
+        "quantization",
+        "local-models",
+        "gguf",
+        "tool-calling",
+        "qat"
+      ],
+      "date": "2026/07/29",
+      "slug": "quantization-quality-cliffs",
+      "path": "data/2026/07/29/quantization-quality-cliffs.md"
+    },
+    {
+      "title": "Why server-sent events came back for streaming LLM apps",
+      "tokens": [
+        "apps",
+        "back",
+        "came",
+        "events",
+        "http",
+        "llm",
+        "mcp",
+        "platform",
+        "sent",
+        "server",
+        "sse",
+        "streaming",
+        "web"
+      ],
+      "tags": [
+        "sse",
+        "streaming",
+        "web-platform",
+        "mcp",
+        "http"
+      ],
+      "date": "2026/07/29",
+      "slug": "server-sent-events-comeback",
+      "path": "data/2026/07/29/server-sent-events-comeback.md"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-29",
+  "topics": [
+    {
+      "title": "Ensemble AI code review: does a second reviewer find real bugs?",
+      "brief_file": "ai-code-review-second-pass.md",
+      "tags": [
+        "code-review",
+        "multi-agent",
+        "ai-agents",
+        "false-positives",
+        "cross-model"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Quantization quality cliffs: where 4-bit stops being good enough",
+      "brief_file": "quantization-quality-cliffs.md",
+      "tags": [
+        "quantization",
+        "local-models",
+        "gguf",
+        "tool-calling",
+        "qat"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why server-sent events came back for streaming LLM apps",
+      "brief_file": "server-sent-events-comeback.md",
+      "tags": [
+        "sse",
+        "streaming",
+        "web-platform",
+        "mcp",
+        "http"
+      ],
+      "connections": []
+    }
+  ]
+}
