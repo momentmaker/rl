@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-30",
+  "topics": [
+    {
+      "title": "Which AI video upscalers people actually run locally",
+      "brief_file": "local-ai-video-upscalers.md",
+      "tags": [
+        "video-upscaling",
+        "seedvr2",
+        "local-inference",
+        "temporal-consistency",
+        "media-tools"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What local-first sync actually costs to run",
+      "brief_file": "local-first-sync-costs.md",
+      "tags": [
+        "local-first",
+        "crdt",
+        "sync-engines",
+        "storage-overhead",
+        "distributed-systems"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Code ownership and blame when an agent wrote the commit",
+      "brief_file": "code-ownership-agent-commits.md",
+      "tags": [
+        "code-ownership",
+        "ai-agents",
+        "provenance",
+        "git-blame",
+        "liability"
+      ],
+      "connections": []
+    }
+  ]
+}

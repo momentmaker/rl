@@ -9,6 +9,7 @@
     111,
     117,
     119,
+    121,
     123,
     125,
     127,
@@ -137,6 +138,7 @@
     388,
     390,
     392,
+    396,
     41,
     43,
     45,
@@ -156,6 +158,7 @@
     88,
     90,
     92,
+    96,
     99
   ],
   "topics": [
@@ -4313,6 +4316,91 @@
       "date": "2026/07/29",
       "slug": "server-sent-events-comeback",
       "path": "data/2026/07/29/server-sent-events-comeback.md"
+    },
+    {
+      "title": "Which AI video upscalers people actually run locally",
+      "tokens": [
+        "actually",
+        "ai",
+        "consistency",
+        "inference",
+        "local",
+        "locally",
+        "media",
+        "people",
+        "run",
+        "seedvr2",
+        "temporal",
+        "tools",
+        "upscalers",
+        "upscaling",
+        "video",
+        "which"
+      ],
+      "tags": [
+        "video-upscaling",
+        "seedvr2",
+        "local-inference",
+        "temporal-consistency",
+        "media-tools"
+      ],
+      "date": "2026/07/30",
+      "slug": "local-ai-video-upscalers",
+      "path": "data/2026/07/30/local-ai-video-upscalers.md"
+    },
+    {
+      "title": "What local-first sync actually costs to run",
+      "tokens": [
+        "actually",
+        "costs",
+        "crdt",
+        "distributed",
+        "engines",
+        "first",
+        "local",
+        "overhead",
+        "run",
+        "storage",
+        "sync",
+        "systems"
+      ],
+      "tags": [
+        "local-first",
+        "crdt",
+        "sync-engines",
+        "storage-overhead",
+        "distributed-systems"
+      ],
+      "date": "2026/07/30",
+      "slug": "local-first-sync-costs",
+      "path": "data/2026/07/30/local-first-sync-costs.md"
+    },
+    {
+      "title": "Code ownership and blame when an agent wrote the commit",
+      "tokens": [
+        "agent",
+        "agents",
+        "ai",
+        "blame",
+        "code",
+        "commit",
+        "git",
+        "liability",
+        "ownership",
+        "provenance",
+        "when",
+        "wrote"
+      ],
+      "tags": [
+        "code-ownership",
+        "ai-agents",
+        "provenance",
+        "git-blame",
+        "liability"
+      ],
+      "date": "2026/07/30",
+      "slug": "code-ownership-agent-commits",
+      "path": "data/2026/07/30/code-ownership-agent-commits.md"
     }
   ]
 }
