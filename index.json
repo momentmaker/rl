@@ -7,6 +7,8 @@
     109,
     11,
     111,
+    113,
+    115,
     117,
     119,
     121,
@@ -138,6 +140,7 @@
     388,
     390,
     392,
+    394,
     396,
     41,
     43,
@@ -4401,6 +4404,98 @@
       "date": "2026/07/30",
       "slug": "code-ownership-agent-commits",
       "path": "data/2026/07/30/code-ownership-agent-commits.md"
+    },
+    {
+      "title": "What teams actually report after running spec-driven development with coding agents",
+      "tokens": [
+        "actually",
+        "after",
+        "agents",
+        "coding",
+        "developer",
+        "development",
+        "driven",
+        "engineering",
+        "kit",
+        "process",
+        "report",
+        "running",
+        "spec",
+        "teams",
+        "workflow"
+      ],
+      "tags": [
+        "spec-driven-development",
+        "coding-agents",
+        "spec-kit",
+        "developer-workflow",
+        "engineering-process"
+      ],
+      "date": "2026/07/31",
+      "slug": "spec-driven-agent-development",
+      "path": "data/2026/07/31/spec-driven-agent-development.md"
+    },
+    {
+      "title": "How hiring teams screen engineers now that the resume stopped carrying signal",
+      "tokens": [
+        "ai",
+        "assignments",
+        "carrying",
+        "detection",
+        "engineers",
+        "hiring",
+        "home",
+        "interviews",
+        "now",
+        "recruiting",
+        "resume",
+        "screen",
+        "screening",
+        "signal",
+        "stopped",
+        "take",
+        "teams",
+        "technical"
+      ],
+      "tags": [
+        "hiring-screening",
+        "ai-detection",
+        "technical-interviews",
+        "take-home-assignments",
+        "recruiting"
+      ],
+      "date": "2026/07/31",
+      "slug": "ai-resumes-hiring-signal",
+      "path": "data/2026/07/31/ai-resumes-hiring-signal.md"
+    },
+    {
+      "title": "What canvas editors and timeline UIs actually get built with",
+      "tokens": [
+        "actually",
+        "built",
+        "canvas",
+        "editors",
+        "get",
+        "hit",
+        "performance",
+        "redo",
+        "rendering",
+        "testing",
+        "timeline",
+        "ui",
+        "uis",
+        "undo"
+      ],
+      "tags": [
+        "canvas-editors",
+        "rendering-performance",
+        "hit-testing",
+        "timeline-ui",
+        "undo-redo"
+      ],
+      "date": "2026/07/31",
+      "slug": "canvas-timeline-ui-engineering",
+      "path": "data/2026/07/31/canvas-timeline-ui-engineering.md"
     }
   ]
 }

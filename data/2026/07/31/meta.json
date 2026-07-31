@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-31",
+  "topics": [
+    {
+      "title": "What teams actually report after running spec-driven development with coding agents",
+      "brief_file": "spec-driven-agent-development.md",
+      "tags": [
+        "spec-driven-development",
+        "coding-agents",
+        "spec-kit",
+        "developer-workflow",
+        "engineering-process"
+      ],
+      "connections": []
+    },
+    {
+      "title": "How hiring teams screen engineers now that the resume stopped carrying signal",
+      "brief_file": "ai-resumes-hiring-signal.md",
+      "tags": [
+        "hiring-screening",
+        "ai-detection",
+        "technical-interviews",
+        "take-home-assignments",
+        "recruiting"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What canvas editors and timeline UIs actually get built with",
+      "brief_file": "canvas-timeline-ui-engineering.md",
+      "tags": [
+        "canvas-editors",
+        "rendering-performance",
+        "hit-testing",
+        "timeline-ui",
+        "undo-redo"
+      ],
+      "connections": []
+    }
+  ]
+}
