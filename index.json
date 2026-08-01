@@ -96,6 +96,7 @@
     293,
     295,
     297,
+    299,
     301,
     303,
     305,
@@ -137,6 +138,7 @@
     38,
     381,
     383,
+    385,
     388,
     390,
     392,
@@ -154,6 +156,7 @@
     66,
     68,
     70,
+    72,
     8,
     81,
     83,
@@ -4496,6 +4499,97 @@
       "date": "2026/07/31",
       "slug": "canvas-timeline-ui-engineering",
       "path": "data/2026/07/31/canvas-timeline-ui-engineering.md"
+    },
+    {
+      "title": "AI-found vulnerabilities: what got verified versus what got claimed",
+      "tokens": [
+        "ai",
+        "analysis",
+        "claimed",
+        "cve",
+        "discovery",
+        "found",
+        "got",
+        "open",
+        "security",
+        "source",
+        "static",
+        "verification",
+        "verified",
+        "versus",
+        "vulnerabilities",
+        "vulnerability"
+      ],
+      "tags": [
+        "ai-security",
+        "vulnerability-discovery",
+        "cve-verification",
+        "static-analysis",
+        "open-source"
+      ],
+      "date": "2026/08/01",
+      "slug": "ai-vuln-finding-agents-c-code",
+      "path": "data/2026/08/01/ai-vuln-finding-agents-c-code.md"
+    },
+    {
+      "title": "How AI products get priced once inference is the cost of goods sold",
+      "tokens": [
+        "ai",
+        "based",
+        "billing",
+        "cost",
+        "get",
+        "goods",
+        "gross",
+        "inference",
+        "margins",
+        "once",
+        "outcome",
+        "priced",
+        "pricing",
+        "products",
+        "sold",
+        "usage"
+      ],
+      "tags": [
+        "pricing",
+        "outcome-based-pricing",
+        "ai-products",
+        "gross-margins",
+        "usage-billing"
+      ],
+      "date": "2026/08/01",
+      "slug": "ai-product-outcome-pricing",
+      "path": "data/2026/08/01/ai-product-outcome-pricing.md"
+    },
+    {
+      "title": "Whether text-to-CAD actually produces parametric models you can edit",
+      "tokens": [
+        "3d",
+        "actually",
+        "cad",
+        "cadquery",
+        "can",
+        "edit",
+        "modeling",
+        "models",
+        "openscad",
+        "parametric",
+        "printing",
+        "produces",
+        "text",
+        "whether"
+      ],
+      "tags": [
+        "text-to-cad",
+        "cadquery",
+        "openscad",
+        "parametric-modeling",
+        "3d-printing"
+      ],
+      "date": "2026/08/01",
+      "slug": "text-to-cad-parametric-models",
+      "path": "data/2026/08/01/text-to-cad-parametric-models.md"
     }
   ]
 }

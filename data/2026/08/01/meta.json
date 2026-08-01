@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-01",
+  "topics": [
+    {
+      "title": "AI-found vulnerabilities: what got verified versus what got claimed",
+      "brief_file": "ai-vuln-finding-agents-c-code.md",
+      "tags": [
+        "ai-security",
+        "vulnerability-discovery",
+        "cve-verification",
+        "static-analysis",
+        "open-source"
+      ],
+      "connections": [
+        {
+          "title": "AI bug-hunting vs the slop flood: what OSS maintainers face in 2026",
+          "date": "2026/07/08"
+        }
+      ]
+    },
+    {
+      "title": "How AI products get priced once inference is the cost of goods sold",
+      "brief_file": "ai-product-outcome-pricing.md",
+      "tags": [
+        "pricing",
+        "outcome-based-pricing",
+        "ai-products",
+        "gross-margins",
+        "usage-billing"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Whether text-to-CAD actually produces parametric models you can edit",
+      "brief_file": "text-to-cad-parametric-models.md",
+      "tags": [
+        "text-to-cad",
+        "cadquery",
+        "openscad",
+        "parametric-modeling",
+        "3d-printing"
+      ],
+      "connections": []
+    }
+  ]
+}
