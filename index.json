@@ -26,6 +26,7 @@
     146,
     148,
     15,
+    150,
     152,
     155,
     158,
@@ -50,6 +51,7 @@
     200,
     202,
     204,
+    206,
     209,
     211,
     213,
@@ -164,6 +166,7 @@
     88,
     90,
     92,
+    94,
     96,
     99
   ],
@@ -4590,6 +4593,103 @@
       "date": "2026/08/01",
       "slug": "text-to-cad-parametric-models",
       "path": "data/2026/08/01/text-to-cad-parametric-models.md"
+    },
+    {
+      "title": "What coding agents actually run inside: sandbox runtimes, prices and escapes",
+      "tokens": [
+        "actually",
+        "agent",
+        "agents",
+        "code",
+        "coding",
+        "cold",
+        "escapes",
+        "execution",
+        "firecracker",
+        "inside",
+        "isolation",
+        "latency",
+        "microvms",
+        "prices",
+        "run",
+        "runtimes",
+        "sandbox",
+        "sandboxes",
+        "start"
+      ],
+      "tags": [
+        "agent-sandboxes",
+        "firecracker-microvms",
+        "cold-start-latency",
+        "sandbox-escapes",
+        "code-execution-isolation"
+      ],
+      "date": "2026/08/02",
+      "slug": "agent-sandbox-runtimes",
+      "path": "data/2026/08/02/agent-sandbox-runtimes.md"
+    },
+    {
+      "title": "What happens when AI-designed proteins reach the bench",
+      "tokens": [
+        "ai",
+        "bench",
+        "binders",
+        "boltzgen",
+        "de",
+        "design",
+        "designed",
+        "happens",
+        "lab",
+        "novo",
+        "protein",
+        "proteins",
+        "reach",
+        "rfdiffusion",
+        "validation",
+        "wet",
+        "when"
+      ],
+      "tags": [
+        "ai-protein-design",
+        "de-novo-binders",
+        "rfdiffusion",
+        "boltzgen",
+        "wet-lab-validation"
+      ],
+      "date": "2026/08/02",
+      "slug": "ai-designed-proteins-bench",
+      "path": "data/2026/08/02/ai-designed-proteins-bench.md"
+    },
+    {
+      "title": "How speech-native models actually represent audio",
+      "tokens": [
+        "acoustic",
+        "actually",
+        "audio",
+        "bitrate",
+        "codecs",
+        "low",
+        "models",
+        "native",
+        "quantization",
+        "represent",
+        "residual",
+        "semantic",
+        "speech",
+        "tokenizers",
+        "tokens",
+        "vector"
+      ],
+      "tags": [
+        "audio-codecs",
+        "speech-tokenizers",
+        "residual-vector-quantization",
+        "low-bitrate-speech",
+        "semantic-acoustic-tokens"
+      ],
+      "date": "2026/08/02",
+      "slug": "audio-tokenizers-speech-models",
+      "path": "data/2026/08/02/audio-tokenizers-speech-models.md"
     }
   ]
 }

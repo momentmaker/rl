@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-02",
+  "topics": [
+    {
+      "title": "What coding agents actually run inside: sandbox runtimes, prices and escapes",
+      "brief_file": "agent-sandbox-runtimes.md",
+      "tags": [
+        "agent-sandboxes",
+        "firecracker-microvms",
+        "cold-start-latency",
+        "sandbox-escapes",
+        "code-execution-isolation"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What happens when AI-designed proteins reach the bench",
+      "brief_file": "ai-designed-proteins-bench.md",
+      "tags": [
+        "ai-protein-design",
+        "de-novo-binders",
+        "rfdiffusion",
+        "boltzgen",
+        "wet-lab-validation"
+      ],
+      "connections": []
+    },
+    {
+      "title": "How speech-native models actually represent audio",
+      "brief_file": "audio-tokenizers-speech-models.md",
+      "tags": [
+        "audio-codecs",
+        "speech-tokenizers",
+        "residual-vector-quantization",
+        "low-bitrate-speech",
+        "semantic-acoustic-tokens"
+      ],
+      "connections": []
+    }
+  ]
+}
