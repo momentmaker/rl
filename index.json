@@ -27,6 +27,7 @@
     148,
     15,
     150,
+    151,
     152,
     155,
     158,
@@ -59,6 +60,7 @@
     217,
     219,
     221,
+    223,
     224,
     226,
     229,
@@ -127,6 +129,7 @@
     353,
     356,
     358,
+    36,
     360,
     362,
     364,
@@ -4690,6 +4693,93 @@
       "date": "2026/08/02",
       "slug": "audio-tokenizers-speech-models",
       "path": "data/2026/08/02/audio-tokenizers-speech-models.md"
+    },
+    {
+      "title": "What a quoted hallucination rate actually measures",
+      "tokens": [
+        "aa",
+        "abstention",
+        "actually",
+        "benchmarks",
+        "calibration",
+        "evaluation",
+        "hallucination",
+        "hhem",
+        "llm",
+        "measures",
+        "omniscience",
+        "quoted",
+        "rate",
+        "vectara"
+      ],
+      "tags": [
+        "hallucination-benchmarks",
+        "aa-omniscience",
+        "vectara-hhem",
+        "abstention-calibration",
+        "llm-evaluation"
+      ],
+      "date": "2026/08/03",
+      "slug": "hallucination-rate-benchmarks",
+      "path": "data/2026/08/03/hallucination-rate-benchmarks.md"
+    },
+    {
+      "title": "What breaks in full-duplex voice agents: barge-in and end-of-turn",
+      "tokens": [
+        "agents",
+        "barge",
+        "breaks",
+        "detection",
+        "duplex",
+        "end",
+        "endpointing",
+        "full",
+        "turn",
+        "voice"
+      ],
+      "tags": [
+        "voice-agents",
+        "full-duplex",
+        "barge-in",
+        "endpointing",
+        "turn-detection"
+      ],
+      "date": "2026/08/03",
+      "slug": "full-duplex-voice-agents",
+      "path": "data/2026/08/03/full-duplex-voice-agents.md"
+    },
+    {
+      "title": "What actually happens when you assign a real ticket to a coding agent",
+      "tokens": [
+        "actually",
+        "agent",
+        "agents",
+        "assign",
+        "code",
+        "coding",
+        "delegation",
+        "happens",
+        "issue",
+        "load",
+        "merge",
+        "pr",
+        "rates",
+        "real",
+        "review",
+        "ticket",
+        "trackers",
+        "when"
+      ],
+      "tags": [
+        "coding-agents",
+        "issue-trackers",
+        "pr-merge-rates",
+        "code-review-load",
+        "agent-delegation"
+      ],
+      "date": "2026/08/03",
+      "slug": "assigning-tickets-to-coding-agents",
+      "path": "data/2026/08/03/assigning-tickets-to-coding-agents.md"
     }
   ]
 }

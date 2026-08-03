@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-03",
+  "topics": [
+    {
+      "title": "What a quoted hallucination rate actually measures",
+      "brief_file": "hallucination-rate-benchmarks.md",
+      "tags": [
+        "hallucination-benchmarks",
+        "aa-omniscience",
+        "vectara-hhem",
+        "abstention-calibration",
+        "llm-evaluation"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What breaks in full-duplex voice agents: barge-in and end-of-turn",
+      "brief_file": "full-duplex-voice-agents.md",
+      "tags": [
+        "voice-agents",
+        "full-duplex",
+        "barge-in",
+        "endpointing",
+        "turn-detection"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What actually happens when you assign a real ticket to a coding agent",
+      "brief_file": "assigning-tickets-to-coding-agents.md",
+      "tags": [
+        "coding-agents",
+        "issue-trackers",
+        "pr-merge-rates",
+        "code-review-load",
+        "agent-delegation"
+      ],
+      "connections": []
+    }
+  ]
+}
