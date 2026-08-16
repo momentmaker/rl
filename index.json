@@ -149,6 +149,9 @@
     392,
     394,
     396,
+    398,
+    400,
+    402,
     41,
     43,
     45,
@@ -4780,6 +4783,95 @@
       "date": "2026/08/03",
       "slug": "assigning-tickets-to-coding-agents",
       "path": "data/2026/08/03/assigning-tickets-to-coding-agents.md"
+    },
+    {
+      "title": "How stale light pollution maps are and whether Bortle matches what observers see",
+      "tokens": [
+        "bortle",
+        "light",
+        "maps",
+        "matches",
+        "meter",
+        "observers",
+        "pollution",
+        "quality",
+        "scale",
+        "see",
+        "sky",
+        "skyglow",
+        "stale",
+        "viirs",
+        "whether"
+      ],
+      "tags": [
+        "light-pollution",
+        "bortle-scale",
+        "viirs",
+        "skyglow",
+        "sky-quality-meter"
+      ],
+      "date": "2026/08/16",
+      "slug": "light-pollution-map-accuracy",
+      "path": "data/2026/08/16/light-pollution-map-accuracy.md"
+    },
+    {
+      "title": "What it costs and what breaks running a personal staff of agents on your own VPS",
+      "tokens": [
+        "agent",
+        "agents",
+        "breaks",
+        "cost",
+        "costs",
+        "guardrails",
+        "hosted",
+        "hosting",
+        "ops",
+        "own",
+        "personal",
+        "runaway",
+        "running",
+        "self",
+        "staff",
+        "vps"
+      ],
+      "tags": [
+        "self-hosted-agents",
+        "agent-ops",
+        "runaway-cost",
+        "vps-hosting",
+        "agent-guardrails"
+      ],
+      "date": "2026/08/16",
+      "slug": "personal-agent-staff-on-a-vps",
+      "path": "data/2026/08/16/personal-agent-staff-on-a-vps.md"
+    },
+    {
+      "title": "What solar shade reports miss that an on-site survey catches",
+      "tokens": [
+        "analysis",
+        "catches",
+        "guarantee",
+        "lidar",
+        "miss",
+        "production",
+        "pv",
+        "reports",
+        "shade",
+        "shading",
+        "site",
+        "solar",
+        "survey"
+      ],
+      "tags": [
+        "solar-pv",
+        "shading-analysis",
+        "site-survey",
+        "production-guarantee",
+        "lidar"
+      ],
+      "date": "2026/08/16",
+      "slug": "solar-shade-reports-vs-site-surveys",
+      "path": "data/2026/08/16/solar-shade-reports-vs-site-surveys.md"
     }
   ]
 }

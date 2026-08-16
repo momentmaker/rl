@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-16",
+  "topics": [
+    {
+      "title": "How stale light pollution maps are and whether Bortle matches what observers see",
+      "brief_file": "light-pollution-map-accuracy.md",
+      "tags": [
+        "light-pollution",
+        "bortle-scale",
+        "viirs",
+        "skyglow",
+        "sky-quality-meter"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What it costs and what breaks running a personal staff of agents on your own VPS",
+      "brief_file": "personal-agent-staff-on-a-vps.md",
+      "tags": [
+        "self-hosted-agents",
+        "agent-ops",
+        "runaway-cost",
+        "vps-hosting",
+        "agent-guardrails"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What solar shade reports miss that an on-site survey catches",
+      "brief_file": "solar-shade-reports-vs-site-surveys.md",
+      "tags": [
+        "solar-pv",
+        "shading-analysis",
+        "site-survey",
+        "production-guarantee",
+        "lidar"
+      ],
+      "connections": []
+    }
+  ]
+}
