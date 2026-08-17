@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-17",
+  "topics": [
+    {
+      "title": "Why every cause of hallucination collapses into the same four geometric shapes",
+      "brief_file": "form-constants-geometric-hallucinations.md",
+      "tags": [
+        "neuroscience",
+        "hallucinations",
+        "form-constants",
+        "visual-cortex",
+        "psychedelics"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What self-hosters actually run to get a homelab alert to their phone",
+      "brief_file": "self-hosted-homelab-alerting-stacks.md",
+      "tags": [
+        "self-hosting",
+        "homelab",
+        "ntfy",
+        "alerting",
+        "push-notifications"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Whether AI-text detectors catch anything and whether humanizers beat them",
+      "brief_file": "ai-detectors-and-humanizers.md",
+      "tags": [
+        "ai-text",
+        "ai-detectors",
+        "humanizers",
+        "watermarking",
+        "academic-integrity"
+      ],
+      "connections": []
+    }
+  ]
+}

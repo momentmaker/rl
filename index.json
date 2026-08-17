@@ -152,7 +152,10 @@
     398,
     400,
     402,
+    408,
     41,
+    410,
+    412,
     43,
     45,
     49,
@@ -4872,6 +4875,92 @@
       "date": "2026/08/16",
       "slug": "solar-shade-reports-vs-site-surveys",
       "path": "data/2026/08/16/solar-shade-reports-vs-site-surveys.md"
+    },
+    {
+      "title": "Why every cause of hallucination collapses into the same four geometric shapes",
+      "tokens": [
+        "cause",
+        "collapses",
+        "constants",
+        "cortex",
+        "every",
+        "form",
+        "four",
+        "geometric",
+        "hallucination",
+        "hallucinations",
+        "neuroscience",
+        "psychedelics",
+        "same",
+        "shapes",
+        "visual"
+      ],
+      "tags": [
+        "neuroscience",
+        "hallucinations",
+        "form-constants",
+        "visual-cortex",
+        "psychedelics"
+      ],
+      "date": "2026/08/17",
+      "slug": "form-constants-geometric-hallucinations",
+      "path": "data/2026/08/17/form-constants-geometric-hallucinations.md"
+    },
+    {
+      "title": "What self-hosters actually run to get a homelab alert to their phone",
+      "tokens": [
+        "actually",
+        "alert",
+        "alerting",
+        "get",
+        "homelab",
+        "hosters",
+        "hosting",
+        "notifications",
+        "ntfy",
+        "phone",
+        "push",
+        "run",
+        "self",
+        "their"
+      ],
+      "tags": [
+        "self-hosting",
+        "homelab",
+        "ntfy",
+        "alerting",
+        "push-notifications"
+      ],
+      "date": "2026/08/17",
+      "slug": "self-hosted-homelab-alerting-stacks",
+      "path": "data/2026/08/17/self-hosted-homelab-alerting-stacks.md"
+    },
+    {
+      "title": "Whether AI-text detectors catch anything and whether humanizers beat them",
+      "tokens": [
+        "academic",
+        "ai",
+        "anything",
+        "beat",
+        "catch",
+        "detectors",
+        "humanizers",
+        "integrity",
+        "text",
+        "them",
+        "watermarking",
+        "whether"
+      ],
+      "tags": [
+        "ai-text",
+        "ai-detectors",
+        "humanizers",
+        "watermarking",
+        "academic-integrity"
+      ],
+      "date": "2026/08/17",
+      "slug": "ai-detectors-and-humanizers",
+      "path": "data/2026/08/17/ai-detectors-and-humanizers.md"
     }
   ]
 }
