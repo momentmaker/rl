@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-18",
+  "topics": [
+    {
+      "title": "What data centers actually do to your electricity bill",
+      "brief_file": "data-centers-and-your-electricity-bill.md",
+      "tags": [
+        "data-centers",
+        "electricity-rates",
+        "large-load-tariffs",
+        "ratepayers",
+        "grid"
+      ],
+      "connections": [
+        {
+          "title": "AI data centers, the power grid, and who pays your electricity bill",
+          "date": "2026/06/14"
+        }
+      ]
+    },
+    {
+      "title": "What actually keeps an archive alive: the medium, the vendor, or the volunteers",
+      "brief_file": "what-keeps-an-archive-alive.md",
+      "tags": [
+        "digital-preservation",
+        "archive-custody",
+        "lto-tape",
+        "drive-reliability",
+        "datahoarder"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What archives and small sites do about AI crawlers hammering their servers",
+      "brief_file": "ai-crawlers-archives-and-small-sites.md",
+      "tags": [
+        "ai-crawlers",
+        "anubis",
+        "robots-txt",
+        "bot-traffic",
+        "web-preservation"
+      ],
+      "connections": []
+    }
+  ]
+}

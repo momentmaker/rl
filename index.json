@@ -152,10 +152,13 @@
     398,
     400,
     402,
+    404,
+    406,
     408,
     41,
     410,
     412,
+    414,
     43,
     45,
     49,
@@ -4961,6 +4964,94 @@
       "date": "2026/08/17",
       "slug": "ai-detectors-and-humanizers",
       "path": "data/2026/08/17/ai-detectors-and-humanizers.md"
+    },
+    {
+      "title": "What data centers actually do to your electricity bill",
+      "tokens": [
+        "actually",
+        "bill",
+        "centers",
+        "data",
+        "do",
+        "electricity",
+        "grid",
+        "large",
+        "load",
+        "ratepayers",
+        "rates",
+        "tariffs"
+      ],
+      "tags": [
+        "data-centers",
+        "electricity-rates",
+        "large-load-tariffs",
+        "ratepayers",
+        "grid"
+      ],
+      "date": "2026/08/18",
+      "slug": "data-centers-and-your-electricity-bill",
+      "path": "data/2026/08/18/data-centers-and-your-electricity-bill.md"
+    },
+    {
+      "title": "What actually keeps an archive alive: the medium, the vendor, or the volunteers",
+      "tokens": [
+        "actually",
+        "alive",
+        "archive",
+        "custody",
+        "datahoarder",
+        "digital",
+        "drive",
+        "keeps",
+        "lto",
+        "medium",
+        "preservation",
+        "reliability",
+        "tape",
+        "vendor",
+        "volunteers"
+      ],
+      "tags": [
+        "digital-preservation",
+        "archive-custody",
+        "lto-tape",
+        "drive-reliability",
+        "datahoarder"
+      ],
+      "date": "2026/08/18",
+      "slug": "what-keeps-an-archive-alive",
+      "path": "data/2026/08/18/what-keeps-an-archive-alive.md"
+    },
+    {
+      "title": "What archives and small sites do about AI crawlers hammering their servers",
+      "tokens": [
+        "ai",
+        "anubis",
+        "archives",
+        "bot",
+        "crawlers",
+        "do",
+        "hammering",
+        "preservation",
+        "robots",
+        "servers",
+        "sites",
+        "small",
+        "their",
+        "traffic",
+        "txt",
+        "web"
+      ],
+      "tags": [
+        "ai-crawlers",
+        "anubis",
+        "robots-txt",
+        "bot-traffic",
+        "web-preservation"
+      ],
+      "date": "2026/08/18",
+      "slug": "ai-crawlers-archives-and-small-sites",
+      "path": "data/2026/08/18/ai-crawlers-archives-and-small-sites.md"
     }
   ]
 }
