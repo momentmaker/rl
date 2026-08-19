@@ -159,6 +159,9 @@
     410,
     412,
     414,
+    416,
+    418,
+    420,
     43,
     45,
     49,
@@ -5052,6 +5055,92 @@
       "date": "2026/08/18",
       "slug": "ai-crawlers-archives-and-small-sites",
       "path": "data/2026/08/18/ai-crawlers-archives-and-small-sites.md"
+    },
+    {
+      "title": "What happens to your data when a company dies and its records are auctioned",
+      "tokens": [
+        "363",
+        "auctioned",
+        "bankruptcy",
+        "company",
+        "data",
+        "deidentification",
+        "dies",
+        "happens",
+        "its",
+        "privacy",
+        "records",
+        "sales",
+        "section",
+        "when"
+      ],
+      "tags": [
+        "bankruptcy",
+        "data-sales",
+        "privacy",
+        "deidentification",
+        "section-363"
+      ],
+      "date": "2026/08/19",
+      "slug": "bankruptcy-data-auctions",
+      "path": "data/2026/08/19/bankruptcy-data-auctions.md"
+    },
+    {
+      "title": "What a coding agent status line actually costs to run",
+      "tokens": [
+        "actually",
+        "agent",
+        "cli",
+        "coding",
+        "costs",
+        "developer",
+        "latency",
+        "line",
+        "lines",
+        "prompts",
+        "run",
+        "status",
+        "terminal",
+        "tools"
+      ],
+      "tags": [
+        "status-lines",
+        "terminal-prompts",
+        "cli",
+        "latency",
+        "developer-tools"
+      ],
+      "date": "2026/08/19",
+      "slug": "status-lines-and-terminal-prompts",
+      "path": "data/2026/08/19/status-lines-and-terminal-prompts.md"
+    },
+    {
+      "title": "Cloud vendor lock-in and what leaving actually costs",
+      "tokens": [
+        "act",
+        "actually",
+        "cloud",
+        "costs",
+        "data",
+        "economics",
+        "egress",
+        "eu",
+        "fees",
+        "leaving",
+        "lock",
+        "switching",
+        "vendor"
+      ],
+      "tags": [
+        "vendor-lock-in",
+        "switching-costs",
+        "eu-data-act",
+        "cloud-economics",
+        "egress-fees"
+      ],
+      "date": "2026/08/19",
+      "slug": "vendor-lock-in-switching-costs",
+      "path": "data/2026/08/19/vendor-lock-in-switching-costs.md"
     }
   ]
 }

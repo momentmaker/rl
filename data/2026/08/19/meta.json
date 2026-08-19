@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-19",
+  "topics": [
+    {
+      "title": "What happens to your data when a company dies and its records are auctioned",
+      "brief_file": "bankruptcy-data-auctions.md",
+      "tags": [
+        "bankruptcy",
+        "data-sales",
+        "privacy",
+        "deidentification",
+        "section-363"
+      ],
+      "connections": [
+        {
+          "title": "Synthetic data vs human-labeled data: the bifurcating AI data supply chain",
+          "date": "2026/07/14"
+        }
+      ]
+    },
+    {
+      "title": "What a coding agent status line actually costs to run",
+      "brief_file": "status-lines-and-terminal-prompts.md",
+      "tags": [
+        "status-lines",
+        "terminal-prompts",
+        "cli",
+        "latency",
+        "developer-tools"
+      ],
+      "connections": [
+        {
+          "title": "Terminal demos as build artifacts: VHS, asciinema, and agent screencasts",
+          "date": "2026/07/26"
+        }
+      ]
+    },
+    {
+      "title": "Cloud vendor lock-in and what leaving actually costs",
+      "brief_file": "vendor-lock-in-switching-costs.md",
+      "tags": [
+        "vendor-lock-in",
+        "switching-costs",
+        "eu-data-act",
+        "cloud-economics",
+        "egress-fees"
+      ],
+      "connections": [
+        {
+          "title": "What actually keeps an archive alive: the medium, the vendor, or the volunteers",
+          "date": "2026/08/18"
+        }
+      ]
+    }
+  ]
+}
