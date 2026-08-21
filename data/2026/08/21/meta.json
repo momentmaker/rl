@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-21",
+  "topics": [
+    {
+      "title": "Code signing and notarization for indie desktop apps",
+      "brief_file": "code-signing-indie-desktop-apps.md",
+      "tags": [
+        "code-signing",
+        "notarization",
+        "smartscreen",
+        "desktop-apps",
+        "indie",
+        "certificates"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Preference post-training for small models",
+      "brief_file": "preference-post-training-small-models.md",
+      "tags": [
+        "dpo",
+        "grpo",
+        "post-training",
+        "fine-tuning",
+        "preference-data",
+        "llm"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Devices bricked when companies shut down their servers",
+      "brief_file": "devices-bricked-by-cloud-shutdowns.md",
+      "tags": [
+        "bricking",
+        "cloud-dependency",
+        "right-to-repair",
+        "smart-home",
+        "e-waste",
+        "eol"
+      ],
+      "connections": []
+    }
+  ]
+}

@@ -162,6 +162,9 @@
     416,
     418,
     420,
+    422,
+    424,
+    428,
     43,
     45,
     49,
@@ -5141,6 +5144,90 @@
       "date": "2026/08/19",
       "slug": "vendor-lock-in-switching-costs",
       "path": "data/2026/08/19/vendor-lock-in-switching-costs.md"
+    },
+    {
+      "title": "Code signing and notarization for indie desktop apps",
+      "tokens": [
+        "apps",
+        "certificates",
+        "code",
+        "desktop",
+        "indie",
+        "notarization",
+        "signing",
+        "smartscreen"
+      ],
+      "tags": [
+        "code-signing",
+        "notarization",
+        "smartscreen",
+        "desktop-apps",
+        "indie",
+        "certificates"
+      ],
+      "date": "2026/08/21",
+      "slug": "code-signing-indie-desktop-apps",
+      "path": "data/2026/08/21/code-signing-indie-desktop-apps.md"
+    },
+    {
+      "title": "Preference post-training for small models",
+      "tokens": [
+        "data",
+        "dpo",
+        "fine",
+        "grpo",
+        "llm",
+        "models",
+        "post",
+        "preference",
+        "small",
+        "training",
+        "tuning"
+      ],
+      "tags": [
+        "dpo",
+        "grpo",
+        "post-training",
+        "fine-tuning",
+        "preference-data",
+        "llm"
+      ],
+      "date": "2026/08/21",
+      "slug": "preference-post-training-small-models",
+      "path": "data/2026/08/21/preference-post-training-small-models.md"
+    },
+    {
+      "title": "Devices bricked when companies shut down their servers",
+      "tokens": [
+        "bricked",
+        "bricking",
+        "cloud",
+        "companies",
+        "dependency",
+        "devices",
+        "down",
+        "eol",
+        "home",
+        "repair",
+        "right",
+        "servers",
+        "shut",
+        "smart",
+        "their",
+        "waste",
+        "when"
+      ],
+      "tags": [
+        "bricking",
+        "cloud-dependency",
+        "right-to-repair",
+        "smart-home",
+        "e-waste",
+        "eol"
+      ],
+      "date": "2026/08/21",
+      "slug": "devices-bricked-by-cloud-shutdowns",
+      "path": "data/2026/08/21/devices-bricked-by-cloud-shutdowns.md"
     }
   ]
 }
