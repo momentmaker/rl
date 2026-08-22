@@ -164,8 +164,11 @@
     420,
     422,
     424,
+    426,
     428,
     43,
+    430,
+    432,
     45,
     49,
     56,
@@ -5228,6 +5231,92 @@
       "date": "2026/08/21",
       "slug": "devices-bricked-by-cloud-shutdowns",
       "path": "data/2026/08/21/devices-bricked-by-cloud-shutdowns.md"
+    },
+    {
+      "title": "AI companies destroying the books they scan",
+      "tokens": [
+        "ai",
+        "antitrust",
+        "book",
+        "books",
+        "companies",
+        "copyright",
+        "destroying",
+        "libraries",
+        "preservation",
+        "scan",
+        "scanning",
+        "shadow",
+        "they",
+        "training"
+      ],
+      "tags": [
+        "book-scanning",
+        "ai-training",
+        "preservation",
+        "copyright",
+        "antitrust",
+        "shadow-libraries"
+      ],
+      "date": "2026/08/22",
+      "slug": "ai-book-destruction-and-volunteer-scanning",
+      "path": "data/2026/08/22/ai-book-destruction-and-volunteer-scanning.md"
+    },
+    {
+      "title": "Japan's overtourism rules arriving as visitor numbers fall",
+      "tokens": [
+        "arriving",
+        "fall",
+        "fuji",
+        "japan",
+        "kyoto",
+        "mount",
+        "numbers",
+        "overtourism",
+        "rules",
+        "tax",
+        "tourism",
+        "travel",
+        "visitor"
+      ],
+      "tags": [
+        "japan",
+        "overtourism",
+        "travel",
+        "tourism-tax",
+        "mount-fuji",
+        "kyoto"
+      ],
+      "date": "2026/08/22",
+      "slug": "japan-overtourism-fewer-visitors-more-rules",
+      "path": "data/2026/08/22/japan-overtourism-fewer-visitors-more-rules.md"
+    },
+    {
+      "title": "An autism spectrum too broad to be useful",
+      "tokens": [
+        "autism",
+        "broad",
+        "criteria",
+        "diagnosis",
+        "diagnostic",
+        "epidemiology",
+        "measurement",
+        "psychiatry",
+        "spectrum",
+        "too",
+        "useful"
+      ],
+      "tags": [
+        "autism",
+        "diagnosis",
+        "psychiatry",
+        "measurement",
+        "diagnostic-criteria",
+        "epidemiology"
+      ],
+      "date": "2026/08/22",
+      "slug": "autism-spectrum-too-broad-to-be-useful",
+      "path": "data/2026/08/22/autism-spectrum-too-broad-to-be-useful.md"
     }
   ]
 }

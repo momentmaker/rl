@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-22",
+  "topics": [
+    {
+      "title": "AI companies destroying the books they scan",
+      "brief_file": "ai-book-destruction-and-volunteer-scanning.md",
+      "tags": [
+        "book-scanning",
+        "ai-training",
+        "preservation",
+        "copyright",
+        "antitrust",
+        "shadow-libraries"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Japan's overtourism rules arriving as visitor numbers fall",
+      "brief_file": "japan-overtourism-fewer-visitors-more-rules.md",
+      "tags": [
+        "japan",
+        "overtourism",
+        "travel",
+        "tourism-tax",
+        "mount-fuji",
+        "kyoto"
+      ],
+      "connections": []
+    },
+    {
+      "title": "An autism spectrum too broad to be useful",
+      "brief_file": "autism-spectrum-too-broad-to-be-useful.md",
+      "tags": [
+        "autism",
+        "diagnosis",
+        "psychiatry",
+        "measurement",
+        "diagnostic-criteria",
+        "epidemiology"
+      ],
+      "connections": []
+    }
+  ]
+}
