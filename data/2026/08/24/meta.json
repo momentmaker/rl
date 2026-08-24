@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-24",
+  "topics": [
+    {
+      "title": "US customs manifest data and the form that hides you from it",
+      "brief_file": "customs-bill-of-lading-supplier-discovery.md",
+      "tags": [
+        "customs-data",
+        "supply-chain",
+        "bill-of-lading",
+        "cbp",
+        "sourcing",
+        "trade"
+      ],
+      "connections": []
+    },
+    {
+      "title": "AI weather models once forecasters started deferring to them",
+      "brief_file": "ai-weather-models-operational-forecasting.md",
+      "tags": [
+        "ai-weather",
+        "ecmwf-aifs",
+        "graphcast",
+        "forecasting",
+        "meteorology",
+        "hurricanes"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Whether data-broker deletions actually stick under California's DELETE Act",
+      "brief_file": "delete-act-drop-data-broker-removals.md",
+      "tags": [
+        "data-brokers",
+        "delete-act",
+        "drop",
+        "privacy-law",
+        "people-search",
+        "opt-out"
+      ],
+      "connections": []
+    }
+  ]
+}

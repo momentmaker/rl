@@ -169,6 +169,9 @@
     43,
     430,
     432,
+    436,
+    438,
+    448,
     45,
     49,
     56,
@@ -5317,6 +5320,99 @@
       "date": "2026/08/22",
       "slug": "autism-spectrum-too-broad-to-be-useful",
       "path": "data/2026/08/22/autism-spectrum-too-broad-to-be-useful.md"
+    },
+    {
+      "title": "US customs manifest data and the form that hides you from it",
+      "tokens": [
+        "bill",
+        "cbp",
+        "chain",
+        "customs",
+        "data",
+        "form",
+        "hides",
+        "lading",
+        "manifest",
+        "sourcing",
+        "supply",
+        "trade",
+        "us"
+      ],
+      "tags": [
+        "customs-data",
+        "supply-chain",
+        "bill-of-lading",
+        "cbp",
+        "sourcing",
+        "trade"
+      ],
+      "date": "2026/08/24",
+      "slug": "customs-bill-of-lading-supplier-discovery",
+      "path": "data/2026/08/24/customs-bill-of-lading-supplier-discovery.md"
+    },
+    {
+      "title": "AI weather models once forecasters started deferring to them",
+      "tokens": [
+        "ai",
+        "aifs",
+        "deferring",
+        "ecmwf",
+        "forecasters",
+        "forecasting",
+        "graphcast",
+        "hurricanes",
+        "meteorology",
+        "models",
+        "once",
+        "started",
+        "them",
+        "weather"
+      ],
+      "tags": [
+        "ai-weather",
+        "ecmwf-aifs",
+        "graphcast",
+        "forecasting",
+        "meteorology",
+        "hurricanes"
+      ],
+      "date": "2026/08/24",
+      "slug": "ai-weather-models-operational-forecasting",
+      "path": "data/2026/08/24/ai-weather-models-operational-forecasting.md"
+    },
+    {
+      "title": "Whether data-broker deletions actually stick under California's DELETE Act",
+      "tokens": [
+        "act",
+        "actually",
+        "broker",
+        "brokers",
+        "california",
+        "data",
+        "delete",
+        "deletions",
+        "drop",
+        "law",
+        "opt",
+        "out",
+        "people",
+        "privacy",
+        "search",
+        "stick",
+        "under",
+        "whether"
+      ],
+      "tags": [
+        "data-brokers",
+        "delete-act",
+        "drop",
+        "privacy-law",
+        "people-search",
+        "opt-out"
+      ],
+      "date": "2026/08/24",
+      "slug": "delete-act-drop-data-broker-removals",
+      "path": "data/2026/08/24/delete-act-drop-data-broker-removals.md"
     }
   ]
 }
