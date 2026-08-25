@@ -171,8 +171,11 @@
     432,
     436,
     438,
+    442,
     448,
     45,
+    450,
+    454,
     49,
     56,
     58,
@@ -5413,6 +5416,104 @@
       "date": "2026/08/24",
       "slug": "delete-act-drop-data-broker-removals",
       "path": "data/2026/08/24/delete-act-drop-data-broker-removals.md"
+    },
+    {
+      "title": "WiGLE and what a crowdsourced Wi-Fi map exposes about home routers",
+      "tokens": [
+        "alpr",
+        "bssid",
+        "crowdsourced",
+        "exposes",
+        "fi",
+        "geolocation",
+        "home",
+        "map",
+        "privacy",
+        "routers",
+        "wardriving",
+        "wi",
+        "wifi",
+        "wigle"
+      ],
+      "tags": [
+        "wigle",
+        "wardriving",
+        "wifi",
+        "geolocation",
+        "privacy",
+        "bssid",
+        "alpr"
+      ],
+      "date": "2026/08/25",
+      "slug": "wigle-wardriving-surveillance-mapping",
+      "path": "data/2026/08/25/wigle-wardriving-surveillance-mapping.md"
+    },
+    {
+      "title": "Where independent search engines get their index after the Bing API shutdown",
+      "tokens": [
+        "after",
+        "antitrust",
+        "api",
+        "bing",
+        "brave",
+        "engine",
+        "engines",
+        "get",
+        "independent",
+        "index",
+        "marginalia",
+        "mojeek",
+        "search",
+        "shutdown",
+        "their",
+        "where"
+      ],
+      "tags": [
+        "search-engine",
+        "index",
+        "bing-api",
+        "marginalia",
+        "brave",
+        "mojeek",
+        "antitrust"
+      ],
+      "date": "2026/08/25",
+      "slug": "independent-search-index-after-bing-api",
+      "path": "data/2026/08/25/independent-search-index-after-bing-api.md"
+    },
+    {
+      "title": "Why AI-driven NPCs still have not shipped in real games",
+      "tokens": [
+        "ace",
+        "ai",
+        "driven",
+        "games",
+        "gaming",
+        "have",
+        "inference",
+        "local",
+        "mods",
+        "not",
+        "npc",
+        "npcs",
+        "nvidia",
+        "real",
+        "regulation",
+        "shipped",
+        "still"
+      ],
+      "tags": [
+        "ai",
+        "npc",
+        "gaming",
+        "nvidia-ace",
+        "local-inference",
+        "mods",
+        "regulation"
+      ],
+      "date": "2026/08/25",
+      "slug": "ai-npcs-shipping-in-real-games",
+      "path": "data/2026/08/25/ai-npcs-shipping-in-real-games.md"
     }
   ]
 }

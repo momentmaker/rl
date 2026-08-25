@@ -1,0 +1,47 @@
+{
+  "date": "2026/08/25",
+  "topics": [
+    {
+      "title": "WiGLE and what a crowdsourced Wi-Fi map exposes about home routers",
+      "brief_file": "wigle-wardriving-surveillance-mapping.md",
+      "tags": [
+        "wigle",
+        "wardriving",
+        "wifi",
+        "geolocation",
+        "privacy",
+        "bssid",
+        "alpr"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Where independent search engines get their index after the Bing API shutdown",
+      "brief_file": "independent-search-index-after-bing-api.md",
+      "tags": [
+        "search-engine",
+        "index",
+        "bing-api",
+        "marginalia",
+        "brave",
+        "mojeek",
+        "antitrust"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Why AI-driven NPCs still have not shipped in real games",
+      "brief_file": "ai-npcs-shipping-in-real-games.md",
+      "tags": [
+        "ai",
+        "npc",
+        "gaming",
+        "nvidia-ace",
+        "local-inference",
+        "mods",
+        "regulation"
+      ],
+      "connections": []
+    }
+  ]
+}
