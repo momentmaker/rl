@@ -1,0 +1,52 @@
+{
+  "date": "2026/08/26",
+  "topics": [
+    {
+      "title": "What Windows 11 debloat tools actually remove, and what comes back",
+      "brief_file": "windows-11-debloat-tools.md",
+      "tags": [
+        "windows",
+        "debloat",
+        "powershell",
+        "opensource",
+        "privacy",
+        "microsoft",
+        "tooling"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What arXiv's AI moderation rules catch, and what still gets through",
+      "brief_file": "arxiv-moderation-ai-generated-papers.md",
+      "tags": [
+        "arxiv",
+        "moderation",
+        "ai-generated",
+        "peer-review",
+        "academia",
+        "preprints",
+        "research-integrity"
+      ],
+      "connections": [
+        {
+          "title": "AI-generated papers and fabricated citations in peer review",
+          "date": "2026/06/19"
+        }
+      ]
+    },
+    {
+      "title": "What mandatory Companies House identity verification has actually changed",
+      "brief_file": "companies-house-identity-verification.md",
+      "tags": [
+        "companies-house",
+        "identity-verification",
+        "uk",
+        "corporate-registry",
+        "eccta",
+        "compliance",
+        "fraud"
+      ],
+      "connections": []
+    }
+  ]
+}

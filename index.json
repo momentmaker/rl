@@ -169,9 +169,12 @@
     43,
     430,
     432,
+    434,
     436,
     438,
+    440,
     442,
+    446,
     448,
     45,
     450,
@@ -5514,6 +5517,99 @@
       "date": "2026/08/25",
       "slug": "ai-npcs-shipping-in-real-games",
       "path": "data/2026/08/25/ai-npcs-shipping-in-real-games.md"
+    },
+    {
+      "title": "What Windows 11 debloat tools actually remove, and what comes back",
+      "tokens": [
+        "11",
+        "actually",
+        "back",
+        "comes",
+        "debloat",
+        "microsoft",
+        "opensource",
+        "powershell",
+        "privacy",
+        "remove",
+        "tooling",
+        "tools",
+        "windows"
+      ],
+      "tags": [
+        "windows",
+        "debloat",
+        "powershell",
+        "opensource",
+        "privacy",
+        "microsoft",
+        "tooling"
+      ],
+      "date": "2026/08/26",
+      "slug": "windows-11-debloat-tools",
+      "path": "data/2026/08/26/windows-11-debloat-tools.md"
+    },
+    {
+      "title": "What arXiv's AI moderation rules catch, and what still gets through",
+      "tokens": [
+        "academia",
+        "ai",
+        "arxiv",
+        "catch",
+        "generated",
+        "gets",
+        "integrity",
+        "moderation",
+        "peer",
+        "preprints",
+        "research",
+        "review",
+        "rules",
+        "still",
+        "through"
+      ],
+      "tags": [
+        "arxiv",
+        "moderation",
+        "ai-generated",
+        "peer-review",
+        "academia",
+        "preprints",
+        "research-integrity"
+      ],
+      "date": "2026/08/26",
+      "slug": "arxiv-moderation-ai-generated-papers",
+      "path": "data/2026/08/26/arxiv-moderation-ai-generated-papers.md"
+    },
+    {
+      "title": "What mandatory Companies House identity verification has actually changed",
+      "tokens": [
+        "actually",
+        "changed",
+        "companies",
+        "compliance",
+        "corporate",
+        "eccta",
+        "fraud",
+        "has",
+        "house",
+        "identity",
+        "mandatory",
+        "registry",
+        "uk",
+        "verification"
+      ],
+      "tags": [
+        "companies-house",
+        "identity-verification",
+        "uk",
+        "corporate-registry",
+        "eccta",
+        "compliance",
+        "fraud"
+      ],
+      "date": "2026/08/26",
+      "slug": "companies-house-identity-verification",
+      "path": "data/2026/08/26/companies-house-identity-verification.md"
     }
   ]
 }
