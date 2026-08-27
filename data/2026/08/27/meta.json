@@ -1,0 +1,47 @@
+{
+  "date": "2026/08/27",
+  "topics": [
+    {
+      "title": "What actually still works for reading X without an account",
+      "brief_file": "reading-x-without-an-account.md",
+      "tags": [
+        "nitter",
+        "xcancel",
+        "twitter",
+        "front-end",
+        "login-wall",
+        "scraping",
+        "privacy"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Headscale and what breaks when you self-host the Tailscale control plane",
+      "brief_file": "headscale-self-hosted-control-plane.md",
+      "tags": [
+        "headscale",
+        "tailscale",
+        "wireguard",
+        "control-plane",
+        "self-hosting",
+        "vpn",
+        "opensource"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What ChatGPT referral traffic is actually worth to small sites",
+      "brief_file": "chatgpt-referral-traffic.md",
+      "tags": [
+        "llm-referral",
+        "chatgpt",
+        "seo",
+        "aeo",
+        "traffic",
+        "analytics",
+        "publishing"
+      ],
+      "connections": []
+    }
+  ]
+}
