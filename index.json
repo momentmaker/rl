@@ -179,9 +179,11 @@
     448,
     45,
     450,
+    452,
     454,
     456,
     458,
+    460,
     49,
     56,
     58,
@@ -5703,6 +5705,91 @@
       "date": "2026/08/27",
       "slug": "chatgpt-referral-traffic",
       "path": "data/2026/08/27/chatgpt-referral-traffic.md"
+    },
+    {
+      "title": "Record linkage with Splink and how identities get matched across messy databases",
+      "tokens": [
+        "across",
+        "data",
+        "databases",
+        "deduplication",
+        "engineering",
+        "entity",
+        "get",
+        "identities",
+        "identity",
+        "linkage",
+        "matched",
+        "messy",
+        "record",
+        "resolution",
+        "splink"
+      ],
+      "tags": [
+        "entity-resolution",
+        "record-linkage",
+        "splink",
+        "data-engineering",
+        "identity",
+        "deduplication"
+      ],
+      "date": "2026/08/31",
+      "slug": "record-linkage-splink",
+      "path": "data/2026/08/31/record-linkage-splink.md"
+    },
+    {
+      "title": "Kdenlive and what editors say after finishing real projects on it",
+      "tokens": [
+        "after",
+        "editing",
+        "editors",
+        "finishing",
+        "kde",
+        "kdenlive",
+        "linux",
+        "nle",
+        "opensource",
+        "projects",
+        "real",
+        "say",
+        "video"
+      ],
+      "tags": [
+        "kdenlive",
+        "video-editing",
+        "opensource",
+        "nle",
+        "linux",
+        "kde"
+      ],
+      "date": "2026/08/31",
+      "slug": "kdenlive-open-source-video-editor",
+      "path": "data/2026/08/31/kdenlive-open-source-video-editor.md"
+    },
+    {
+      "title": "FFmpeg hardware AV1 encoding on NVENC and what it costs in quality",
+      "tokens": [
+        "av1",
+        "codecs",
+        "costs",
+        "encoding",
+        "ffmpeg",
+        "hardware",
+        "nvenc",
+        "quality",
+        "transcoding"
+      ],
+      "tags": [
+        "ffmpeg",
+        "nvenc",
+        "av1",
+        "hardware-encoding",
+        "codecs",
+        "transcoding"
+      ],
+      "date": "2026/08/31",
+      "slug": "ffmpeg-nvenc-av1-hardware-encoding",
+      "path": "data/2026/08/31/ffmpeg-nvenc-av1-hardware-encoding.md"
     }
   ]
 }

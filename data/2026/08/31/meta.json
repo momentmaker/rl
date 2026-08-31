@@ -1,0 +1,44 @@
+{
+  "date": "2026/08/31",
+  "topics": [
+    {
+      "title": "Record linkage with Splink and how identities get matched across messy databases",
+      "brief_file": "record-linkage-splink.md",
+      "tags": [
+        "entity-resolution",
+        "record-linkage",
+        "splink",
+        "data-engineering",
+        "identity",
+        "deduplication"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Kdenlive and what editors say after finishing real projects on it",
+      "brief_file": "kdenlive-open-source-video-editor.md",
+      "tags": [
+        "kdenlive",
+        "video-editing",
+        "opensource",
+        "nle",
+        "linux",
+        "kde"
+      ],
+      "connections": []
+    },
+    {
+      "title": "FFmpeg hardware AV1 encoding on NVENC and what it costs in quality",
+      "brief_file": "ffmpeg-nvenc-av1-hardware-encoding.md",
+      "tags": [
+        "ffmpeg",
+        "nvenc",
+        "av1",
+        "hardware-encoding",
+        "codecs",
+        "transcoding"
+      ],
+      "connections": []
+    }
+  ]
+}
