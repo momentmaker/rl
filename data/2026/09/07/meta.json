@@ -1,0 +1,44 @@
+{
+  "date": "2026/09/07",
+  "topics": [
+    {
+      "title": "What actually limits a Meshtastic mesh, and why people are flashing MeshCore",
+      "brief_file": "meshtastic-mesh-limits-and-meshcore.md",
+      "tags": [
+        "meshtastic",
+        "meshcore",
+        "lora",
+        "mesh-networking",
+        "off-grid",
+        "radio"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What FamilySearch's AI handwriting search opened, and what it quietly closed",
+      "brief_file": "familysearch-full-text-search-handwriting.md",
+      "tags": [
+        "familysearch",
+        "genealogy",
+        "handwriting-recognition",
+        "archives",
+        "digitization",
+        "search"
+      ],
+      "connections": []
+    },
+    {
+      "title": "What people actually do with a read-it-later backlog",
+      "brief_file": "read-it-later-apps-after-pocket.md",
+      "tags": [
+        "readwise",
+        "karakeep",
+        "read-later",
+        "rss",
+        "self-hosting",
+        "attention"
+      ],
+      "connections": []
+    }
+  ]
+}
