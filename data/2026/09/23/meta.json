@@ -1,0 +1,44 @@
+{
+  "date": "2026/09/23",
+  "topics": [
+    {
+      "title": "What folklorists actually said about Campbell's monomyth, and what it became instead",
+      "brief_file": "campbell-monomyth-and-folklorists.md",
+      "tags": [
+        "mythology",
+        "joseph-campbell",
+        "folklore",
+        "storytelling",
+        "criticism",
+        "writing"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Printer tracking dots, and why you can no longer check your own printer",
+      "brief_file": "printer-tracking-dots-machine-identification-code.md",
+      "tags": [
+        "privacy",
+        "printers",
+        "forensics",
+        "steganography",
+        "surveillance",
+        "eff"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Which Tao Te Ching translation people actually recommend",
+      "brief_file": "tao-te-ching-translations.md",
+      "tags": [
+        "taoism",
+        "translation",
+        "philosophy",
+        "books",
+        "classical-chinese",
+        "manuscripts"
+      ],
+      "connections": []
+    }
+  ]
+}
