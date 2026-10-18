@@ -57,8 +57,6 @@ jobs:
         if: steps.fresh.outputs.stale == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
           ENTRY_DATE: ${{ steps.fresh.outputs.entry_date }}
           AGE_DAYS: ${{ steps.fresh.outputs.age_days }}
           DETAIL: ${{ steps.fresh.outputs.detail }}
@@ -71,15 +69,9 @@ jobs:
             body="newest entry ${ENTRY_DATE} is ${AGE_DAYS} days old (threshold ${STALE_DAYS})."
           fi
 
-          # Telegram alert ([rl]-prefixed), only if the bot secrets are configured.
-          if [ -n "${TG_TOKEN:-}" ] && [ -n "${TG_CHAT:-}" ]; then
-            curl -fsS -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-              --data-urlencode "chat_id=${TG_CHAT}" \
-              --data-urlencode "text=[rl] pipeline stale — ${body}" >/dev/null \
-              && echo "telegram alert sent" || echo "telegram alert failed (non-fatal)"
-          else
-            echo "TELEGRAM_* secrets not set; skipping Telegram alert"
-          fi
+          # No Telegram ping: the operator does not want recurring [rl] alerts.
+          # The deduped GitHub issue below is the quiet durable record instead.
+          # (Re-add the sendMessage curl + TG_TOKEN/TG_CHAT secrets to restore.)
 
           # Durable, deduped GitHub issue as a persistent record.
           existing="$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)"
