@@ -188,8 +188,11 @@
     464,
     466,
     468,
+    470,
     472,
     474,
+    476,
+    478,
     49,
     56,
     58,
@@ -5968,6 +5971,107 @@
       "date": "2026/09/23",
       "slug": "tao-te-ching-translations",
       "path": "data/2026/09/23/tao-te-ching-translations.md"
+    },
+    {
+      "title": "Brood War's bot scene was beaten by self-play this autumn, and the LLMs aren't actually playing",
+      "tokens": [
+        "actually",
+        "ai",
+        "aren",
+        "autumn",
+        "beaten",
+        "benchmarks",
+        "bot",
+        "brood",
+        "game",
+        "hacking",
+        "learning",
+        "llm",
+        "llms",
+        "play",
+        "playing",
+        "reinforcement",
+        "reward",
+        "scene",
+        "self",
+        "starcraft",
+        "tournaments",
+        "war",
+        "was"
+      ],
+      "tags": [
+        "starcraft-brood-war",
+        "game-ai",
+        "self-play-reinforcement-learning",
+        "llm-benchmarks",
+        "bot-tournaments",
+        "reward-hacking"
+      ],
+      "date": "2026/10/24",
+      "slug": "starcraft-brood-war-ai-bots",
+      "path": "data/2026/10/24/starcraft-brood-war-ai-bots.md"
+    },
+    {
+      "title": "Strudel, what people actually finish with browser live-coding, and why the licence is the hard part of embedding it",
+      "tokens": [
+        "actually",
+        "agpl",
+        "algorave",
+        "audio",
+        "browser",
+        "coding",
+        "embedding",
+        "finish",
+        "hard",
+        "licence",
+        "licensing",
+        "live",
+        "part",
+        "people",
+        "strudel",
+        "tidalcycles",
+        "web"
+      ],
+      "tags": [
+        "strudel",
+        "live-coding",
+        "algorave",
+        "tidalcycles",
+        "web-audio",
+        "agpl-licensing"
+      ],
+      "date": "2026/10/24",
+      "slug": "strudel-live-coding-music",
+      "path": "data/2026/10/24/strudel-live-coding-music.md"
+    },
+    {
+      "title": "Function Health, Superpower, and what a \"100+ biomarkers\" count is actually counting",
+      "tokens": [
+        "100",
+        "actually",
+        "ai",
+        "biomarkers",
+        "blood",
+        "count",
+        "counting",
+        "function",
+        "health",
+        "interpretation",
+        "overtesting",
+        "superpower",
+        "testing"
+      ],
+      "tags": [
+        "function-health",
+        "superpower-health",
+        "blood-testing",
+        "biomarkers",
+        "overtesting",
+        "ai-health-interpretation"
+      ],
+      "date": "2026/10/24",
+      "slug": "function-health-blood-test-memberships",
+      "path": "data/2026/10/24/function-health-blood-test-memberships.md"
     }
   ]
 }

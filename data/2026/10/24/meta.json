@@ -1,0 +1,54 @@
+{
+  "date": "2026/10/24",
+  "topics": [
+    {
+      "title": "Brood War's bot scene was beaten by self-play this autumn, and the LLMs aren't actually playing",
+      "brief_file": "starcraft-brood-war-ai-bots.md",
+      "tags": [
+        "starcraft-brood-war",
+        "game-ai",
+        "self-play-reinforcement-learning",
+        "llm-benchmarks",
+        "bot-tournaments",
+        "reward-hacking"
+      ],
+      "connections": [
+        {
+          "title": "Harness vs model: what actually moves a coding agent's benchmark score",
+          "date": "2026/07/28"
+        }
+      ]
+    },
+    {
+      "title": "Strudel, what people actually finish with browser live-coding, and why the licence is the hard part of embedding it",
+      "brief_file": "strudel-live-coding-music.md",
+      "tags": [
+        "strudel",
+        "live-coding",
+        "algorave",
+        "tidalcycles",
+        "web-audio",
+        "agpl-licensing"
+      ],
+      "connections": []
+    },
+    {
+      "title": "Function Health, Superpower, and what a \"100+ biomarkers\" count is actually counting",
+      "brief_file": "function-health-blood-test-memberships.md",
+      "tags": [
+        "function-health",
+        "superpower-health",
+        "blood-testing",
+        "biomarkers",
+        "overtesting",
+        "ai-health-interpretation"
+      ],
+      "connections": [
+        {
+          "title": "Full-body AI health scanners and longevity screening: hype versus evidence",
+          "date": "2026/06/22"
+        }
+      ]
+    }
+  ]
+}
